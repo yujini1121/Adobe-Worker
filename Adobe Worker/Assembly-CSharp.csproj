@@ -60,10 +60,26 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2022.3.47f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\HIGHLANDS - Stylized Environment\Scripts\PlayerInteractions.cs" />
+    <Compile Include="Assets\HIGHLANDS - Stylized Environment\Scripts\CloudMover.cs" />
+    <Compile Include="Assets\HIGHLANDS - Stylized Environment\Scripts\Interactive.cs" />
+    <Compile Include="Assets\HIGHLANDS - Stylized Environment\Scripts\SoundGroup.cs" />
+    <Compile Include="Assets\HIGHLANDS - Stylized Environment\Scripts\LightCulling.cs" />
     <Compile Include="Assets\Scripts\Base\IDamageable.cs" />
     <Compile Include="Assets\Scripts\Base\EnemyBase.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
+    <Compile Include="Assets\HIGHLANDS - Stylized Environment\Scripts\AudioZoneControl.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
+    <Compile Include="Assets\HIGHLANDS - Stylized Environment\Scripts\PlayerController.cs" />
+    <Compile Include="Assets\HIGHLANDS - Stylized Environment\Scripts\WindSettings.cs" />
+    <Compile Include="Assets\HIGHLANDS - Stylized Environment\Scripts\PhysicsObject.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\HIGHLANDS - Stylized Environment\Documentation\Readme.txt" />
+    <None Include="Assets\HIGHLANDS - Stylized Environment\Shaders\Highlands_Foliage.shader" />
+    <None Include="Assets\HIGHLANDS - Stylized Environment\Shaders\Highlands_Background_Objects.shader" />
+    <None Include="Assets\HIGHLANDS - Stylized Environment\Shaders\Highlands_Water.shader" />
+    <None Include="Assets\HIGHLANDS - Stylized Environment\Shaders\Highlands_Surface.shader" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -922,6 +938,10 @@
       <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Unity.ScriptableBuildPipeline">
+      <HintPath>Library\ScriptAssemblies\Unity.ScriptableBuildPipeline.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Unity.ShaderGraph.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.ShaderGraph.Editor.dll</HintPath>
       <Private>False</Private>
@@ -1020,6 +1040,10 @@
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.ScriptableBuildPipeline.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.ScriptableBuildPipeline.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Universal.Editor">
