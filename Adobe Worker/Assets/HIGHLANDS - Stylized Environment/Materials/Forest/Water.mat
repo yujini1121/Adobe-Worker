@@ -71,8 +71,21 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - unity_Lightmaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_LightmapsInd:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_ShadowMasks:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
+    - _AlphaCutoff: 0.5
     - _BumpScale: 1
     - _ChromaticAberration: 0.124
     - _CoastOpacity: 0.4
@@ -85,6 +98,7 @@ Material:
     - _EdgeLength: 15
     - _EnableFoam: 1
     - _EnableTessellation: 1
+    - _EnvironmentReflections: 1
     - _Float0: -1.5
     - _FoamContrast: 1
     - _FoamDensity: 0.5
@@ -102,6 +116,9 @@ Material:
     - _OcclusionStrength: 1
     - _Opacity: 0
     - _Parallax: 0.02
+    - _QueueControl: 0
+    - _QueueOffset: 0
+    - _ReceiveShadows: 1
     - _RefractionFactor: 0.5
     - _RefractionScale: 0.7
     - _Scale: 50

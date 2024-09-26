@@ -9,8 +9,6 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: Bush
   m_Shader: {fileID: 4800000, guid: c723bf599da5bf2418887cb5d81e4600, type: 3}
-  m_Parent: {fileID: 0}
-  m_ModifiedSerializedProperties: 0
   m_ValidKeywords:
   - _COLOR2ENABLE_ON
   - _ENABLEWIND_ON
@@ -26,7 +24,6 @@ Material:
   m_CustomRenderQueue: -1
   stringTagMap: {}
   disabledShaderPasses: []
-  m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
@@ -86,6 +83,18 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - unity_Lightmaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_LightmapsInd:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_ShadowMasks:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
     - _AlphaCutoff: 0.4
@@ -101,6 +110,7 @@ Material:
     - _DirectLightOffset: 0.3
     - _DstBlend: 0
     - _EnableWind: 1
+    - _EnvironmentReflections: 1
     - _Float1: 0.31
     - _GlossMapScale: 1
     - _Glossiness: 0.5
@@ -114,8 +124,11 @@ Material:
     - _OcclusionStrength: 1
     - _Parallax: 0.02
     - _Power: 1.5
+    - _QueueControl: 0
+    - _QueueOffset: 0
     - _RAYEnableWind: 1
     - _RAYGlobalEnableWind: 1
+    - _ReceiveShadows: 1
     - _Scale: 1
     - _SecondColorFade: 0.12
     - _SecondColorOffset: -0.45
@@ -131,7 +144,7 @@ Material:
     - _TransNormalDistortion: 0
     - _TransScattering: 2
     - _TransShadow: 1
-    - _Translucency: 1
+    - _Translucency: 2
     - _TranslucencyInt: 5
     - _TranslucencyIntensity: 8.7
     - _TranslucencyOffset: -0.5
