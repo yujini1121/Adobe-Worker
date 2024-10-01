@@ -62,7 +62,6 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Base\IDamageable.cs" />
     <Compile Include="Assets\Scripts\Base\EnemyBase.cs" />
-    <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
   </ItemGroup>
   <ItemGroup>
