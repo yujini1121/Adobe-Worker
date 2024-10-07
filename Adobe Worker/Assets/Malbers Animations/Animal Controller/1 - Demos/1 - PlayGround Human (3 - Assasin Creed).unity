@@ -879,6 +879,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+  events: 0
   OnStart:
     m_PersistentCalls:
       m_Calls: []
@@ -1082,6 +1083,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+  events: 0
   OnStart:
     m_PersistentCalls:
       m_Calls: []
@@ -1929,6 +1931,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+  events: 0
   OnStart:
     m_PersistentCalls:
       m_Calls: []
@@ -15566,6 +15569,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+  events: 0
   OnStart:
     m_PersistentCalls:
       m_Calls: []
@@ -15637,6 +15641,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+  events: 0
   OnStart:
     m_PersistentCalls:
       m_Calls: []
@@ -16238,6 +16243,10 @@ MonoBehaviour:
         UseConstant: 1
         ConstantValue: 0
         Variable: {fileID: 0}
+      CoolDown:
+        UseConstant: 1
+        ConstantValue: 0
+        Variable: {fileID: 0}
       audioSource: {fileID: 0}
       m_stopAudio: 1
       modifier: {fileID: 0}
@@ -16320,6 +16329,10 @@ MonoBehaviour:
         ConstantValue: {fileID: 0}
         Variable: {fileID: 0}
       ClipDelay:
+        UseConstant: 1
+        ConstantValue: 0
+        Variable: {fileID: 0}
+      CoolDown:
         UseConstant: 1
         ConstantValue: 0
         Variable: {fileID: 0}
@@ -16443,6 +16456,10 @@ MonoBehaviour:
         ConstantValue: {fileID: 0}
         Variable: {fileID: 0}
       ClipDelay:
+        UseConstant: 1
+        ConstantValue: 0
+        Variable: {fileID: 0}
+      CoolDown:
         UseConstant: 1
         ConstantValue: 0
         Variable: {fileID: 0}
@@ -16906,7 +16923,7 @@ MonoBehaviour:
       Variable: {fileID: 0}
     position:
       UseConstant: 1
-      ConstantValue: 4.908939
+      ConstantValue: 0
       Variable: {fileID: 0}
     lerpPosition:
       UseConstant: 1
@@ -16930,7 +16947,7 @@ MonoBehaviour:
       Variable: {fileID: 0}
     lerpAnimator:
       UseConstant: 1
-      ConstantValue: 5
+      ConstantValue: 4
       Variable: {fileID: 0}
     strafeSpeed:
       UseConstant: 1
@@ -16948,7 +16965,7 @@ MonoBehaviour:
       Variable: {fileID: 0}
     position:
       UseConstant: 1
-      ConstantValue: 4.908939
+      ConstantValue: 0
       Variable: {fileID: 0}
     lerpPosition:
       UseConstant: 1
@@ -16972,7 +16989,7 @@ MonoBehaviour:
       Variable: {fileID: 0}
     lerpAnimator:
       UseConstant: 1
-      ConstantValue: 5
+      ConstantValue: 4
       Variable: {fileID: 0}
     strafeSpeed:
       UseConstant: 1
@@ -17075,6 +17092,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   OnPreTeleport:
+    m_PersistentCalls:
+      m_Calls: []
+  OnGroundChangesGravity:
     m_PersistentCalls:
       m_Calls: []
   OnStateActivate:
@@ -37634,6 +37654,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   OnInputDisabled:
+    m_PersistentCalls:
+      m_Calls: []
+  OnUsingGamePad:
     m_PersistentCalls:
       m_Calls: []
   IgnoreOnPause:

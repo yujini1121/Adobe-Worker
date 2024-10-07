@@ -151,6 +151,7 @@ MonoBehaviour:
     UseConstant: 1
     ConstantValue: 
     Variable: {fileID: 0}
+  cycle: 1
   HideOffScreen: {fileID: 0}
   ResetOnDisable: 0
   HideOnNull: 0
@@ -313,6 +314,7 @@ MonoBehaviour:
               m_StringArgument: 
               m_BoolArgument: 0
             m_CallState: 2
+      UpdateAfterCompare: 0
     - active: 1
       name: Any
       description: ' Show the Interact Key when the value is not Zero'
@@ -336,6 +338,7 @@ MonoBehaviour:
               m_StringArgument: 
               m_BoolArgument: 1
             m_CallState: 2
+      UpdateAfterCompare: 0
     AdvancedInteger: 1
     AdvancedBool: 0
     InvertBool: 0

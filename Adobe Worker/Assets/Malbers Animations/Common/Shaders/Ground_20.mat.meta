@@ -1,10 +1,15 @@
 fileFormatVersion: 2
 guid: de3f4753ad99ddd4791206d831d03b71
-labels:
-- AllCreature
+timeCreated: 1466023631
+licenseType: Store
 NativeFormatImporter:
-  externalObjects: {}
-  mainObjectFileID: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 121424
+  packageName: Ravens and Crows
+  packageVersion: 3.8
+  assetPath: Assets/Malbers Animations/Common/Shaders/Ground_20.mat
+  uploadId: 585856

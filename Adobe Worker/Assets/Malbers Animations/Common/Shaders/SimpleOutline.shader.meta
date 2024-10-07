@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 5fc889f1605228549ae40bd1b4d5b6cb
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures: []
+  nonModifiableTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 121424
+  packageName: Ravens and Crows
+  packageVersion: 
+  assetPath: Assets/Malbers Animations/Common/Shaders/SimpleOutline.shader
+  uploadId: 0

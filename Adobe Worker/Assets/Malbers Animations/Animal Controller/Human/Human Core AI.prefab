@@ -242,6 +242,11 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4191731122007677583, guid: 9b01e774fd9f5c44a899519facafff1f,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e823cd5b5d27c0f4b8256e7c12ee3e6d, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -279,8 +284,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agent: {fileID: 3155362088873146924}
   animal: {fileID: 8937832984613412865}
-  disableInput: 0
-  enableInput: 0
+  DisableInputAIOn: 1
+  EnableInputAIOff: 1
   StopAgentOn:
   - {fileID: 11400000, guid: 8078fbdb01991b44b9c1351f444b5efe, type: 2}
   - {fileID: 11400000, guid: c44e7e8d6840aa243b6c33ec85052763, type: 2}
@@ -290,8 +295,10 @@ MonoBehaviour:
   UpdateAI: 0.2
   stoppingDistance: 1.5
   PointStoppingDistance: 0.6
+  additiveStopDistance: 0
   slowingDistance: 0
   UseScale: 1
+  ClearTargetOnDisable: 1
   targetHeight: 5
   StopOnTargetTooHigh: 1
   LookAtOffset: 1
@@ -316,6 +323,7 @@ MonoBehaviour:
   OnDisabled:
     m_PersistentCalls:
       m_Calls: []
+  AirDestinationState: {fileID: 0}
   AgentTransform: {fileID: 3533696875230596459}
   Editor_Tabs1: 0
 --- !u!114 &5748633293026398749

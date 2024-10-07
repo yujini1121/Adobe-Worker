@@ -2117,7 +2117,7 @@ MonoBehaviour:
   m_OverrideTileSize: 0
   m_TileSize: 256
   m_OverrideVoxelSize: 0
-  m_VoxelSize: 0.2
+  m_VoxelSize: 0.16666667
   m_MinRegionArea: 2
   m_NavMeshData: {fileID: 23800000, guid: bab24c26f3f64814fa1bb530c0d5c509, type: 2}
   m_BuildHeightMesh: 0
@@ -3740,6 +3740,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   OnInputDisabled:
+    m_PersistentCalls:
+      m_Calls: []
+  OnUsingGamePad:
     m_PersistentCalls:
       m_Calls: []
   IgnoreOnPause:

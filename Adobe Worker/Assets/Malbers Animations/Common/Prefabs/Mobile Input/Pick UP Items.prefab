@@ -28,9 +28,9 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: -1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1521411193371349470}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -54,12 +54,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1521411191702872197}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -72,6 +74,7 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!1 &1521411191762255702
 GameObject:
   m_ObjectHideFlags: 0
@@ -101,10 +104,10 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.7500047, y: 0.7500047, z: 0.7500047}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1521411193052736561}
   m_Father: {fileID: 1521411192573227173}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
@@ -128,12 +131,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1521411191762255702}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 0, g: 0.6306982, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -146,6 +151,7 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!114 &1521411191762255696
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -155,11 +161,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1521411191762255702}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
     m_Mode: 3
+    m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
@@ -169,17 +176,20 @@ MonoBehaviour:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 0.4811321, g: 0.4811321, b: 0.4811321, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
     m_HighlightedSprite: {fileID: 0}
     m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
     m_DisabledSprite: {fileID: 0}
   m_AnimationTriggers:
     m_NormalTrigger: Normal
     m_HighlightedTrigger: Highlighted
     m_PressedTrigger: Pressed
+    m_SelectedTrigger: Highlighted
     m_DisabledTrigger: Disabled
   m_Interactable: 1
   m_TargetGraphic: {fileID: 1521411191762255699}
@@ -187,6 +197,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 11400000, guid: e29042fca2f92ff448186a127523f282, type: 2}
+        m_TargetAssemblyTypeName: 
         m_MethodName: Invoke
         m_Mode: 1
         m_Arguments:
@@ -224,12 +235,12 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1521411191762255697}
   - {fileID: 1521411193371349470}
   - {fileID: 1521411192699684126}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -259,7 +270,12 @@ MonoBehaviour:
     useTransform: 0
     useVector3: 0
     useVector2: 0
+    useComponent: 0
+    useSprite: 0
     Response:
+      m_PersistentCalls:
+        m_Calls: []
+    ResponseNull:
       m_PersistentCalls:
         m_Calls: []
     ResponseFloat:
@@ -272,6 +288,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 11400000, guid: 8783d4b69f9b8554b970e0d167e83a93, type: 2}
+          m_TargetAssemblyTypeName: 
           m_MethodName: LogDeb
           m_Mode: 0
           m_Arguments:
@@ -286,6 +303,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 1521411192699684127}
+          m_TargetAssemblyTypeName: 
           m_MethodName: SetActive
           m_Mode: 6
           m_Arguments:
@@ -297,6 +315,7 @@ MonoBehaviour:
             m_BoolArgument: 1
           m_CallState: 2
         - m_Target: {fileID: 1521411191762255702}
+          m_TargetAssemblyTypeName: 
           m_MethodName: SetActive
           m_Mode: 6
           m_Arguments:
@@ -311,6 +330,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 1521411192699684127}
+          m_TargetAssemblyTypeName: 
           m_MethodName: SetActive
           m_Mode: 6
           m_Arguments:
@@ -322,6 +342,7 @@ MonoBehaviour:
             m_BoolArgument: 0
           m_CallState: 2
         - m_Target: {fileID: 1521411191762255702}
+          m_TargetAssemblyTypeName: 
           m_MethodName: SetActive
           m_Mode: 6
           m_Arguments:
@@ -333,6 +354,7 @@ MonoBehaviour:
             m_BoolArgument: 1
           m_CallState: 2
         - m_Target: {fileID: 1521411193371349471}
+          m_TargetAssemblyTypeName: 
           m_MethodName: SetActive
           m_Mode: 6
           m_Arguments:
@@ -352,6 +374,12 @@ MonoBehaviour:
     ResponseTransform:
       m_PersistentCalls:
         m_Calls: []
+    ResponseComponent:
+      m_PersistentCalls:
+        m_Calls: []
+    ResponseSprite:
+      m_PersistentCalls:
+        m_Calls: []
     ResponseVector3:
       m_PersistentCalls:
         m_Calls: []
@@ -362,6 +390,7 @@ MonoBehaviour:
     AdvancedInteger: 0
     AdvancedBool: 1
     InvertBool: 0
+    multiplier: 1
   - Event: {fileID: 11400000, guid: e29042fca2f92ff448186a127523f282, type: 2}
     useInt: 0
     useFloat: 0
@@ -372,7 +401,12 @@ MonoBehaviour:
     useTransform: 0
     useVector3: 0
     useVector2: 0
+    useComponent: 0
+    useSprite: 0
     Response:
+      m_PersistentCalls:
+        m_Calls: []
+    ResponseNull:
       m_PersistentCalls:
         m_Calls: []
     ResponseFloat:
@@ -388,6 +422,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 1521411192699684127}
+          m_TargetAssemblyTypeName: 
           m_MethodName: SetActive
           m_Mode: 6
           m_Arguments:
@@ -399,6 +434,7 @@ MonoBehaviour:
             m_BoolArgument: 1
           m_CallState: 2
         - m_Target: {fileID: 1521411191762255702}
+          m_TargetAssemblyTypeName: 
           m_MethodName: SetActive
           m_Mode: 6
           m_Arguments:
@@ -413,6 +449,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 1521411191762255702}
+          m_TargetAssemblyTypeName: 
           m_MethodName: SetActive
           m_Mode: 6
           m_Arguments:
@@ -424,6 +461,7 @@ MonoBehaviour:
             m_BoolArgument: 0
           m_CallState: 2
         - m_Target: {fileID: 1521411193371349471}
+          m_TargetAssemblyTypeName: 
           m_MethodName: SetActive
           m_Mode: 6
           m_Arguments:
@@ -435,6 +473,7 @@ MonoBehaviour:
             m_BoolArgument: 1
           m_CallState: 2
         - m_Target: {fileID: 1521411192699684127}
+          m_TargetAssemblyTypeName: 
           m_MethodName: SetActive
           m_Mode: 6
           m_Arguments:
@@ -454,6 +493,12 @@ MonoBehaviour:
     ResponseTransform:
       m_PersistentCalls:
         m_Calls: []
+    ResponseComponent:
+      m_PersistentCalls:
+        m_Calls: []
+    ResponseSprite:
+      m_PersistentCalls:
+        m_Calls: []
     ResponseVector3:
       m_PersistentCalls:
         m_Calls: []
@@ -464,6 +509,9 @@ MonoBehaviour:
     AdvancedInteger: 0
     AdvancedBool: 1
     InvertBool: 0
+    multiplier: 1
+  ShowEvents: 1
+  SelectedEvent: 0
 --- !u!1 &1521411192699684127
 GameObject:
   m_ObjectHideFlags: 0
@@ -490,9 +538,9 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1521411192573227173}
-  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -527,9 +575,9 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1521411191762255697}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -553,12 +601,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1521411193052736566}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -571,6 +621,7 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!1 &1521411193371349471
 GameObject:
   m_ObjectHideFlags: 0
@@ -600,10 +651,10 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.7500047, y: 0.7500047, z: 0.7500047}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1521411191702872196}
   m_Father: {fileID: 1521411192573227173}
-  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
@@ -627,12 +678,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1521411193371349471}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 0, g: 0.6306982, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -645,6 +698,7 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!114 &1521411193371349465
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -654,11 +708,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1521411193371349471}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
     m_Mode: 3
+    m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
@@ -668,17 +723,20 @@ MonoBehaviour:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 0.4811321, g: 0.4811321, b: 0.4811321, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
     m_HighlightedSprite: {fileID: 0}
     m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
     m_DisabledSprite: {fileID: 0}
   m_AnimationTriggers:
     m_NormalTrigger: Normal
     m_HighlightedTrigger: Highlighted
     m_PressedTrigger: Pressed
+    m_SelectedTrigger: Highlighted
     m_DisabledTrigger: Disabled
   m_Interactable: 1
   m_TargetGraphic: {fileID: 1521411193371349464}
@@ -686,6 +744,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 11400000, guid: e29042fca2f92ff448186a127523f282, type: 2}
+        m_TargetAssemblyTypeName: 
         m_MethodName: Invoke
         m_Mode: 1
         m_Arguments:

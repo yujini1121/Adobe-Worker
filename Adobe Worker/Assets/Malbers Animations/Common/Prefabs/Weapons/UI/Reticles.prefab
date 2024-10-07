@@ -32,7 +32,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2031392610671551879}
-  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -161,6 +160,8 @@ MonoBehaviour:
     AdvancedBool: 0
     InvertBool: 0
     multiplier: 1
+  ShowEvents: 1
+  SelectedEvent: 0
 --- !u!1 &1138951840375120
 GameObject:
   m_ObjectHideFlags: 0
@@ -192,7 +193,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 224667412319848178}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -270,7 +270,6 @@ RectTransform:
   m_Children:
   - {fileID: 2031392610671551879}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -306,6 +305,7 @@ MonoBehaviour:
     UseConstant: 1
     ConstantValue: 
     Variable: {fileID: 0}
+  cycle: 1
   HideOffScreen: {fileID: 0}
   ResetOnDisable: 1
   HideOnNull: 1
@@ -563,6 +563,7 @@ MonoBehaviour:
               m_StringArgument: 
               m_BoolArgument: 1
             m_CallState: 2
+      UpdateAfterCompare: 0
     - active: 1
       name: Not Aiming
       description: 
@@ -586,6 +587,7 @@ MonoBehaviour:
               m_StringArgument: 
               m_BoolArgument: 0
             m_CallState: 2
+      UpdateAfterCompare: 0
     AdvancedInteger: 1
     AdvancedBool: 0
     InvertBool: 0
@@ -744,6 +746,8 @@ MonoBehaviour:
     AdvancedBool: 0
     InvertBool: 0
     multiplier: 1
+  ShowEvents: 1
+  SelectedEvent: 0
 --- !u!1 &1614855988827632
 GameObject:
   m_ObjectHideFlags: 0
@@ -777,7 +781,6 @@ RectTransform:
   m_Children:
   - {fileID: 224320905616119676}
   m_Father: {fileID: 2031392610671551879}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -930,6 +933,8 @@ MonoBehaviour:
     AdvancedBool: 0
     InvertBool: 0
     multiplier: 0.02
+  ShowEvents: 1
+  SelectedEvent: 0
 --- !u!1 &1350586872471357206
 GameObject:
   m_ObjectHideFlags: 0
@@ -961,7 +966,6 @@ RectTransform:
   - {fileID: 224667412319848178}
   - {fileID: 224607954028826556}
   m_Father: {fileID: 224457828429152192}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}

@@ -5118,6 +5118,9 @@ MonoBehaviour:
   OnInputDisabled:
     m_PersistentCalls:
       m_Calls: []
+  OnUsingGamePad:
+    m_PersistentCalls:
+      m_Calls: []
   IgnoreOnPause:
     UseConstant: 1
     ConstantValue: 0

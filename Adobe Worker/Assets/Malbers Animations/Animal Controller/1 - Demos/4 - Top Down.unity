@@ -38,7 +38,6 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.4849924, g: 0.5915705, b: 0.65520734, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -888,6 +887,10 @@ MonoBehaviour:
     UseConstant: 1
     ConstantValue: 0
     Variable: {fileID: 0}
+  ignoreStatic:
+    UseConstant: 1
+    ConstantValue: 0
+    Variable: {fileID: 0}
   trigger: {fileID: 0}
   Editor_Tabs1: 0
 --- !u!114 &261874669
@@ -1087,7 +1090,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1279,6 +1282,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_RootOrder
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078212305564347742, guid: fc0ba8caed599c844aea169a458f10e0,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078212305564347742, guid: fc0ba8caed599c844aea169a458f10e0,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1561,7 +1574,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5842,6 +5855,9 @@ MonoBehaviour:
   center: {x: 0, y: 0, z: 0}
   m_height: 1.5
   m_arriveLookAt: 1
+  m_TargetLimit: 0
+  m_targeterStopDistance: 0.2
+  m_WaitTargeterDistance: 4
   OnTargetArrived:
     m_PersistentCalls:
       m_Calls: []
@@ -5879,12 +5895,14 @@ MonoBehaviour:
   modes:
   - {fileID: 11400000, guid: 1286867ad3c4cdd4baacac3373aff92c, type: 2}
   - {fileID: 11400000, guid: dc411047be38d924fbfc67128f6957f2, type: 2}
+  ExcludeAbilities: 
   ignoreStates:
   - {fileID: 11400000, guid: adfa24f62d6db4d40a1d837f4ec1a6e9, type: 2}
   KeepCurrentTarget:
     UseConstant: 1
     ConstantValue: 1
     Variable: {fileID: 0}
+  Tags: []
   Layer:
     UseConstant: 1
     ConstantValue:
@@ -5895,6 +5913,7 @@ MonoBehaviour:
   Distance: 0
   AlignTime: 0.3
   FrontOffet: 0.15
+  IgnoreClose: 1
   AlignCurve:
     serializedVersion: 2
     m_Curve:
@@ -5920,6 +5939,7 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   debugColor: {r: 1, g: 0.5, b: 0, a: 0.2}
+  EditorTab: 0
   debug: 0
 --- !u!224 &1820634033 stripped
 RectTransform:

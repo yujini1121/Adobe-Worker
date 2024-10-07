@@ -430,10 +430,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2122f7629f97b3d41bba939248d2cf03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IKSet: Carry Box
+  ikSet:
+    UseConstant: 1
+    ConstantValue: Carry Box
+    Variable: {fileID: 0}
   SetTargetOnSource: 0
   SetTargetOnEnable: 0
   targets: []
+  setName: 1
+  IKSet: Carry Box
 --- !u!114 &196753955
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -447,9 +452,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Align: 0
-  AlignPos: 0
   AlignTime: 0.15
-  AlignDistance: 1
   PickDelay:
     UseConstant: 1
     ConstantValue: 0
@@ -557,8 +560,20 @@ MonoBehaviour:
   PreDroppedReaction:
     rid: -2
   rb: {fileID: 196753957}
+  DestroyRbOnPick:
+    UseConstant: 1
+    ConstantValue: 0
+    Variable: {fileID: 0}
   m_colliders:
   - {fileID: 196753956}
+  kinematicOnPick:
+    UseConstant: 1
+    ConstantValue: 1
+    Variable: {fileID: 0}
+  disableColliders:
+    UseConstant: 1
+    ConstantValue: 1
+    Variable: {fileID: 0}
   EditorTabs: 2
   references:
     version: 2
@@ -816,7 +831,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -921,7 +936,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1564,7 +1579,9 @@ MonoBehaviour:
     DisableTime: 0.3
     weight: 0
     Targets:
-    - {fileID: 1229262712}
+    - UseConstant: 1
+      ConstantValue: {fileID: 0}
+      Variable: {fileID: 0}
     aimer: {fileID: 0}
     IKProcesors:
     - rid: 631734756411441159
@@ -2371,10 +2388,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2122f7629f97b3d41bba939248d2cf03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IKSet: Carry Box
+  ikSet:
+    UseConstant: 1
+    ConstantValue: Carry Box
+    Variable: {fileID: 0}
   SetTargetOnSource: 0
   SetTargetOnEnable: 0
   targets: []
+  setName: 1
+  IKSet: Carry Box
 --- !u!114 &1285282168
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2388,9 +2410,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Align: 0
-  AlignPos: 0
   AlignTime: 0.15
-  AlignDistance: 1
   PickDelay:
     UseConstant: 1
     ConstantValue: 0
@@ -2498,8 +2518,20 @@ MonoBehaviour:
   PreDroppedReaction:
     rid: -2
   rb: {fileID: 1285282170}
+  DestroyRbOnPick:
+    UseConstant: 1
+    ConstantValue: 0
+    Variable: {fileID: 0}
   m_colliders:
   - {fileID: 1285282169}
+  kinematicOnPick:
+    UseConstant: 1
+    ConstantValue: 1
+    Variable: {fileID: 0}
+  disableColliders:
+    UseConstant: 1
+    ConstantValue: 1
+    Variable: {fileID: 0}
   EditorTabs: 2
   references:
     version: 2
@@ -2757,7 +2789,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2834,10 +2866,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2122f7629f97b3d41bba939248d2cf03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IKSet: Carry Box
+  ikSet:
+    UseConstant: 1
+    ConstantValue: Carry Box
+    Variable: {fileID: 0}
   SetTargetOnSource: 0
   SetTargetOnEnable: 0
   targets: []
+  setName: 1
+  IKSet: Carry Box
 --- !u!114 &1432870887
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2851,9 +2888,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Align: 0
-  AlignPos: 0
   AlignTime: 0.15
-  AlignDistance: 1
   PickDelay:
     UseConstant: 1
     ConstantValue: 0
@@ -2961,8 +2996,20 @@ MonoBehaviour:
   PreDroppedReaction:
     rid: -2
   rb: {fileID: 1432870889}
+  DestroyRbOnPick:
+    UseConstant: 1
+    ConstantValue: 0
+    Variable: {fileID: 0}
   m_colliders:
   - {fileID: 1432870888}
+  kinematicOnPick:
+    UseConstant: 1
+    ConstantValue: 1
+    Variable: {fileID: 0}
+  disableColliders:
+    UseConstant: 1
+    ConstantValue: 1
+    Variable: {fileID: 0}
   EditorTabs: 2
   references:
     version: 2
@@ -3645,10 +3692,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2122f7629f97b3d41bba939248d2cf03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IKSet: Carry Box
+  ikSet:
+    UseConstant: 1
+    ConstantValue: Carry Box
+    Variable: {fileID: 0}
   SetTargetOnSource: 0
   SetTargetOnEnable: 0
   targets: []
+  setName: 1
+  IKSet: Carry Box
 --- !u!114 &1951528806
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3662,9 +3714,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Align: 0
-  AlignPos: 0
   AlignTime: 0.15
-  AlignDistance: 1
   PickDelay:
     UseConstant: 1
     ConstantValue: 0
@@ -3772,8 +3822,20 @@ MonoBehaviour:
   PreDroppedReaction:
     rid: -2
   rb: {fileID: 1951528809}
+  DestroyRbOnPick:
+    UseConstant: 1
+    ConstantValue: 0
+    Variable: {fileID: 0}
   m_colliders:
   - {fileID: 1951528807}
+  kinematicOnPick:
+    UseConstant: 1
+    ConstantValue: 1
+    Variable: {fileID: 0}
+  disableColliders:
+    UseConstant: 1
+    ConstantValue: 1
+    Variable: {fileID: 0}
   EditorTabs: 2
   references:
     version: 2

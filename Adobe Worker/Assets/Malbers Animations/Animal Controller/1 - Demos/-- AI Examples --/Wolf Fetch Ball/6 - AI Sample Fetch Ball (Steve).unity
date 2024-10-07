@@ -283,7 +283,8 @@ MonoBehaviour:
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_fontSharedMaterials: []
+  m_fontSharedMaterials:
+  - {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
@@ -2860,7 +2861,7 @@ MonoBehaviour:
   m_OverrideTileSize: 0
   m_TileSize: 256
   m_OverrideVoxelSize: 0
-  m_VoxelSize: 0.2
+  m_VoxelSize: 0.16666667
   m_MinRegionArea: 2
   m_NavMeshData: {fileID: 23800000, guid: 899bea4082a9d824ebf741d13ec658ac, type: 2}
   m_BuildHeightMesh: 0
@@ -4107,6 +4108,9 @@ MonoBehaviour:
   OnInputDisabled:
     m_PersistentCalls:
       m_Calls: []
+  OnUsingGamePad:
+    m_PersistentCalls:
+      m_Calls: []
   IgnoreOnPause:
     UseConstant: 1
     ConstantValue: 1
@@ -4125,9 +4129,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Align: 0
-  AlignPos: 0
   AlignTime: 0.15
-  AlignDistance: 1
   PickDelay:
     UseConstant: 1
     ConstantValue: 0.15
@@ -4248,8 +4250,20 @@ MonoBehaviour:
   PreDroppedReaction:
     rid: -2
   rb: {fileID: 0}
+  DestroyRbOnPick:
+    UseConstant: 1
+    ConstantValue: 0
+    Variable: {fileID: 0}
   m_colliders:
   - {fileID: 58641874554006497}
+  kinematicOnPick:
+    UseConstant: 1
+    ConstantValue: 1
+    Variable: {fileID: 0}
+  disableColliders:
+    UseConstant: 1
+    ConstantValue: 1
+    Variable: {fileID: 0}
   EditorTabs: 0
   references:
     version: 2
@@ -6434,9 +6448,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Align: 1
-  AlignPos: 1
   AlignTime: 0.15
-  AlignDistance: 1
   PickDelay:
     UseConstant: 1
     ConstantValue: 0.3
@@ -6570,7 +6582,19 @@ MonoBehaviour:
   PreDroppedReaction:
     rid: -2
   rb: {fileID: 0}
+  DestroyRbOnPick:
+    UseConstant: 1
+    ConstantValue: 0
+    Variable: {fileID: 0}
   m_colliders: []
+  kinematicOnPick:
+    UseConstant: 1
+    ConstantValue: 1
+    Variable: {fileID: 0}
+  disableColliders:
+    UseConstant: 1
+    ConstantValue: 1
+    Variable: {fileID: 0}
   EditorTabs: 0
   references:
     version: 2

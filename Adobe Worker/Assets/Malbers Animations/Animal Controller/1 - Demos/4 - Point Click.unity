@@ -38,7 +38,6 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.4849924, g: 0.5915705, b: 0.65520734, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1066,6 +1065,10 @@ MonoBehaviour:
     ConstantValue: 0
     Variable: {fileID: 0}
   OneTimeUse:
+    UseConstant: 1
+    ConstantValue: 0
+    Variable: {fileID: 0}
+  ignoreStatic:
     UseConstant: 1
     ConstantValue: 0
     Variable: {fileID: 0}
@@ -2746,6 +2749,9 @@ MonoBehaviour:
   center: {x: 0, y: 0, z: 0}
   m_height: 0.5
   m_arriveLookAt: 1
+  m_TargetLimit: 0
+  m_targeterStopDistance: 0.2
+  m_WaitTargeterDistance: 4
   OnTargetArrived:
     m_PersistentCalls:
       m_Calls: []
@@ -3022,6 +3028,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+    UpdateAfterCompare: 0
   OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -4239,6 +4246,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   OnInputDisabled:
+    m_PersistentCalls:
+      m_Calls: []
+  OnUsingGamePad:
     m_PersistentCalls:
       m_Calls: []
   IgnoreOnPause:
@@ -5461,6 +5471,7 @@ MonoBehaviour:
     UseConstant: 1
     ConstantValue: 
     Variable: {fileID: 0}
+  cycle: 1
   HideOffScreen: {fileID: 0}
   ResetOnDisable: 1
   HideOnNull: 0
@@ -7254,6 +7265,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+    UpdateAfterCompare: 0
   - active: 1
     name: Interactable is Enemy
     description: 
@@ -7278,6 +7290,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+    UpdateAfterCompare: 0
   OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -7652,6 +7665,9 @@ MonoBehaviour:
     OnElementDamage:
       m_PersistentCalls:
         m_Calls: []
+    OnStatEmpty:
+      m_PersistentCalls:
+        m_Calls: []
   elements: []
   profiles: []
   Editor_Tabs1: 0
@@ -7665,8 +7681,9 @@ MonoBehaviour:
       type: {class: ModeReaction, ns: MalbersAnimations.Reactions, asm: MalbersAnimations}
       data:
         Active: 1
-        useLocalTarget: 0
-        LocalTarget: {fileID: 0}
+        localComponent:
+          component: {fileID: 0}
+          useLocal: 0
         delay: 0
         type: 0
         ID: {fileID: 11400000, guid: b04409080ae7e3c4fa645d8c67b40424, type: 2}
@@ -11260,6 +11277,7 @@ MonoBehaviour:
       serializedVersion: 2
       m_Bits: 4294967295
     Variable: {fileID: 0}
+  Tags: []
   AttackDirection: 0
   triggerInteraction: 2
   owner: {fileID: 0}
@@ -11506,6 +11524,10 @@ MonoBehaviour:
       UseConstant: 1
       ConstantValue: 1
       Variable: {fileID: 0}
+    Round:
+      UseConstant: 1
+      ConstantValue: -1
+      Variable: {fileID: 0}
     multiplier:
       UseConstant: 1
       ConstantValue: 1
@@ -11534,9 +11556,13 @@ MonoBehaviour:
       UseConstant: 1
       ConstantValue: 0
       Variable: {fileID: 0}
-    InmuneTime:
+    ImmuneTime:
       UseConstant: 1
       ConstantValue: 1
+      Variable: {fileID: 0}
+    immune:
+      UseConstant: 1
+      ConstantValue: 0
       Variable: {fileID: 0}
     resetTo: 1
     isPercent: 1
@@ -11621,6 +11647,10 @@ MonoBehaviour:
       UseConstant: 1
       ConstantValue: 0
       Variable: {fileID: 0}
+    Round:
+      UseConstant: 1
+      ConstantValue: -1
+      Variable: {fileID: 0}
     multiplier:
       UseConstant: 1
       ConstantValue: 1
@@ -11649,7 +11679,11 @@ MonoBehaviour:
       UseConstant: 1
       ConstantValue: 0
       Variable: {fileID: 0}
-    InmuneTime:
+    ImmuneTime:
+      UseConstant: 1
+      ConstantValue: 0
+      Variable: {fileID: 0}
+    immune:
       UseConstant: 1
       ConstantValue: 0
       Variable: {fileID: 0}
@@ -11788,6 +11822,7 @@ MonoBehaviour:
   Stances: []
   modes:
   - active: 1
+    TemporalActivation: 1
     ignoreLowerModes: 1
     hasCoolDown: 0
     Input: Attack1
@@ -11816,6 +11851,10 @@ MonoBehaviour:
         ConstantValue: {fileID: 0}
         Variable: {fileID: 0}
       ClipDelay:
+        UseConstant: 1
+        ConstantValue: 0
+        Variable: {fileID: 0}
+      CoolDown:
         UseConstant: 1
         ConstantValue: 0
         Variable: {fileID: 0}
@@ -11904,6 +11943,10 @@ MonoBehaviour:
         UseConstant: 1
         ConstantValue: 0
         Variable: {fileID: 0}
+      CoolDown:
+        UseConstant: 1
+        ConstantValue: 0
+        Variable: {fileID: 0}
       audioSource: {fileID: 0}
       m_stopAudio: 1
       modifier: {fileID: 0}
@@ -11995,6 +12038,7 @@ MonoBehaviour:
     m_Source: {fileID: 0}
     ActivationTime: 0
   - active: 1
+    TemporalActivation: 1
     ignoreLowerModes: 0
     hasCoolDown: 0
     Input: 
@@ -12023,6 +12067,10 @@ MonoBehaviour:
         ConstantValue: {fileID: 0}
         Variable: {fileID: 0}
       ClipDelay:
+        UseConstant: 1
+        ConstantValue: 0
+        Variable: {fileID: 0}
+      CoolDown:
         UseConstant: 1
         ConstantValue: 0
         Variable: {fileID: 0}
@@ -12106,6 +12154,10 @@ MonoBehaviour:
         ConstantValue: {fileID: 0}
         Variable: {fileID: 0}
       ClipDelay:
+        UseConstant: 1
+        ConstantValue: 0
+        Variable: {fileID: 0}
+      CoolDown:
         UseConstant: 1
         ConstantValue: 0
         Variable: {fileID: 0}
@@ -12198,6 +12250,7 @@ MonoBehaviour:
     m_Source: {fileID: 0}
     ActivationTime: 0
   - active: 1
+    TemporalActivation: 1
     ignoreLowerModes: 0
     hasCoolDown: 0
     Input: 
@@ -12226,6 +12279,10 @@ MonoBehaviour:
         ConstantValue: {fileID: 0}
         Variable: {fileID: 0}
       ClipDelay:
+        UseConstant: 1
+        ConstantValue: 0
+        Variable: {fileID: 0}
+      CoolDown:
         UseConstant: 1
         ConstantValue: 0
         Variable: {fileID: 0}
@@ -12309,6 +12366,10 @@ MonoBehaviour:
         ConstantValue: {fileID: 0}
         Variable: {fileID: 0}
       ClipDelay:
+        UseConstant: 1
+        ConstantValue: 0
+        Variable: {fileID: 0}
+      CoolDown:
         UseConstant: 1
         ConstantValue: 0
         Variable: {fileID: 0}
@@ -12401,6 +12462,7 @@ MonoBehaviour:
     m_Source: {fileID: 0}
     ActivationTime: 0
   - active: 1
+    TemporalActivation: 1
     ignoreLowerModes: 0
     hasCoolDown: 0
     Input: Action
@@ -12429,6 +12491,10 @@ MonoBehaviour:
         ConstantValue: {fileID: 0}
         Variable: {fileID: 0}
       ClipDelay:
+        UseConstant: 1
+        ConstantValue: 0
+        Variable: {fileID: 0}
+      CoolDown:
         UseConstant: 1
         ConstantValue: 0
         Variable: {fileID: 0}
@@ -12517,6 +12583,10 @@ MonoBehaviour:
         UseConstant: 1
         ConstantValue: 0
         Variable: {fileID: 0}
+      CoolDown:
+        UseConstant: 1
+        ConstantValue: 0
+        Variable: {fileID: 0}
       audioSource: {fileID: 0}
       m_stopAudio: 1
       modifier: {fileID: 0}
@@ -12599,6 +12669,10 @@ MonoBehaviour:
         ConstantValue: {fileID: 0}
         Variable: {fileID: 0}
       ClipDelay:
+        UseConstant: 1
+        ConstantValue: 0
+        Variable: {fileID: 0}
+      CoolDown:
         UseConstant: 1
         ConstantValue: 0
         Variable: {fileID: 0}
@@ -12687,6 +12761,10 @@ MonoBehaviour:
         UseConstant: 1
         ConstantValue: 0
         Variable: {fileID: 0}
+      CoolDown:
+        UseConstant: 1
+        ConstantValue: 0
+        Variable: {fileID: 0}
       audioSource: {fileID: 0}
       m_stopAudio: 1
       modifier: {fileID: 0}
@@ -12772,6 +12850,10 @@ MonoBehaviour:
         UseConstant: 1
         ConstantValue: 0
         Variable: {fileID: 0}
+      CoolDown:
+        UseConstant: 1
+        ConstantValue: 0
+        Variable: {fileID: 0}
       audioSource: {fileID: 0}
       m_stopAudio: 1
       modifier: {fileID: 0}
@@ -12854,6 +12936,10 @@ MonoBehaviour:
         ConstantValue: {fileID: 0}
         Variable: {fileID: 0}
       ClipDelay:
+        UseConstant: 1
+        ConstantValue: 0
+        Variable: {fileID: 0}
+      CoolDown:
         UseConstant: 1
         ConstantValue: 0
         Variable: {fileID: 0}
@@ -12961,6 +13047,9 @@ MonoBehaviour:
     ActivationTime: 0
   CloneStates: 1
   OverrideStartState: {fileID: 0}
+  activeState: {fileID: 0}
+  lastState: {fileID: 0}
+  queueState: {fileID: 0}
   groundLayer:
     UseConstant: 1
     ConstantValue:
@@ -13012,6 +13101,8 @@ MonoBehaviour:
     UseConstant: 1
     ConstantValue: {fileID: 0}
     Variable: {fileID: 0}
+  additivePosLog: 0
+  additiveRotLog: 0
   isPlayer:
     UseConstant: 1
     ConstantValue: 0
@@ -13075,6 +13166,7 @@ MonoBehaviour:
     UseConstant: 1
     ConstantValue: 0
     Variable: {fileID: 0}
+  kinematicTimeline: 1
   OnStrafe:
     m_PersistentCalls:
       m_Calls: []
@@ -13496,6 +13588,48 @@ MonoBehaviour:
       UseConstant: 1
       ConstantValue: 4
       Variable: {fileID: 0}
+  SprintSpeed:
+    name: Default
+    Vertical:
+      UseConstant: 1
+      ConstantValue: 1
+      Variable: {fileID: 0}
+    position:
+      UseConstant: 1
+      ConstantValue: 0
+      Variable: {fileID: 0}
+    lerpPosition:
+      UseConstant: 1
+      ConstantValue: 4
+      Variable: {fileID: 0}
+    lerpPosAnim:
+      UseConstant: 1
+      ConstantValue: 4
+      Variable: {fileID: 0}
+    rotation:
+      UseConstant: 1
+      ConstantValue: 0
+      Variable: {fileID: 0}
+    lerpRotAnim:
+      UseConstant: 1
+      ConstantValue: 4
+      Variable: {fileID: 0}
+    animator:
+      UseConstant: 1
+      ConstantValue: 1
+      Variable: {fileID: 0}
+    lerpAnimator:
+      UseConstant: 1
+      ConstantValue: 4
+      Variable: {fileID: 0}
+    strafeSpeed:
+      UseConstant: 1
+      ConstantValue: 0
+      Variable: {fileID: 0}
+    lerpStrafe:
+      UseConstant: 1
+      ConstantValue: 4
+      Variable: {fileID: 0}
   m_gravityDir:
     UseConstant: 1
     ConstantValue: {x: 0, y: -1, z: 0}
@@ -13517,7 +13651,7 @@ MonoBehaviour:
     ConstantValue: 0
     Variable: {fileID: 0}
   TurnLimit: 120
-  rootMotion:
+  GlobalRootMotion:
     UseConstant: 1
     ConstantValue: 1
     Variable: {fileID: 0}
@@ -13595,12 +13729,6 @@ MonoBehaviour:
   OnFreeMovement:
     m_PersistentCalls:
       m_Calls: []
-  OnStateActivate:
-    m_PersistentCalls:
-      m_Calls: []
-  OnStateChange:
-    m_PersistentCalls:
-      m_Calls: []
   OnStateProfile:
     m_PersistentCalls:
       m_Calls: []
@@ -13617,6 +13745,18 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   OnTeleport:
+    m_PersistentCalls:
+      m_Calls: []
+  OnPreTeleport:
+    m_PersistentCalls:
+      m_Calls: []
+  OnGroundChangesGravity:
+    m_PersistentCalls:
+      m_Calls: []
+  OnStateActivate:
+    m_PersistentCalls:
+      m_Calls: []
+  OnStateChange:
     m_PersistentCalls:
       m_Calls: []
   OnEnterExitStates: []
@@ -13773,6 +13913,10 @@ MonoBehaviour:
     UseConstant: 1
     ConstantValue: 0
     Variable: {fileID: 0}
+  ignoreStatic:
+    UseConstant: 1
+    ConstantValue: 0
+    Variable: {fileID: 0}
   trigger: {fileID: 0}
   Editor_Tabs1: 0
 --- !u!4 &4451895324576058351
@@ -13903,8 +14047,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agent: {fileID: 7767756432531524887}
   animal: {fileID: 3696115591853623534}
-  disableInput: 1
-  enableInput: 1
+  DisableInputAIOn: 1
+  EnableInputAIOff: 1
   StopAgentOn:
   - {fileID: 11400000, guid: 8078fbdb01991b44b9c1351f444b5efe, type: 2}
   - {fileID: 11400000, guid: c44e7e8d6840aa243b6c33ec85052763, type: 2}
@@ -13912,8 +14056,10 @@ MonoBehaviour:
   UpdateAI: 0.2
   stoppingDistance: 1.5
   PointStoppingDistance: 0.6
+  additiveStopDistance: 0
   slowingDistance: 0
   UseScale: 1
+  ClearTargetOnDisable: 1
   targetHeight: 5
   StopOnTargetTooHigh: 1
   LookAtOffset: 1
@@ -13938,6 +14084,7 @@ MonoBehaviour:
   OnDisabled:
     m_PersistentCalls:
       m_Calls: []
+  AirDestinationState: {fileID: 0}
   AgentTransform: {fileID: 2369028375349337131}
   Editor_Tabs1: 0
 --- !u!1 &6389935953302467740

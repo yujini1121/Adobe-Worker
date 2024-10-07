@@ -5,6 +5,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 154870105767742554, guid: 320f7143d21a9d644ab539d1793ecc31,
@@ -109,16 +110,13 @@ PrefabInstance:
       value: Zone (Confuse)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 320f7143d21a9d644ab539d1793ecc31, type: 3}
 --- !u!65 &5214936254271609807 stripped
 BoxCollider:
   m_CorrespondingSourceObject: {fileID: 6045545981984184782, guid: 320f7143d21a9d644ab539d1793ecc31,
-    type: 3}
-  m_PrefabInstance: {fileID: 1997686108860662273}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &8855713204401646122 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7015733918423312427, guid: 320f7143d21a9d644ab539d1793ecc31,
     type: 3}
   m_PrefabInstance: {fileID: 1997686108860662273}
   m_PrefabAsset: {fileID: 0}
@@ -134,3 +132,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &8855713204401646122 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7015733918423312427, guid: 320f7143d21a9d644ab539d1793ecc31,
+    type: 3}
+  m_PrefabInstance: {fileID: 1997686108860662273}
+  m_PrefabAsset: {fileID: 0}

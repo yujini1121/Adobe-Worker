@@ -10,7 +10,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1024626565931582, guid: f973176897d258f4bafcd8155d6125bf, type: 3}
       propertyPath: m_Name
-      value: Zone Power Up Variant
+      value: Zone Power Up
       objectReference: {fileID: 0}
     - target: {fileID: 1024626565931582, guid: f973176897d258f4bafcd8155d6125bf, type: 3}
       propertyPath: m_IsActive

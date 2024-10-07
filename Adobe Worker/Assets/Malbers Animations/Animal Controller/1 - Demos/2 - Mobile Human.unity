@@ -5647,6 +5647,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+  events: 0
   OnStart:
     m_PersistentCalls:
       m_Calls: []
@@ -5722,6 +5723,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+  events: 0
   OnStart:
     m_PersistentCalls:
       m_Calls: []
@@ -7747,6 +7749,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+  events: 0
   OnStart:
     m_PersistentCalls:
       m_Calls: []
@@ -12248,6 +12251,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+  events: 0
   OnStart:
     m_PersistentCalls:
       m_Calls: []

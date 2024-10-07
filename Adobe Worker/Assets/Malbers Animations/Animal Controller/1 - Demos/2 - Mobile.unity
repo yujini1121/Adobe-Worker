@@ -38,7 +38,6 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 1355568765}
-  m_IndirectSpecularColor: {r: 0.4849924, g: 0.5915705, b: 0.65520734, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1237,6 +1236,7 @@ MonoBehaviour:
               m_StringArgument: 
               m_BoolArgument: 0
             m_CallState: 2
+      UpdateAfterCompare: 0
     - active: 1
       name: Action Index = Eat (2)
       description: 
@@ -1261,6 +1261,7 @@ MonoBehaviour:
               m_StringArgument: 
               m_BoolArgument: 0
             m_CallState: 2
+      UpdateAfterCompare: 0
     - active: 1
       name: Action Index = Enter Hole
       description: 
@@ -1285,6 +1286,7 @@ MonoBehaviour:
               m_StringArgument: 
               m_BoolArgument: 0
             m_CallState: 2
+      UpdateAfterCompare: 0
     - active: 1
       name: Action Index = Drink (7)
       description: 
@@ -1309,6 +1311,7 @@ MonoBehaviour:
               m_StringArgument: 
               m_BoolArgument: 0
             m_CallState: 2
+      UpdateAfterCompare: 0
     - active: 1
       name: Action Index = Dig (10)
       description: 
@@ -1333,6 +1336,7 @@ MonoBehaviour:
               m_StringArgument: 
               m_BoolArgument: 0
             m_CallState: 2
+      UpdateAfterCompare: 0
     - active: 1
       name: Action Index = Hawl (20)
       description: 
@@ -1357,6 +1361,7 @@ MonoBehaviour:
               m_StringArgument: 
               m_BoolArgument: 0
             m_CallState: 2
+      UpdateAfterCompare: 0
     - active: 1
       name: Action Index = Sleep (6)
       description: 
@@ -1381,6 +1386,7 @@ MonoBehaviour:
               m_StringArgument: 
               m_BoolArgument: 0
             m_CallState: 2
+      UpdateAfterCompare: 0
     - active: 1
       name: Action Index = Perch (21)
       description: 
@@ -1405,6 +1411,7 @@ MonoBehaviour:
               m_StringArgument: 
               m_BoolArgument: 0
             m_CallState: 2
+      UpdateAfterCompare: 0
     AdvancedInteger: 1
     AdvancedBool: 0
     InvertBool: 0
@@ -5655,6 +5662,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   size: 0.5
   Opacity: 0.606
+  x: 1
+  y: 1
+  z: 1
 --- !u!114 &1744366101
 MonoBehaviour:
   m_ObjectHideFlags: 0

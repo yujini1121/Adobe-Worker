@@ -33,7 +33,6 @@ RectTransform:
   m_Children:
   - {fileID: 1490382565789305768}
   m_Father: {fileID: 8976651773174847800}
-  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 30.380001}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
@@ -127,7 +126,6 @@ RectTransform:
   - {fileID: 3873612277676571804}
   - {fileID: 4018762337564284011}
   m_Father: {fileID: 6616307610930714088}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
@@ -231,10 +229,17 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+  events: 0
   OnStart:
     m_PersistentCalls:
       m_Calls: []
   OnEnd:
+    m_PersistentCalls:
+      m_Calls: []
+  onEnable:
+    m_PersistentCalls:
+      m_Calls: []
+  onDisable:
     m_PersistentCalls:
       m_Calls: []
   previewPosition: 0
@@ -278,7 +283,6 @@ RectTransform:
   m_Children:
   - {fileID: 8976651773174847800}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
@@ -384,6 +388,7 @@ MonoBehaviour:
               m_StringArgument: 
               m_BoolArgument: 1
             m_CallState: 2
+      UpdateAfterCompare: 0
     - active: 1
       name: Not Bow
       description: 
@@ -407,10 +412,13 @@ MonoBehaviour:
               m_StringArgument: 
               m_BoolArgument: 0
             m_CallState: 2
+      UpdateAfterCompare: 0
     AdvancedInteger: 1
     AdvancedBool: 0
     InvertBool: 0
     multiplier: 1
+  ShowEvents: 1
+  SelectedEvent: 0
 --- !u!1 &7171568166749022762
 GameObject:
   m_ObjectHideFlags: 0
@@ -445,7 +453,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8976651773174847800}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
@@ -625,7 +632,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4018762337564284011}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -30}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}

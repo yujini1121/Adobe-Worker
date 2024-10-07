@@ -3337,6 +3337,10 @@ MonoBehaviour:
   Owner: {fileID: 5170218139084480737}
   Meshes:
   - Name: Hair
+    name:
+      UseConstant: 1
+      ConstantValue: 
+      Variable: {fileID: 0}
     Active: 1
     meshes:
     - {fileID: 9219519176949247966}
@@ -3384,6 +3388,10 @@ MonoBehaviour:
     Current: 0
     CurrentMeshItemIndex: 0
   - Name: Ears
+    name:
+      UseConstant: 1
+      ConstantValue: 
+      Variable: {fileID: 0}
     Active: 1
     meshes:
     - {fileID: 9219519176949247960}
@@ -3418,6 +3426,10 @@ MonoBehaviour:
     Current: 0
     CurrentMeshItemIndex: 0
   - Name: Eyebrows
+    name:
+      UseConstant: 1
+      ConstantValue: 
+      Variable: {fileID: 0}
     Active: 1
     meshes:
     - {fileID: 9219519176949247962}
@@ -3452,6 +3464,10 @@ MonoBehaviour:
     Current: 0
     CurrentMeshItemIndex: 0
   - Name: Beard
+    name:
+      UseConstant: 1
+      ConstantValue: 
+      Variable: {fileID: 0}
     Active: 1
     meshes:
     - {fileID: 4458801360399483691}
@@ -3488,6 +3504,10 @@ MonoBehaviour:
   debug: 0
   Pinned:
     Name: NameHere
+    name:
+      UseConstant: 1
+      ConstantValue: 
+      Variable: {fileID: 0}
     Active: 1
     meshes: []
     MeshItems: []

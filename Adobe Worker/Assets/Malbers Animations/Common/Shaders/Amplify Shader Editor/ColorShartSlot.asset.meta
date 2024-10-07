@@ -1,10 +1,16 @@
 fileFormatVersion: 2
 guid: 231fe18505db4a84b9c478d379c9247d
-labels:
-- AllCreature
+timeCreated: 1530225461
+licenseType: Store
 NativeFormatImporter:
-  externalObjects: {}
   mainObjectFileID: 11400000
   userData: 
   assetBundleName: 
   assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 121424
+  packageName: Ravens and Crows
+  packageVersion: 3.8
+  assetPath: Assets/Malbers Animations/Common/Shaders/ColorShartSlot.asset
+  uploadId: 585856

@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 9d644f4490be222438977df25a7ad197
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures: []
+  nonModifiableTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 121424
+  packageName: Ravens and Crows
+  packageVersion: 
+  assetPath: Assets/Malbers Animations/Common/Shaders/Color4x2 Emission.shader
+  uploadId: 0

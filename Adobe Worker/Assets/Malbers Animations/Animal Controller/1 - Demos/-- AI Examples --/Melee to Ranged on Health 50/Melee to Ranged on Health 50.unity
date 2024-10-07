@@ -1899,7 +1899,7 @@ MonoBehaviour:
   m_OverrideTileSize: 0
   m_TileSize: 256
   m_OverrideVoxelSize: 0
-  m_VoxelSize: 0.2
+  m_VoxelSize: 0.16666667
   m_MinRegionArea: 2
   m_NavMeshData: {fileID: 23800000, guid: 33af2a3ea328e544daa080e12dc27127, type: 2}
   m_BuildHeightMesh: 0
@@ -23499,6 +23499,10 @@ MonoBehaviour:
         UseConstant: 1
         ConstantValue: 0
         Variable: {fileID: 0}
+      CoolDown:
+        UseConstant: 1
+        ConstantValue: 0
+        Variable: {fileID: 0}
       audioSource: {fileID: 0}
       m_stopAudio: 1
       modifier: {fileID: 0}
@@ -23581,6 +23585,10 @@ MonoBehaviour:
         ConstantValue: {fileID: 0}
         Variable: {fileID: 0}
       ClipDelay:
+        UseConstant: 1
+        ConstantValue: 0
+        Variable: {fileID: 0}
+      CoolDown:
         UseConstant: 1
         ConstantValue: 0
         Variable: {fileID: 0}
@@ -23669,6 +23677,10 @@ MonoBehaviour:
         UseConstant: 1
         ConstantValue: 0
         Variable: {fileID: 0}
+      CoolDown:
+        UseConstant: 1
+        ConstantValue: 0
+        Variable: {fileID: 0}
       audioSource: {fileID: 0}
       m_stopAudio: 1
       modifier: {fileID: 0}
@@ -23751,6 +23763,10 @@ MonoBehaviour:
         ConstantValue: {fileID: 0}
         Variable: {fileID: 0}
       ClipDelay:
+        UseConstant: 1
+        ConstantValue: 0
+        Variable: {fileID: 0}
+      CoolDown:
         UseConstant: 1
         ConstantValue: 0
         Variable: {fileID: 0}
@@ -23865,6 +23881,10 @@ MonoBehaviour:
         UseConstant: 1
         ConstantValue: 0
         Variable: {fileID: 0}
+      CoolDown:
+        UseConstant: 1
+        ConstantValue: 0
+        Variable: {fileID: 0}
       audioSource: {fileID: 0}
       m_stopAudio: 1
       modifier: {fileID: 0}
@@ -23947,6 +23967,10 @@ MonoBehaviour:
         ConstantValue: {fileID: 0}
         Variable: {fileID: 0}
       ClipDelay:
+        UseConstant: 1
+        ConstantValue: 0
+        Variable: {fileID: 0}
+      CoolDown:
         UseConstant: 1
         ConstantValue: 0
         Variable: {fileID: 0}
@@ -24035,6 +24059,10 @@ MonoBehaviour:
         UseConstant: 1
         ConstantValue: 0
         Variable: {fileID: 0}
+      CoolDown:
+        UseConstant: 1
+        ConstantValue: 0
+        Variable: {fileID: 0}
       audioSource: {fileID: 0}
       m_stopAudio: 1
       modifier: {fileID: 0}
@@ -24117,6 +24145,10 @@ MonoBehaviour:
         ConstantValue: {fileID: 0}
         Variable: {fileID: 0}
       ClipDelay:
+        UseConstant: 1
+        ConstantValue: 0
+        Variable: {fileID: 0}
+      CoolDown:
         UseConstant: 1
         ConstantValue: 0
         Variable: {fileID: 0}
@@ -24243,6 +24275,10 @@ MonoBehaviour:
         UseConstant: 1
         ConstantValue: 0
         Variable: {fileID: 0}
+      CoolDown:
+        UseConstant: 1
+        ConstantValue: 0
+        Variable: {fileID: 0}
       audioSource: {fileID: 0}
       m_stopAudio: 1
       modifier: {fileID: 0}
@@ -24326,6 +24362,10 @@ MonoBehaviour:
         ConstantValue: {fileID: 0}
         Variable: {fileID: 0}
       ClipDelay:
+        UseConstant: 1
+        ConstantValue: 0
+        Variable: {fileID: 0}
+      CoolDown:
         UseConstant: 1
         ConstantValue: 0
         Variable: {fileID: 0}
@@ -24415,6 +24455,10 @@ MonoBehaviour:
         UseConstant: 1
         ConstantValue: 0
         Variable: {fileID: 0}
+      CoolDown:
+        UseConstant: 1
+        ConstantValue: 0
+        Variable: {fileID: 0}
       audioSource: {fileID: 0}
       m_stopAudio: 1
       modifier: {fileID: 0}
@@ -24498,6 +24542,10 @@ MonoBehaviour:
         ConstantValue: {fileID: 0}
         Variable: {fileID: 0}
       ClipDelay:
+        UseConstant: 1
+        ConstantValue: 0
+        Variable: {fileID: 0}
+      CoolDown:
         UseConstant: 1
         ConstantValue: 0
         Variable: {fileID: 0}
@@ -24663,6 +24711,10 @@ MonoBehaviour:
         UseConstant: 1
         ConstantValue: 0.1
         Variable: {fileID: 0}
+      CoolDown:
+        UseConstant: 1
+        ConstantValue: 0
+        Variable: {fileID: 0}
       audioSource: {fileID: 0}
       m_stopAudio: 1
       modifier: {fileID: 0}
@@ -24751,6 +24803,10 @@ MonoBehaviour:
       ClipDelay:
         UseConstant: 1
         ConstantValue: 0.1
+        Variable: {fileID: 0}
+      CoolDown:
+        UseConstant: 1
+        ConstantValue: 0
         Variable: {fileID: 0}
       audioSource: {fileID: 0}
       m_stopAudio: 1
@@ -24841,6 +24897,10 @@ MonoBehaviour:
         UseConstant: 1
         ConstantValue: 0.25
         Variable: {fileID: 0}
+      CoolDown:
+        UseConstant: 1
+        ConstantValue: 0
+        Variable: {fileID: 0}
       audioSource: {fileID: 0}
       m_stopAudio: 1
       modifier: {fileID: 0}
@@ -24929,6 +24989,10 @@ MonoBehaviour:
       ClipDelay:
         UseConstant: 1
         ConstantValue: 0.25
+        Variable: {fileID: 0}
+      CoolDown:
+        UseConstant: 1
+        ConstantValue: 0
         Variable: {fileID: 0}
       audioSource: {fileID: 0}
       m_stopAudio: 1
@@ -25019,6 +25083,10 @@ MonoBehaviour:
         UseConstant: 1
         ConstantValue: 0.25
         Variable: {fileID: 0}
+      CoolDown:
+        UseConstant: 1
+        ConstantValue: 0
+        Variable: {fileID: 0}
       audioSource: {fileID: 0}
       m_stopAudio: 1
       modifier: {fileID: 11400000, guid: 1826bca017ee8e540a5d92a355c10d60, type: 2}
@@ -25108,6 +25176,10 @@ MonoBehaviour:
         UseConstant: 1
         ConstantValue: 0.25
         Variable: {fileID: 0}
+      CoolDown:
+        UseConstant: 1
+        ConstantValue: 0
+        Variable: {fileID: 0}
       audioSource: {fileID: 0}
       m_stopAudio: 1
       modifier: {fileID: 11400000, guid: 1826bca017ee8e540a5d92a355c10d60, type: 2}
@@ -25196,6 +25268,10 @@ MonoBehaviour:
       ClipDelay:
         UseConstant: 1
         ConstantValue: 0.25
+        Variable: {fileID: 0}
+      CoolDown:
+        UseConstant: 1
+        ConstantValue: 0
         Variable: {fileID: 0}
       audioSource: {fileID: 0}
       m_stopAudio: 1
@@ -25324,6 +25400,10 @@ MonoBehaviour:
         UseConstant: 1
         ConstantValue: 0
         Variable: {fileID: 0}
+      CoolDown:
+        UseConstant: 1
+        ConstantValue: 0
+        Variable: {fileID: 0}
       audioSource: {fileID: 0}
       m_stopAudio: 1
       modifier: {fileID: 0}
@@ -25444,6 +25524,10 @@ MonoBehaviour:
         ConstantValue: {fileID: 0}
         Variable: {fileID: 0}
       ClipDelay:
+        UseConstant: 1
+        ConstantValue: 0
+        Variable: {fileID: 0}
+      CoolDown:
         UseConstant: 1
         ConstantValue: 0
         Variable: {fileID: 0}
@@ -25568,6 +25652,10 @@ MonoBehaviour:
         UseConstant: 1
         ConstantValue: 0.2
         Variable: {fileID: 0}
+      CoolDown:
+        UseConstant: 1
+        ConstantValue: 0
+        Variable: {fileID: 0}
       audioSource: {fileID: 0}
       m_stopAudio: 1
       modifier: {fileID: 0}
@@ -25651,6 +25739,10 @@ MonoBehaviour:
         UseConstant: 1
         ConstantValue: 0.2
         Variable: {fileID: 0}
+      CoolDown:
+        UseConstant: 1
+        ConstantValue: 0
+        Variable: {fileID: 0}
       audioSource: {fileID: 0}
       m_stopAudio: 1
       modifier: {fileID: 0}
@@ -25733,6 +25825,10 @@ MonoBehaviour:
       ClipDelay:
         UseConstant: 1
         ConstantValue: 0.2
+        Variable: {fileID: 0}
+      CoolDown:
+        UseConstant: 1
+        ConstantValue: 0
         Variable: {fileID: 0}
       audioSource: {fileID: 0}
       m_stopAudio: 1
@@ -25855,6 +25951,10 @@ MonoBehaviour:
         UseConstant: 1
         ConstantValue: 0.2
         Variable: {fileID: 0}
+      CoolDown:
+        UseConstant: 1
+        ConstantValue: 0
+        Variable: {fileID: 0}
       audioSource: {fileID: 0}
       m_stopAudio: 1
       modifier: {fileID: 0}
@@ -25937,6 +26037,10 @@ MonoBehaviour:
       ClipDelay:
         UseConstant: 1
         ConstantValue: 0.2
+        Variable: {fileID: 0}
+      CoolDown:
+        UseConstant: 1
+        ConstantValue: 0
         Variable: {fileID: 0}
       audioSource: {fileID: 0}
       m_stopAudio: 1
@@ -26059,6 +26163,10 @@ MonoBehaviour:
         UseConstant: 1
         ConstantValue: 0.2
         Variable: {fileID: 0}
+      CoolDown:
+        UseConstant: 1
+        ConstantValue: 0
+        Variable: {fileID: 0}
       audioSource: {fileID: 0}
       m_stopAudio: 1
       modifier: {fileID: 0}
@@ -26142,6 +26250,10 @@ MonoBehaviour:
         UseConstant: 1
         ConstantValue: 0.2
         Variable: {fileID: 0}
+      CoolDown:
+        UseConstant: 1
+        ConstantValue: 0
+        Variable: {fileID: 0}
       audioSource: {fileID: 0}
       m_stopAudio: 1
       modifier: {fileID: 0}
@@ -26224,6 +26336,10 @@ MonoBehaviour:
       ClipDelay:
         UseConstant: 1
         ConstantValue: 0.2
+        Variable: {fileID: 0}
+      CoolDown:
+        UseConstant: 1
+        ConstantValue: 0
         Variable: {fileID: 0}
       audioSource: {fileID: 0}
       m_stopAudio: 1
@@ -26346,6 +26462,10 @@ MonoBehaviour:
         UseConstant: 1
         ConstantValue: 0.2
         Variable: {fileID: 0}
+      CoolDown:
+        UseConstant: 1
+        ConstantValue: 0
+        Variable: {fileID: 0}
       audioSource: {fileID: 0}
       m_stopAudio: 1
       modifier: {fileID: 0}
@@ -26429,6 +26549,10 @@ MonoBehaviour:
         UseConstant: 1
         ConstantValue: 0.2
         Variable: {fileID: 0}
+      CoolDown:
+        UseConstant: 1
+        ConstantValue: 0
+        Variable: {fileID: 0}
       audioSource: {fileID: 0}
       m_stopAudio: 1
       modifier: {fileID: 0}
@@ -26511,6 +26635,10 @@ MonoBehaviour:
       ClipDelay:
         UseConstant: 1
         ConstantValue: 0.2
+        Variable: {fileID: 0}
+      CoolDown:
+        UseConstant: 1
+        ConstantValue: 0
         Variable: {fileID: 0}
       audioSource: {fileID: 0}
       m_stopAudio: 1
@@ -26633,6 +26761,10 @@ MonoBehaviour:
         UseConstant: 1
         ConstantValue: 0.2
         Variable: {fileID: 0}
+      CoolDown:
+        UseConstant: 1
+        ConstantValue: 0
+        Variable: {fileID: 0}
       audioSource: {fileID: 0}
       m_stopAudio: 1
       modifier: {fileID: 0}
@@ -26717,6 +26849,10 @@ MonoBehaviour:
       ClipDelay:
         UseConstant: 1
         ConstantValue: 0.2
+        Variable: {fileID: 0}
+      CoolDown:
+        UseConstant: 1
+        ConstantValue: 0
         Variable: {fileID: 0}
       audioSource: {fileID: 0}
       m_stopAudio: 1
@@ -26803,6 +26939,10 @@ MonoBehaviour:
         UseConstant: 1
         ConstantValue: 0.2
         Variable: {fileID: 0}
+      CoolDown:
+        UseConstant: 1
+        ConstantValue: 0
+        Variable: {fileID: 0}
       audioSource: {fileID: 0}
       m_stopAudio: 1
       modifier: {fileID: 0}
@@ -26887,6 +27027,10 @@ MonoBehaviour:
       ClipDelay:
         UseConstant: 1
         ConstantValue: 0.3
+        Variable: {fileID: 0}
+      CoolDown:
+        UseConstant: 1
+        ConstantValue: 0
         Variable: {fileID: 0}
       audioSource: {fileID: 0}
       m_stopAudio: 1
@@ -26973,6 +27117,10 @@ MonoBehaviour:
         UseConstant: 1
         ConstantValue: 0.4
         Variable: {fileID: 0}
+      CoolDown:
+        UseConstant: 1
+        ConstantValue: 0
+        Variable: {fileID: 0}
       audioSource: {fileID: 0}
       m_stopAudio: 1
       modifier: {fileID: 0}
@@ -27058,6 +27206,10 @@ MonoBehaviour:
         UseConstant: 1
         ConstantValue: 0.1
         Variable: {fileID: 0}
+      CoolDown:
+        UseConstant: 1
+        ConstantValue: 0
+        Variable: {fileID: 0}
       audioSource: {fileID: 0}
       m_stopAudio: 1
       modifier: {fileID: 0}
@@ -27142,6 +27294,10 @@ MonoBehaviour:
       ClipDelay:
         UseConstant: 1
         ConstantValue: 0.1
+        Variable: {fileID: 0}
+      CoolDown:
+        UseConstant: 1
+        ConstantValue: 0
         Variable: {fileID: 0}
       audioSource: {fileID: 0}
       m_stopAudio: 1
@@ -27229,6 +27385,10 @@ MonoBehaviour:
         UseConstant: 1
         ConstantValue: 0.1
         Variable: {fileID: 0}
+      CoolDown:
+        UseConstant: 1
+        ConstantValue: 0
+        Variable: {fileID: 0}
       audioSource: {fileID: 0}
       m_stopAudio: 1
       modifier: {fileID: 11400000, guid: 1826bca017ee8e540a5d92a355c10d60, type: 2}
@@ -27314,6 +27474,10 @@ MonoBehaviour:
       ClipDelay:
         UseConstant: 1
         ConstantValue: 0.1
+        Variable: {fileID: 0}
+      CoolDown:
+        UseConstant: 1
+        ConstantValue: 0
         Variable: {fileID: 0}
       audioSource: {fileID: 0}
       m_stopAudio: 1
@@ -27401,6 +27565,10 @@ MonoBehaviour:
         UseConstant: 1
         ConstantValue: 0.1
         Variable: {fileID: 0}
+      CoolDown:
+        UseConstant: 1
+        ConstantValue: 0
+        Variable: {fileID: 0}
       audioSource: {fileID: 0}
       m_stopAudio: 1
       modifier: {fileID: 0}
@@ -27485,6 +27653,10 @@ MonoBehaviour:
       ClipDelay:
         UseConstant: 1
         ConstantValue: 0.1
+        Variable: {fileID: 0}
+      CoolDown:
+        UseConstant: 1
+        ConstantValue: 0
         Variable: {fileID: 0}
       audioSource: {fileID: 0}
       m_stopAudio: 1
@@ -27571,6 +27743,10 @@ MonoBehaviour:
         UseConstant: 1
         ConstantValue: 0.1
         Variable: {fileID: 0}
+      CoolDown:
+        UseConstant: 1
+        ConstantValue: 0
+        Variable: {fileID: 0}
       audioSource: {fileID: 0}
       m_stopAudio: 1
       modifier: {fileID: 0}
@@ -27655,6 +27831,10 @@ MonoBehaviour:
       ClipDelay:
         UseConstant: 1
         ConstantValue: 0.1
+        Variable: {fileID: 0}
+      CoolDown:
+        UseConstant: 1
+        ConstantValue: 0
         Variable: {fileID: 0}
       audioSource: {fileID: 0}
       m_stopAudio: 1
@@ -27779,6 +27959,10 @@ MonoBehaviour:
         UseConstant: 1
         ConstantValue: 0.4
         Variable: {fileID: 0}
+      CoolDown:
+        UseConstant: 1
+        ConstantValue: 0
+        Variable: {fileID: 0}
       audioSource: {fileID: 0}
       m_stopAudio: 1
       modifier: {fileID: 0}
@@ -27861,6 +28045,10 @@ MonoBehaviour:
       ClipDelay:
         UseConstant: 1
         ConstantValue: 0.2
+        Variable: {fileID: 0}
+      CoolDown:
+        UseConstant: 1
+        ConstantValue: 0
         Variable: {fileID: 0}
       audioSource: {fileID: 0}
       m_stopAudio: 1
@@ -27945,6 +28133,10 @@ MonoBehaviour:
         UseConstant: 1
         ConstantValue: 0.3
         Variable: {fileID: 0}
+      CoolDown:
+        UseConstant: 1
+        ConstantValue: 0
+        Variable: {fileID: 0}
       audioSource: {fileID: 0}
       m_stopAudio: 1
       modifier: {fileID: 0}
@@ -28027,6 +28219,10 @@ MonoBehaviour:
       ClipDelay:
         UseConstant: 1
         ConstantValue: 0.3
+        Variable: {fileID: 0}
+      CoolDown:
+        UseConstant: 1
+        ConstantValue: 0
         Variable: {fileID: 0}
       audioSource: {fileID: 0}
       m_stopAudio: 1
@@ -28111,6 +28307,10 @@ MonoBehaviour:
         UseConstant: 1
         ConstantValue: 0.3
         Variable: {fileID: 0}
+      CoolDown:
+        UseConstant: 1
+        ConstantValue: 0
+        Variable: {fileID: 0}
       audioSource: {fileID: 0}
       m_stopAudio: 1
       modifier: {fileID: 0}
@@ -28193,6 +28393,10 @@ MonoBehaviour:
       ClipDelay:
         UseConstant: 1
         ConstantValue: 0.3
+        Variable: {fileID: 0}
+      CoolDown:
+        UseConstant: 1
+        ConstantValue: 0
         Variable: {fileID: 0}
       audioSource: {fileID: 0}
       m_stopAudio: 1
@@ -28315,6 +28519,10 @@ MonoBehaviour:
         UseConstant: 1
         ConstantValue: 0.2
         Variable: {fileID: 0}
+      CoolDown:
+        UseConstant: 1
+        ConstantValue: 0
+        Variable: {fileID: 0}
       audioSource: {fileID: 0}
       m_stopAudio: 1
       modifier: {fileID: 0}
@@ -28397,6 +28605,10 @@ MonoBehaviour:
       ClipDelay:
         UseConstant: 1
         ConstantValue: 0.2
+        Variable: {fileID: 0}
+      CoolDown:
+        UseConstant: 1
+        ConstantValue: 0
         Variable: {fileID: 0}
       audioSource: {fileID: 0}
       m_stopAudio: 1
@@ -28481,6 +28693,10 @@ MonoBehaviour:
         UseConstant: 1
         ConstantValue: 0.2
         Variable: {fileID: 0}
+      CoolDown:
+        UseConstant: 1
+        ConstantValue: 0
+        Variable: {fileID: 0}
       audioSource: {fileID: 0}
       m_stopAudio: 1
       modifier: {fileID: 0}
@@ -28564,6 +28780,10 @@ MonoBehaviour:
         UseConstant: 1
         ConstantValue: 0.2
         Variable: {fileID: 0}
+      CoolDown:
+        UseConstant: 1
+        ConstantValue: 0
+        Variable: {fileID: 0}
       audioSource: {fileID: 0}
       m_stopAudio: 0
       modifier: {fileID: 0}
@@ -28646,6 +28866,10 @@ MonoBehaviour:
       ClipDelay:
         UseConstant: 1
         ConstantValue: 0.2
+        Variable: {fileID: 0}
+      CoolDown:
+        UseConstant: 1
+        ConstantValue: 0
         Variable: {fileID: 0}
       audioSource: {fileID: 0}
       m_stopAudio: 1
@@ -28768,6 +28992,10 @@ MonoBehaviour:
         UseConstant: 1
         ConstantValue: 0
         Variable: {fileID: 0}
+      CoolDown:
+        UseConstant: 1
+        ConstantValue: 0
+        Variable: {fileID: 0}
       audioSource: {fileID: 0}
       m_stopAudio: 1
       modifier: {fileID: 0}
@@ -28848,6 +29076,10 @@ MonoBehaviour:
         ConstantValue: {fileID: 0}
         Variable: {fileID: 0}
       ClipDelay:
+        UseConstant: 1
+        ConstantValue: 0
+        Variable: {fileID: 0}
+      CoolDown:
         UseConstant: 1
         ConstantValue: 0
         Variable: {fileID: 0}
@@ -28972,6 +29204,10 @@ MonoBehaviour:
         UseConstant: 1
         ConstantValue: 0
         Variable: {fileID: 0}
+      CoolDown:
+        UseConstant: 1
+        ConstantValue: 0
+        Variable: {fileID: 0}
       audioSource: {fileID: 0}
       m_stopAudio: 1
       modifier: {fileID: 0}
@@ -29054,6 +29290,10 @@ MonoBehaviour:
         ConstantValue: {fileID: 0}
         Variable: {fileID: 0}
       ClipDelay:
+        UseConstant: 1
+        ConstantValue: 0
+        Variable: {fileID: 0}
+      CoolDown:
         UseConstant: 1
         ConstantValue: 0
         Variable: {fileID: 0}
@@ -29180,6 +29420,10 @@ MonoBehaviour:
         UseConstant: 1
         ConstantValue: 0
         Variable: {fileID: 0}
+      CoolDown:
+        UseConstant: 1
+        ConstantValue: 0
+        Variable: {fileID: 0}
       audioSource: {fileID: 0}
       m_stopAudio: 1
       modifier: {fileID: 0}
@@ -29262,6 +29506,10 @@ MonoBehaviour:
         ConstantValue: {fileID: 0}
         Variable: {fileID: 0}
       ClipDelay:
+        UseConstant: 1
+        ConstantValue: 0
+        Variable: {fileID: 0}
+      CoolDown:
         UseConstant: 1
         ConstantValue: 0
         Variable: {fileID: 0}
@@ -29350,6 +29598,10 @@ MonoBehaviour:
         UseConstant: 1
         ConstantValue: 0
         Variable: {fileID: 0}
+      CoolDown:
+        UseConstant: 1
+        ConstantValue: 0
+        Variable: {fileID: 0}
       audioSource: {fileID: 0}
       m_stopAudio: 1
       modifier: {fileID: 0}
@@ -29435,6 +29687,10 @@ MonoBehaviour:
         UseConstant: 1
         ConstantValue: 0
         Variable: {fileID: 0}
+      CoolDown:
+        UseConstant: 1
+        ConstantValue: 0
+        Variable: {fileID: 0}
       audioSource: {fileID: 0}
       m_stopAudio: 1
       modifier: {fileID: 0}
@@ -29517,6 +29773,10 @@ MonoBehaviour:
         ConstantValue: {fileID: 0}
         Variable: {fileID: 0}
       ClipDelay:
+        UseConstant: 1
+        ConstantValue: 0
+        Variable: {fileID: 0}
+      CoolDown:
         UseConstant: 1
         ConstantValue: 0
         Variable: {fileID: 0}
@@ -29643,6 +29903,10 @@ MonoBehaviour:
         UseConstant: 1
         ConstantValue: 0
         Variable: {fileID: 0}
+      CoolDown:
+        UseConstant: 1
+        ConstantValue: 0
+        Variable: {fileID: 0}
       audioSource: {fileID: 0}
       m_stopAudio: 1
       modifier: {fileID: 0}
@@ -29723,6 +29987,10 @@ MonoBehaviour:
         ConstantValue: {fileID: 0}
         Variable: {fileID: 0}
       ClipDelay:
+        UseConstant: 1
+        ConstantValue: 0
+        Variable: {fileID: 0}
+      CoolDown:
         UseConstant: 1
         ConstantValue: 0
         Variable: {fileID: 0}
@@ -29809,6 +30077,10 @@ MonoBehaviour:
         UseConstant: 1
         ConstantValue: 0
         Variable: {fileID: 0}
+      CoolDown:
+        UseConstant: 1
+        ConstantValue: 0
+        Variable: {fileID: 0}
       audioSource: {fileID: 0}
       m_stopAudio: 1
       modifier: {fileID: 0}
@@ -29892,6 +30164,10 @@ MonoBehaviour:
         UseConstant: 1
         ConstantValue: 0
         Variable: {fileID: 0}
+      CoolDown:
+        UseConstant: 1
+        ConstantValue: 0
+        Variable: {fileID: 0}
       audioSource: {fileID: 0}
       m_stopAudio: 1
       modifier: {fileID: 0}
@@ -29972,6 +30248,10 @@ MonoBehaviour:
         ConstantValue: {fileID: 0}
         Variable: {fileID: 0}
       ClipDelay:
+        UseConstant: 1
+        ConstantValue: 0
+        Variable: {fileID: 0}
+      CoolDown:
         UseConstant: 1
         ConstantValue: 0
         Variable: {fileID: 0}
@@ -31862,6 +32142,9 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   OnPreTeleport:
+    m_PersistentCalls:
+      m_Calls: []
+  OnGroundChangesGravity:
     m_PersistentCalls:
       m_Calls: []
   OnStateActivate:
@@ -36958,7 +37241,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10308, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: e823cd5b5d27c0f4b8256e7c12ee3e6d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -37458,6 +37741,10 @@ MonoBehaviour:
   Owner: {fileID: 4853938620678676847}
   Meshes:
   - Name: Hair
+    name:
+      UseConstant: 1
+      ConstantValue: 
+      Variable: {fileID: 0}
     Active: 1
     meshes:
     - {fileID: 9219519177062994832}
@@ -37505,6 +37792,10 @@ MonoBehaviour:
     Current: 0
     CurrentMeshItemIndex: 0
   - Name: Ears
+    name:
+      UseConstant: 1
+      ConstantValue: 
+      Variable: {fileID: 0}
     Active: 1
     meshes:
     - {fileID: 9219519177062994838}
@@ -37539,6 +37830,10 @@ MonoBehaviour:
     Current: 1
     CurrentMeshItemIndex: 0
   - Name: Eyebrows
+    name:
+      UseConstant: 1
+      ConstantValue: 
+      Variable: {fileID: 0}
     Active: 1
     meshes:
     - {fileID: 9219519177062994836}
@@ -37573,6 +37868,10 @@ MonoBehaviour:
     Current: 1
     CurrentMeshItemIndex: 0
   - Name: Beard
+    name:
+      UseConstant: 1
+      ConstantValue: 
+      Variable: {fileID: 0}
     Active: 1
     meshes:
     - {fileID: 4458801360286531429}
@@ -37609,6 +37908,10 @@ MonoBehaviour:
   debug: 0
   Pinned:
     Name: NameHere
+    name:
+      UseConstant: 1
+      ConstantValue: 
+      Variable: {fileID: 0}
     Active: 1
     meshes: []
     MeshItems: []
@@ -43558,6 +43861,14 @@ MonoBehaviour:
   StoreWeaponModeID: {fileID: 11400000, guid: 908d4f1fe671c064cbb3045eeb113742, type: 2}
   UnarmedModeID: {fileID: 11400000, guid: 1286867ad3c4cdd4baacac3373aff92c, type: 2}
   comboManager: {fileID: 3223312137449449203}
+  mainAttackBranch:
+    UseConstant: 1
+    ConstantValue: 0
+    Variable: {fileID: 0}
+  secondAttackBranch:
+    UseConstant: 1
+    ConstantValue: 1
+    Variable: {fileID: 0}
   IgnoreHandOffset:
     UseConstant: 1
     ConstantValue: 0
@@ -44097,6 +44408,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+  events: 0
   OnStart:
     m_PersistentCalls:
       m_Calls: []

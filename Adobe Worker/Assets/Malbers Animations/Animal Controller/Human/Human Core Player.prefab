@@ -205,6 +205,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+    UpdateAfterCompare: 0
   - active: 1
     name: 'Stamina Greater Than '
     description: 'Enable the Dodge Mode if the Stamina is greater than 25.
@@ -244,6 +245,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+    UpdateAfterCompare: 0
   OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -431,6 +433,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: edb769e7b671f1642b42d0a739c994ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  EvaluateOnEnable: 0
   conditions:
   - {fileID: 784898373192063296}
   - {fileID: 5674607879423307192}
@@ -681,6 +684,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  OnTargetAimAssist:
+    m_PersistentCalls:
+      m_Calls: []
   OnLockingTarget:
     m_PersistentCalls:
       m_Calls:
@@ -770,6 +776,10 @@ MonoBehaviour:
     ConstantValue: 0
     Variable: {fileID: 0}
   OneTimeUse:
+    UseConstant: 1
+    ConstantValue: 0
+    Variable: {fileID: 0}
+  ignoreStatic:
     UseConstant: 1
     ConstantValue: 0
     Variable: {fileID: 0}
@@ -1563,6 +1573,10 @@ MonoBehaviour:
     UseConstant: 1
     ConstantValue: 0
     Variable: {fileID: 0}
+  ignoreStatic:
+    UseConstant: 1
+    ConstantValue: 0
+    Variable: {fileID: 0}
   trigger: {fileID: 0}
   Editor_Tabs1: 1
 --- !u!135 &6294776747902287119
@@ -2249,6 +2263,11 @@ PrefabInstance:
       propertyPath: stats.Array.data[1].OnValueChangeNormalized.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 4191731122007677583, guid: 9b01e774fd9f5c44a899519facafff1f,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e823cd5b5d27c0f4b8256e7c12ee3e6d, type: 2}
     - target: {fileID: 4661966628746135893, guid: 9b01e774fd9f5c44a899519facafff1f,
         type: 3}
       propertyPath: m_aimOrigin
@@ -7665,6 +7684,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   OnInputDisabled:
+    m_PersistentCalls:
+      m_Calls: []
+  OnUsingGamePad:
     m_PersistentCalls:
       m_Calls: []
   IgnoreOnPause:

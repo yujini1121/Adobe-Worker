@@ -38,7 +38,6 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -10497,6 +10496,7 @@ MonoBehaviour:
       serializedVersion: 2
       m_Bits: 3230662657
     Variable: {fileID: 0}
+  Tags: []
   AttackDirection: 1
   triggerInteraction: 1
   owner: {fileID: 330212843}
@@ -10805,6 +10805,10 @@ MonoBehaviour:
     UseConstant: 1
     ConstantValue: 0
     Variable: {fileID: 0}
+  strafeOnUnequip:
+    UseConstant: 1
+    ConstantValue: 0
+    Variable: {fileID: 0}
   AimIKRight: {fileID: 0}
   AimIKLeft: {fileID: 0}
   TwoHandIK:
@@ -10903,8 +10907,9 @@ MonoBehaviour:
       type: {class: ModeReaction, ns: MalbersAnimations.Reactions, asm: MalbersAnimations}
       data:
         Active: 1
-        useLocalTarget: 0
-        LocalTarget: {fileID: 0}
+        localComponent:
+          component: {fileID: 0}
+          useLocal: 0
         delay: 0
         type: 0
         ID: {fileID: 11400000, guid: 4721f79850ae1be43aec2bccdea79fdc, type: 2}
@@ -16202,6 +16207,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5269563833209068777, guid: 9133169553a02d0418a8c61561fcc4bb,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e823cd5b5d27c0f4b8256e7c12ee3e6d, type: 2}
     - target: {fileID: 8140637814876227737, guid: 9133169553a02d0418a8c61561fcc4bb,
         type: 3}
       propertyPath: stats.Array.data[0].EditorTabs
@@ -21706,6 +21716,7 @@ MonoBehaviour:
       serializedVersion: 2
       m_Bits: 3230662657
     Variable: {fileID: 0}
+  Tags: []
   AttackDirection: 1
   triggerInteraction: 1
   owner: {fileID: 851455838}
@@ -22014,6 +22025,10 @@ MonoBehaviour:
     UseConstant: 1
     ConstantValue: 0
     Variable: {fileID: 0}
+  strafeOnUnequip:
+    UseConstant: 1
+    ConstantValue: 0
+    Variable: {fileID: 0}
   AimIKRight: {fileID: 0}
   AimIKLeft: {fileID: 0}
   TwoHandIK:
@@ -22112,8 +22127,9 @@ MonoBehaviour:
       type: {class: ModeReaction, ns: MalbersAnimations.Reactions, asm: MalbersAnimations}
       data:
         Active: 1
-        useLocalTarget: 0
-        LocalTarget: {fileID: 0}
+        localComponent:
+          component: {fileID: 0}
+          useLocal: 0
         delay: 0
         type: 0
         ID: {fileID: 11400000, guid: 4721f79850ae1be43aec2bccdea79fdc, type: 2}
@@ -22200,7 +22216,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -22389,6 +22405,9 @@ MonoBehaviour:
   OnInputDisabled:
     m_PersistentCalls:
       m_Calls: []
+  OnUsingGamePad:
+    m_PersistentCalls:
+      m_Calls: []
   IgnoreOnPause:
     UseConstant: 1
     ConstantValue: 1
@@ -22474,6 +22493,10 @@ MonoBehaviour:
     ConstantValue: 0
     Variable: {fileID: 0}
   OneTimeUse:
+    UseConstant: 1
+    ConstantValue: 0
+    Variable: {fileID: 0}
+  ignoreStatic:
     UseConstant: 1
     ConstantValue: 0
     Variable: {fileID: 0}
@@ -22904,10 +22927,17 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+  events: 0
   OnStart:
     m_PersistentCalls:
       m_Calls: []
   OnEnd:
+    m_PersistentCalls:
+      m_Calls: []
+  onEnable:
+    m_PersistentCalls:
+      m_Calls: []
+  onDisable:
     m_PersistentCalls:
       m_Calls: []
   previewPosition: 0
@@ -23123,6 +23153,7 @@ MonoBehaviour:
       serializedVersion: 2
       m_Bits: 3230662657
     Variable: {fileID: 0}
+  Tags: []
   AttackDirection: 1
   triggerInteraction: 1
   owner: {fileID: 1291865094}
@@ -23431,6 +23462,10 @@ MonoBehaviour:
     UseConstant: 1
     ConstantValue: 0
     Variable: {fileID: 0}
+  strafeOnUnequip:
+    UseConstant: 1
+    ConstantValue: 0
+    Variable: {fileID: 0}
   AimIKRight: {fileID: 0}
   AimIKLeft: {fileID: 0}
   TwoHandIK:
@@ -23529,8 +23564,9 @@ MonoBehaviour:
       type: {class: ModeReaction, ns: MalbersAnimations.Reactions, asm: MalbersAnimations}
       data:
         Active: 1
-        useLocalTarget: 0
-        LocalTarget: {fileID: 0}
+        localComponent:
+          component: {fileID: 0}
+          useLocal: 0
         delay: 0
         type: 0
         ID: {fileID: 11400000, guid: 4721f79850ae1be43aec2bccdea79fdc, type: 2}
@@ -28467,6 +28503,10 @@ MonoBehaviour:
     UseConstant: 1
     ConstantValue: 0
     Variable: {fileID: 0}
+  ignoreStatic:
+    UseConstant: 1
+    ConstantValue: 0
+    Variable: {fileID: 0}
   trigger: {fileID: 0}
   Editor_Tabs1: 0
 --- !u!65 &1610123356
@@ -28926,6 +28966,10 @@ MonoBehaviour:
     ConstantValue: 0
     Variable: {fileID: 0}
   OneTimeUse:
+    UseConstant: 1
+    ConstantValue: 0
+    Variable: {fileID: 0}
+  ignoreStatic:
     UseConstant: 1
     ConstantValue: 0
     Variable: {fileID: 0}
@@ -34338,6 +34382,7 @@ MonoBehaviour:
       serializedVersion: 2
       m_Bits: 3230662657
     Variable: {fileID: 0}
+  Tags: []
   AttackDirection: 1
   triggerInteraction: 1
   owner: {fileID: 406475057211877948}
@@ -34646,6 +34691,10 @@ MonoBehaviour:
     UseConstant: 1
     ConstantValue: 0
     Variable: {fileID: 0}
+  strafeOnUnequip:
+    UseConstant: 1
+    ConstantValue: 0
+    Variable: {fileID: 0}
   AimIKRight: {fileID: 0}
   AimIKLeft: {fileID: 0}
   TwoHandIK:
@@ -34744,8 +34793,9 @@ MonoBehaviour:
       type: {class: ModeReaction, ns: MalbersAnimations.Reactions, asm: MalbersAnimations}
       data:
         Active: 1
-        useLocalTarget: 0
-        LocalTarget: {fileID: 0}
+        localComponent:
+          component: {fileID: 0}
+          useLocal: 0
         delay: 0
         type: 0
         ID: {fileID: 11400000, guid: 4721f79850ae1be43aec2bccdea79fdc, type: 2}
@@ -44592,6 +44642,10 @@ MonoBehaviour:
     UseConstant: 1
     ConstantValue: 0
     Variable: {fileID: 0}
+  ignoreStatic:
+    UseConstant: 1
+    ConstantValue: 0
+    Variable: {fileID: 0}
   trigger: {fileID: 0}
   Editor_Tabs1: 0
 --- !u!1 &2207452527694974449
@@ -44912,30 +44966,28 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Brain: {fileID: 0}
-  updateMode: 0
+  unscaledTime:
+    UseConstant: 1
+    ConstantValue: 1
+    Variable: {fileID: 0}
   priority: 10
   cameraSide: 1
-  Target:
-    UseConstant: 0
-    ConstantValue: {fileID: 0}
-    Variable: {fileID: 11400000, guid: e759cb94eee3fcd4bb2f749b1dbda0a8, type: 2}
-  CamPivot: {fileID: 0}
-  look:
-    UseConstant: 0
-    ConstantValue: {x: 0, y: 0}
-    Variable: {fileID: 11400000, guid: 81ebbdea0e8140745b486bad86246321, type: 2}
-  invertX:
-    UseConstant: 1
-    ConstantValue: 0
-    Variable: {fileID: 0}
-  invertY:
-    UseConstant: 1
-    ConstantValue: 0
-    Variable: {fileID: 0}
   CameraDistance:
     UseConstant: 1
     ConstantValue: 6
     Variable: {fileID: 0}
+  Target:
+    UseConstant: 0
+    ConstantValue: {fileID: 0}
+    Variable: {fileID: 11400000, guid: e759cb94eee3fcd4bb2f749b1dbda0a8, type: 2}
+  upVector:
+    UseConstant: 1
+    ConstantValue: {fileID: 0}
+    Variable: {fileID: 0}
+  look:
+    UseConstant: 0
+    ConstantValue: {x: 0, y: 0}
+    Variable: {fileID: 11400000, guid: 81ebbdea0e8140745b486bad86246321, type: 2}
   XMultiplier:
     UseConstant: 1
     ConstantValue: 1
@@ -44956,9 +45008,31 @@ MonoBehaviour:
     UseConstant: 1
     ConstantValue: 15
     Variable: {fileID: 0}
+  lerpPosition:
+    UseConstant: 1
+    ConstantValue: 0
+    Variable: {fileID: 0}
+  invertX:
+    UseConstant: 1
+    ConstantValue: 0
+    Variable: {fileID: 0}
+  invertY:
+    UseConstant: 1
+    ConstantValue: 0
+    Variable: {fileID: 0}
+  UsingMouse:
+    UseConstant: 1
+    ConstantValue: 1
+    Variable: {fileID: 0}
+  GamepadMult:
+    UseConstant: 1
+    ConstantValue: 100
+    Variable: {fileID: 0}
   OnActiveCamera:
     m_PersistentCalls:
       m_Calls: []
+  _cinemachineTargetYaw: 0
+  _cinemachineTargetPitch: 0
 --- !u!1 &4119520938554665231
 GameObject:
   m_ObjectHideFlags: 0
