@@ -1,12 +1,11 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
 using Cinemachine;
+using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    public CinemachineVirtualCamera virtualCam;
-    public GameObject virtualCamTarget;
+    [SerializeField] private GameObject TP_virtualCam;
+    [SerializeField] private GameObject FP_virtualCam;
+    [SerializeField] private GameObject virtualCamTarget;
     private Rigidbody rb;
 
     private float keyHorizontalAxisValue;
@@ -36,11 +35,22 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         PlayerMove();
+        CameraSwitch();
     }
 
     private void LateUpdate()
     {
         PlayerRotation();
+    }
+
+
+    void CameraSwitch()
+    {
+        if (Input.GetKeyDown(KeyCode.Tab))
+        {
+            FP_virtualCam.SetActive(!FP_virtualCam.active);
+            TP_virtualCam.SetActive(!TP_virtualCam.active);
+        }
     }
 
     void PlayerMove()
