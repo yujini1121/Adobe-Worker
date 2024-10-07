@@ -61,14 +61,33 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Structure\StructureBreakable.cs" />
+    <Compile Include="Assets\Scripts\TempTaeYoon\TempEnemyControllerAlpha.cs" />
+    <Compile Include="Assets\Scripts\PlayerController.cs" />
+    <Compile Include="Assets\Scripts\Base\TagBundle.cs" />
     <Compile Include="Assets\Scripts\Structure\StructureColliderChild.cs" />
     <Compile Include="Assets\Scripts\TempTaeYoon\TempPlayerControllerAlpha.cs" />
     <Compile Include="Assets\Scripts\Base\IDamageable.cs" />
-    <Compile Include="Assets\Scripts\TempTaeYoon\TempEnemyControllerAlpha.cs" />
     <Compile Include="Assets\Scripts\Structure\StructureGoal.cs" />
     <Compile Include="Assets\Scripts\Base\EnemyBase.cs" />
-    <Compile Include="Assets\Scripts\PlayerController.cs" />
-    <Compile Include="Assets\Scripts\Base\TagBundle.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Malbers Animations\Common\Shaders\Amplify Shader Editor\Mask8Toon.shader" />
+    <None Include="Assets\Malbers Animations\Common\Shaders\Amplify Shader Editor\DragonEggs_Shader.shader" />
+    <None Include="Assets\Malbers Animations\Common\Shaders\Amplify Shader Editor\Color4x4.shader" />
+    <None Include="Assets\Malbers Animations\Common\Shaders\Amplify Shader Editor\Mask4Toon.shader" />
+    <None Include="Assets\Malbers Animations\Common\Shaders\Amplify Shader Editor\Mask4Realistic.shader" />
+    <None Include="Assets\Malbers Animations\Common\Shaders\Amplify Shader Editor\Golem Shader.shader" />
+    <None Include="Assets\Malbers Animations\Common\Shaders\Amplify Shader Editor\Fur.shader" />
+    <None Include="Assets\Malbers Animations\Common\Shaders\Amplify Shader Editor\Color3x3.shader" />
+    <None Include="Assets\Malbers Animations\Common\Shaders\Amplify Shader Editor\Color4x3.shader" />
+    <None Include="Assets\Malbers Animations\Common\Shaders\Amplify Shader Editor\Wind Shader.shader" />
+    <None Include="Assets\Malbers Animations\Common\Shaders\Amplify Shader Editor\AnisotropicCircular.shader" />
+    <None Include="Assets\Malbers Animations\Common\Shaders\Amplify Shader Editor\AnisotropicWard.shader" />
+    <None Include="Assets\Malbers Animations\Common\Shaders\Amplify Shader Editor\MWater2.shader" />
+    <None Include="Assets\Malbers Animations\Common\Shaders\Amplify Shader Editor\Gradient4.shader" />
+    <None Include="Assets\Malbers Animations\Common\Shaders\Amplify Shader Editor\Color4x4 Unlit.shader" />
+    <None Include="Assets\Malbers Animations\Common\Shaders\Amplify Shader Editor\Mask8Realistic.shader" />
+    <None Include="Assets\Malbers Animations\Common\Fonts\OpenSans\License!.txt" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -911,6 +930,10 @@
       <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Unity.AI.Navigation">
+      <HintPath>Library\ScriptAssemblies\Unity.AI.Navigation.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Unity.Burst.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.Burst.Editor.dll</HintPath>
       <Private>False</Private>
@@ -987,12 +1010,20 @@
       <HintPath>Library\ScriptAssemblies\Unity.Timeline.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Unity.Splines.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.Splines.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Unity.VisualScripting.SettingsProvider.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Core.ShaderLibrary">
       <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.AI.Navigation.Updater">
+      <HintPath>Library\ScriptAssemblies\Unity.AI.Navigation.Updater.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.VisualScripting.State.Editor">
@@ -1005,6 +1036,10 @@
     </Reference>
     <Reference Include="Unity.Mathematics">
       <HintPath>Library\ScriptAssemblies\Unity.Mathematics.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Splines">
+      <HintPath>Library\ScriptAssemblies\Unity.Splines.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
@@ -1023,6 +1058,10 @@
       <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Shaders.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Unity.AI.Navigation.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.AI.Navigation.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Unity.VisualScripting.State">
       <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.State.dll</HintPath>
       <Private>False</Private>
@@ -1035,12 +1074,28 @@
       <HintPath>Library\ScriptAssemblies\Cinemachine.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Unity.AI.Navigation.Editor.ConversionSystem">
+      <HintPath>Library\ScriptAssemblies\Unity.AI.Navigation.Editor.ConversionSystem.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Unity.RenderPipelines.Universal.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="MalbersAnimations.csproj">
+      <Project>{30EBDB23-2FB7-88E3-F329-81F19B4BB18D}</Project>
+      <Name>MalbersAnimations</Name>
+    </ProjectReference>
+    <ProjectReference Include="MalbersAnimations.Editor.csproj">
+      <Project>{E9209A83-8B00-40E2-7C54-21F0C2243A99}</Project>
+      <Name>MalbersAnimations.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="MalbersAnimations.Cinemachine.csproj">
+      <Project>{4A49C85E-6F80-9B6D-790E-A27D2365D761}</Project>
+      <Name>MalbersAnimations.Cinemachine</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
