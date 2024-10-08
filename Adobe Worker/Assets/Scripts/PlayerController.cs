@@ -3,7 +3,8 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    [SerializeField] private GameObject TP_virtualCam;
+	[Header("Cinemachine Camera")]
+	[SerializeField] private GameObject TP_virtualCam;
     [SerializeField] private GameObject FP_virtualCam;
     [SerializeField] private GameObject virtualCamTarget;
     private Rigidbody rb;
@@ -11,17 +12,27 @@ public class PlayerController : MonoBehaviour
     private float keyHorizontalAxisValue;
     private float keyVerticalAxisValue;
 
-    [Header("Cinemachine Camera")]
-    private float virtualCamYaw;
+	[SerializeField] private float virtualCamPitchTop = 70.0f;
+	[SerializeField] private float virtualCamPitchBottom = -30.0f;
+	private float virtualCamYaw;
     private float virtualCamPitch;
-    [SerializeField] private float virtualCamPitchTop = 70.0f;
-    [SerializeField] private float virtualCamPitchBottom = -30.0f;
 
-    [Header("Player Move Value")]
-    private float targetRotation = 0f;
+
+    [Header("Move Value")]
+	[SerializeField] private float rotationSmoothTime = 0.12f;
+	[SerializeField] private float moveSpeed = 10.0f;
+	private float targetRotation = 0f;
     private float rotationVelocity = 0f;
-    [SerializeField] private float rotationSmoothTime = 0.12f;
-    [SerializeField] private float moveSpeed = 10.0f;
+
+
+    [Header("Dash Value")]
+    [SerializeField] private float dashSpeed;
+    [SerializeField] private float dashForce;
+    [SerializeField] private float dashUpwardForce;
+    [SerializeField] private float dashDuration;
+    [SerializeField] private float dashCooltime;
+    [SerializeField] private Vector3 delayedForceToApply;
+
 
     private void Start()
     {
@@ -34,8 +45,10 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        PlayerMove();
-        CameraSwitch();
+		CameraSwitch();
+
+		PlayerMove();
+        PlayerDash();
     }
 
     private void LateUpdate()
@@ -72,6 +85,33 @@ public class PlayerController : MonoBehaviour
 
         rb.velocity = targetDirection.normalized * (inputDir != Vector3.zero ? moveSpeed : 0.0f)
                         + new Vector3(0.0f, rb.velocity.y, 0.0f);
+    }
+
+    void PlayerDash()
+    {
+        Debug.Log(dashCooltime);
+		//if (dashCooltime > 0) return;
+
+        if (Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.RightShift))
+        {
+            dashCooltime -= Time.deltaTime;
+            Vector3 forceToApply = rb.transform.forward * dashForce + rb.transform.up * dashUpwardForce;
+
+            delayedForceToApply = forceToApply;
+            Invoke("DelayedDashForce", 0.025f);
+            Invoke("ResetDash", dashDuration);
+            dashCooltime = 1.5f;
+        }
+    }
+
+    private void DelayedDashForce()
+    {
+		rb.AddForce(delayedForceToApply, ForceMode.Impulse);
+	}
+
+	void ResetDash()
+    {
+
     }
 
     void PlayerRotation()
