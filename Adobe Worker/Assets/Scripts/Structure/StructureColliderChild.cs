@@ -25,7 +25,9 @@ public class StructureColliderChild : MonoBehaviour
         {
             return;
         }
-        parentTagBunde.WhenChildCollide(otherTag);
+        AdobeTagActionArguments arguments = new AdobeTagActionArguments();
+        arguments.other = other;
+        parentTagBunde.WhenChildCollide(otherTag, arguments);
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -35,6 +37,8 @@ public class StructureColliderChild : MonoBehaviour
         {
             return;
         }
-        parentTagBunde.WhenChildCollide(otherTag);
+        AdobeTagActionArguments arguments = new AdobeTagActionArguments();
+        arguments.SetCollision(collision);
+        parentTagBunde.WhenChildCollide(otherTag, arguments);
     }
 }

@@ -6,7 +6,7 @@ public class StructureGoal : MonoBehaviour
 {
     TagBundle myTags;
 
-    void DoWhenReachedGoal()
+    void DoWhenReachedGoal(AdobeTagActionArguments arguments)
     {
         Debug.Log("이곳을 정복했습니다!");
     }

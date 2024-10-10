@@ -8,7 +8,7 @@ public class StructureBreakable : MonoBehaviour
 
     TagBundle myTags;
 
-    void WhenGetAttacked()
+    void WhenGetAttacked(AdobeTagActionArguments arguments)
     {
         hp -= 1;
 

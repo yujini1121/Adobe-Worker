@@ -6,7 +6,7 @@ public class TempEnemyControllerAlpha : MonoBehaviour
 {
     TagBundle myTagBundle;
 
-    void CollideHandler()
+    void CollideHandler(AdobeTagActionArguments arguments)
     {
         Debug.Log("I'm attacked!");
     }

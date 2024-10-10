@@ -8,23 +8,26 @@ using UnityEngine;
 /// </summary>
 public class TagBundle : MonoBehaviour
 {
-    [Header("외부에서 영향을 받을 태그")]
+    [Header("외부에서 영향을 받을 태그(자신 호출)")]
     [SerializeField] bool fromPlayer;
     [SerializeField] bool fromEnemy;
     [SerializeField] bool fromAttack;
     [SerializeField] bool fromStructure;
+    [SerializeField] bool fromItem;
 
-    [Header("외부에게 자신을 설명하는 태그")]
+    [Header("외부에게 자신을 설명하는 태그(외부 호출)")]
     [SerializeField] bool player;
     [SerializeField] bool enemy;
     [SerializeField] bool attack;
     [SerializeField] bool structure;
+    [SerializeField] bool item;
     [SerializeField] List<bool> inspectorInputTags;
     [SerializeField] List<bool> inspectorOutputTags;
 
+    const int INSPECTOR_TAGS_COUNT = 5;
     int inputTagValue; // receive tag from other
     int outputTagValue; // insert tag to other
-    System.Action tagAction;
+    System.Action<AdobeTagActionArguments> tagAction;
 
     public int GetInputTagID()
     {
@@ -62,16 +65,16 @@ public class TagBundle : MonoBehaviour
     {
         return (this.inputTagValue & other.outputTagValue) != 0;
     }
-    public void AddAction(System.Action action)
+    public void AddAction(System.Action<AdobeTagActionArguments> action)
     {
         tagAction += action;
     }
 
-    public void WhenChildCollide(TagBundle other)
+    public void WhenChildCollide(TagBundle other, AdobeTagActionArguments arguments)
     {
         if (IsSame(other))
         {
-            tagAction();
+            tagAction(arguments);
         }
     }
 
@@ -85,7 +88,10 @@ public class TagBundle : MonoBehaviour
 
         if (IsSame(otherTag))
         {
-            tagAction();
+            AdobeTagActionArguments arguments = new AdobeTagActionArguments();
+            arguments.other = other;
+
+            tagAction(arguments);
         }
     }
 
@@ -96,34 +102,40 @@ public class TagBundle : MonoBehaviour
         {
             return;
         }
-
+        //Debug.Log($"{gameObject.name} : 충돌!");
+        //Debug.Log($"{gameObject.name} : i {AdobeUtility.ShowBitArray(inputTagValue)} o : {AdobeUtility.ShowBitArray(outputTagValue)}");
         if (IsSame(otherTag))
         {
-            tagAction();
+            AdobeTagActionArguments arguments = new AdobeTagActionArguments();
+            arguments.SetCollision(collision);
+
+            tagAction(arguments);
         }
     }
 
     // Start is called before the first frame update
     void Start()
     {
-        tagAction += () => { };
+        tagAction += (AdobeTagActionArguments arguments) => { };
         if (fromPlayer == true) AddInputTag(0);
         if (fromEnemy == true) AddInputTag(1);
         if (fromAttack == true) AddInputTag(2);
         if (fromStructure == true) AddInputTag(3);
+        if (fromItem == true) AddInputTag(4);
 
         if (player == true) AddOutputTag(0);
         if (enemy == true) AddOutputTag(1);
         if (attack == true) AddOutputTag(2);
         if (structure == true) AddOutputTag(3);
+        if (item == true) AddOutputTag(4);
 
-        for (int index = 0; index < 32 - 4 && index < inspectorInputTags.Count; ++index)
+        for (int index = 0; index < 32 - INSPECTOR_TAGS_COUNT && index < inspectorInputTags.Count; ++index)
         {
-            if (inspectorInputTags[index]) AddInputTag(index + 4);
+            if (inspectorInputTags[index]) AddInputTag(index + INSPECTOR_TAGS_COUNT);
         }
-        for (int index = 0; index < 32 - 4 && index < inspectorOutputTags.Count; ++index)
+        for (int index = 0; index < 32 - INSPECTOR_TAGS_COUNT && index < inspectorOutputTags.Count; ++index)
         {
-            if (inspectorOutputTags[index]) AddOutputTag(index + 4);
+            if (inspectorOutputTags[index]) AddOutputTag(index + INSPECTOR_TAGS_COUNT);
         }
     }
 }

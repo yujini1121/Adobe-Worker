@@ -22,6 +22,7 @@ public class TempPlayerControllerAlpha : MonoBehaviour
             Input.GetAxis("Vertical") * Time.deltaTime * 3.0f));
 
         UseItems();
+        SwitchItems();
         ShowInventory();
     }
 
@@ -33,6 +34,7 @@ public class TempPlayerControllerAlpha : MonoBehaviour
         }
 
         AdobeItemUseArguments args = new AdobeItemUseArguments();
+        args.itemUser = gameObject;
         inventory.Use(args);
     }
 
@@ -41,13 +43,14 @@ public class TempPlayerControllerAlpha : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.DownArrow))
         {
             inventory.SwitchItem(-1);
+            Debug.Log($"아이템을 바꾸었습니다. 순서 : {inventory.inventoryIndex} {inventory.inventory[inventory.inventoryIndex].id}");
         }
         if (Input.GetKeyDown(KeyCode.UpArrow))
         {
             inventory.SwitchItem(1);
+            Debug.Log($"아이템을 바꾸었습니다. 순서 : {inventory.inventoryIndex} {inventory.inventory[inventory.inventoryIndex].id}");
         }
 
-        Debug.Log($"아이템을 바꾸었습니다. 순서 : {inventory.inventoryIndex} {inventory.inventory[inventory.inventoryIndex].id}");
     }
 
     void ShowInventory()
@@ -64,14 +67,5 @@ public class TempPlayerControllerAlpha : MonoBehaviour
         }
 
         Debug.Log(answer.ToString());
-    }
-
-    void TempItemSet()
-    {
-        AdobeItemBase tempItem = new AdobeItemBase();
-        tempItem.id = 1;
-        tempItem.amount = 3;
-
-        inventory.inventory.Add(tempItem);
     }
 }

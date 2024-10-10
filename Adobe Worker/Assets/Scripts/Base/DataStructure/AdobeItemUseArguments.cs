@@ -4,5 +4,5 @@ using UnityEngine;
 
 public class AdobeItemUseArguments
 {
-    public GameObject user;
+    public GameObject itemUser;
 }
