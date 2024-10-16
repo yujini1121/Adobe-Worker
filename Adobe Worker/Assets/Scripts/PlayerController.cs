@@ -32,6 +32,9 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float dashDuration;
     [SerializeField] private float dashCooltime;
     [SerializeField] private Vector3 delayedForceToApply;
+    [SerializeField] private float afterDashPower = 0;
+    [SerializeField] private float dashDecelete = 0;
+    private bool dashInput;
 
 
     private void Start()
@@ -48,12 +51,19 @@ public class PlayerController : MonoBehaviour
 		CameraSwitch();
 
 		PlayerMove();
-        PlayerDash();
+
+        if (Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.RightShift))
+            dashInput = true;
     }
 
     private void LateUpdate()
     {
         PlayerRotation();
+    }
+
+    private void FixedUpdate()
+    {
+        PlayerDash();
     }
 
 
@@ -81,9 +91,9 @@ public class PlayerController : MonoBehaviour
             transform.rotation = Quaternion.Euler(0.0f, rotation, 0.0f);
         }
 
-        Vector3 targetDirection = Quaternion.Euler(0.0f, targetRotation, 0.0f) * Vector3.forward;
+        Vector3 targetDirection = Quaternion.Euler(0.0f, targetRotation, 0.0f) * Vector3.forward + transform.TransformDirection(new Vector3(0f, 0f, afterDashPower));
 
-        rb.velocity = targetDirection.normalized * (inputDir != Vector3.zero ? moveSpeed : 0.0f)
+        rb.velocity = targetDirection * (inputDir != Vector3.zero ? moveSpeed : 0.0f)
                         + new Vector3(0.0f, rb.velocity.y, 0.0f);
     }
 
@@ -92,7 +102,7 @@ public class PlayerController : MonoBehaviour
         Debug.Log(dashCooltime);
 		//if (dashCooltime > 0) return;
 
-        if (Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.RightShift))
+        if (dashInput)
         {
             dashCooltime -= Time.deltaTime;
             Vector3 forceToApply = rb.transform.forward * dashForce + rb.transform.up * dashUpwardForce;
@@ -101,13 +111,25 @@ public class PlayerController : MonoBehaviour
             Invoke("DelayedDashForce", 0.025f);
             Invoke("ResetDash", dashDuration);
             dashCooltime = 1.5f;
+
+            dashInput = false;
+        }
+        else if (afterDashPower >= 0)
+        {
+            afterDashPower *= dashDecelete ;
+            //afterDashPower -= Time.deltaTime;
+
+            if ( afterDashPower < 0)
+            {
+                afterDashPower = 0;
+            }
         }
     }
 
     private void DelayedDashForce()
     {
-		rb.AddForce(delayedForceToApply, ForceMode.Impulse);
-	}
+        afterDashPower = 10f;
+    }
 
 	void ResetDash()
     {
