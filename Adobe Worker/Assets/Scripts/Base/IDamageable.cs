@@ -7,5 +7,5 @@ public interface IDamageable
     /// <summary>
     ///     It called when gameobject get hurted by attack action
     /// </summary>
-    void DoWhenDamaged();
+    void DoWhenDamaged(float damage);
 }
