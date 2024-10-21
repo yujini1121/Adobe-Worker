@@ -49,7 +49,6 @@ public class AdobePlayerController : MonoBehaviour
     void Update()
     {
 		CameraSwitch();
-
 		PlayerMove();
 
         if (Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.RightShift))

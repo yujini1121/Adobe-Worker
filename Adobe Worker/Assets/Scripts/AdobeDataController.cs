@@ -19,14 +19,13 @@ public class PlayerData
 	public int hunger;
 	public int sanity;
 
-	[Space(30)]
+	//[Space(30)]
 	[Header("Inventory")]
-	public string[] items;
-
+	//public int[] items;
+	public AdobeItemPack inventory;
 
 	public PlayerData()
 	{
-		items = new string[0];
 		instance = this;
 	}
 }
@@ -42,12 +41,16 @@ public class AdobeDataController : MonoBehaviour
 		LoadData();
 	}
 
+	private void Start()
+	{
+		playerData.inventory = AdobePlayerReference.playerInstance.GetComponent<AdobeItemPack>();
+	}
+
 	public void SaveData()
 	{
 		string json = JsonUtility.ToJson(playerData, true);
 		string path = Application.dataPath + "/Resources/Json Files/PlayerData.json";
 		File.WriteAllText(path, json);
-		Debug.Log("µÇ³Ä");
 	}
 
 	public void LoadData()
