@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class KeyBinding : MonoBehaviour
+public class AdobeKeyBinding : MonoBehaviour
 {
     static public KeyCode MoveUp;
     static public KeyCode MoveDown;

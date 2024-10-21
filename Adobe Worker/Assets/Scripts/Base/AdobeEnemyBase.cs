@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyBase : MonoBehaviour, IDamageable
+public class AdobeEnemyBase : MonoBehaviour, AdobeIDamageable
 {
     public float health;
     public float speed;

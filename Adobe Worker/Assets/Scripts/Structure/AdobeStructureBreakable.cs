@@ -2,11 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class StructureBreakable : MonoBehaviour
+public class AdobeStructureBreakable : MonoBehaviour
 {
     [SerializeField] int hp = 3;
 
-    TagBundle myTags;
+    AdobeTagBundle myTags;
 
     void WhenGetAttacked(AdobeTagActionArguments arguments)
     {
@@ -21,7 +21,7 @@ public class StructureBreakable : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        myTags = GetComponent<TagBundle>();
+        myTags = GetComponent<AdobeTagBundle>();
         myTags.AddAction(WhenGetAttacked);
     }
 

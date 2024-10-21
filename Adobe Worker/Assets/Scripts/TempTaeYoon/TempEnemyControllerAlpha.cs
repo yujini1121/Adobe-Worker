@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class TempEnemyControllerAlpha : MonoBehaviour
 {
-    TagBundle myTagBundle;
+    AdobeTagBundle myTagBundle;
 
     void CollideHandler(AdobeTagActionArguments arguments)
     {
@@ -14,7 +14,7 @@ public class TempEnemyControllerAlpha : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        myTagBundle = GetComponent<TagBundle>();
+        myTagBundle = GetComponent<AdobeTagBundle>();
         myTagBundle.AddAction(CollideHandler);
     }
 

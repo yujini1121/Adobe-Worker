@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class StructureGoal : MonoBehaviour
+public class AdobeStructureGoal : MonoBehaviour
 {
-    TagBundle myTags;
+    AdobeTagBundle myTags;
 
     void DoWhenReachedGoal(AdobeTagActionArguments arguments)
     {
@@ -15,7 +15,7 @@ public class StructureGoal : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        myTags = GetComponent<TagBundle>();
+        myTags = GetComponent<AdobeTagBundle>();
 
         myTags.AddAction(DoWhenReachedGoal);
     }

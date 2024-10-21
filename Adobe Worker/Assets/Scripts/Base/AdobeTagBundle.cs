@@ -6,7 +6,7 @@ using UnityEngine;
 ///     32개짜리 태그를 비트마스킹으로 관리하고 충돌 처리를 해주는 컴포넌트입니다.
 ///     태그는 유니티의 태그가 아닙니다.
 /// </summary>
-public class TagBundle : MonoBehaviour
+public class AdobeTagBundle : MonoBehaviour
 {
     [Header("외부에서 영향을 받을 태그(자신 호출)")]
     [SerializeField] bool fromPlayer;
@@ -61,7 +61,7 @@ public class TagBundle : MonoBehaviour
     {
         return (outputTagValue & (1 << tagIndex)) == (1 << tagIndex);
     }
-    public bool IsSame(TagBundle other)
+    public bool IsSame(AdobeTagBundle other)
     {
         return (this.inputTagValue & other.outputTagValue) != 0;
     }
@@ -70,7 +70,7 @@ public class TagBundle : MonoBehaviour
         tagAction += action;
     }
 
-    public void WhenChildCollide(TagBundle other, AdobeTagActionArguments arguments)
+    public void WhenChildCollide(AdobeTagBundle other, AdobeTagActionArguments arguments)
     {
         if (IsSame(other))
         {
@@ -80,7 +80,7 @@ public class TagBundle : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        TagBundle otherTag = other.gameObject.GetComponent<TagBundle>();
+		AdobeTagBundle otherTag = other.gameObject.GetComponent<AdobeTagBundle>();
         if (otherTag == null)
         {
             return;
@@ -97,7 +97,7 @@ public class TagBundle : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        TagBundle otherTag = collision.gameObject.GetComponent<TagBundle>();
+		AdobeTagBundle otherTag = collision.gameObject.GetComponent<AdobeTagBundle>();
         if (otherTag == null)
         {
             return;

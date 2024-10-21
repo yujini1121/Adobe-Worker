@@ -2,14 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class StructureColliderChild : MonoBehaviour
+public class AdobeStructureColliderChild : MonoBehaviour
 {
-    TagBundle parentTagBunde;
+	AdobeTagBundle parentTagBunde;
 
     // Start is called before the first frame update
     void Start()
     {
-        parentTagBunde = transform.parent.GetComponent<TagBundle>();
+        parentTagBunde = transform.parent.GetComponent<AdobeTagBundle>();
     }
 
     // Update is called once per frame
@@ -20,7 +20,7 @@ public class StructureColliderChild : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        TagBundle otherTag = other.gameObject.GetComponent<TagBundle>();
+		AdobeTagBundle otherTag = other.gameObject.GetComponent<AdobeTagBundle>();
         if (otherTag == null)
         {
             return;
@@ -32,7 +32,7 @@ public class StructureColliderChild : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        TagBundle otherTag = collision.gameObject.GetComponent<TagBundle>();
+		AdobeTagBundle otherTag = collision.gameObject.GetComponent<AdobeTagBundle>();
         if (otherTag == null)
         {
             return;

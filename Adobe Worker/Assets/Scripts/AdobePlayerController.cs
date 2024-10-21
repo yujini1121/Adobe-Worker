@@ -1,7 +1,7 @@
 using Cinemachine;
 using UnityEngine;
 
-public class PlayerController : MonoBehaviour
+public class AdobePlayerController : MonoBehaviour
 {
 	[Header("Cinemachine Camera")]
 	[SerializeField] private GameObject TP_virtualCam;
