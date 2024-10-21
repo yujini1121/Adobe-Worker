@@ -41,9 +41,9 @@ public class AdobePlayerController : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
 
-        Debug.LogWarning("Test : Mouse cursor is locked");
-        Cursor.visible = false;
-        Cursor.lockState = CursorLockMode.Locked;
+        //Debug.LogWarning("Mouse cursor is locked");
+        //Cursor.visible = false;
+        //Cursor.lockState = CursorLockMode.Locked;
     }
 
     void Update()
