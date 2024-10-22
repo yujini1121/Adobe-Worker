@@ -109,7 +109,7 @@ public class AdobeMapGenerator : MonoBehaviour
         int posiitonIndexX = middleX + (int)Mathf.Floor((position.x - chunkSize.x / 2) / chunkSize.x);
         int posiitonIndexY = middleY + (int)Mathf.Floor((position.y - chunkSize.y / 2) / chunkSize.y);
 
-        pivot = new Vector3(posiitonIndexX * chunkSize.x, 0, posiitonIndexY * chunkSize.y);
+        pivot = new Vector3((posiitonIndexX - middleX) * chunkSize.x, 0, (posiitonIndexY - middleY) * chunkSize.y);
 
         // 没农 积己
         int m_size = 1 + radius * 2 + padding * 2;
