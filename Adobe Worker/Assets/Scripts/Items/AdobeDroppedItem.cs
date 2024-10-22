@@ -34,6 +34,6 @@ public class AdobeDroppedItem : MonoBehaviour
     void Start()
     {
         thisItems = GetComponent<AdobeItemPack>();
-        GetComponent<AdobeTagBundle>().AddAction(GiveItem);
+        GetComponent<AdobeTagBundle>().AddReceiveAction(GiveItem);
     }
 }

@@ -26,6 +26,7 @@ public class AdobeMapGenerator : MonoBehaviour
     float radiusY;
     bool[,] isInstantiated;
     int[,] mapPrefabIndexes;
+    int[,] mapChunkType;
     List<(Vector2, GameObject)> instantiatedChunkList; // O(Xsize * Ysize)보다 더 줄일 수 있는 탐색을 위한 자료구조입니다.
     Vector3 pivot;
 
@@ -36,8 +37,8 @@ public class AdobeMapGenerator : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        BakeMap();
         InitField();
+        BakeMap();
         ArrangeMap();
 
 
@@ -95,6 +96,8 @@ public class AdobeMapGenerator : MonoBehaviour
                 mapPrefabIndexes[x, y] = index;
             }
         }
+
+        mapPrefabIndexes[middleX, middleY] = 0;
         Debug.Log("맵 베이킹 성공");
     }
 
@@ -171,22 +174,6 @@ public class AdobeMapGenerator : MonoBehaviour
         middleY = (int)(mapSize.y / 2);
         radiusX = chunkSize.x * radius + chunkSize.x / 2;
         radiusY = chunkSize.y * radius + chunkSize.y / 2;
-        //isInstantiated = new bool[1 + radius * 2 + padding * 2, 1 + radius * 2 + padding * 2];
-
-        //for (int x = 0; x < isInstantiated.GetLength(0); ++x)
-        //{
-        //    for (int y = 0; y < isInstantiated.GetLength(1); ++y)
-        //    {
-        //        bool m_value = true;
-
-        //        if (x < padding) m_value = false;
-        //        if (x > radius * 2 + padding) m_value = false;
-        //        if (y < padding) m_value = false;
-        //        if (y > radius * 2 + padding) m_value = false;
-
-        //        isInstantiated[x, y] = m_value;
-        //    }
-        //}
 
         pivot = new Vector3(0, 0, 0);
         instantiatedChunkList = new List<(Vector2, GameObject)>();

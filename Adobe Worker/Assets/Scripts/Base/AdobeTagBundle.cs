@@ -8,14 +8,14 @@ using UnityEngine;
 /// </summary>
 public class AdobeTagBundle : MonoBehaviour
 {
-    [Header("외부에서 영향을 받을 태그(자신 호출)")]
+    [Header("충돌 시 외부에서 받을 정보 : 영향을 받을 태그 필터(자신 호출)")]
     [SerializeField] bool fromPlayer;
     [SerializeField] bool fromEnemy;
     [SerializeField] bool fromAttack;
     [SerializeField] bool fromStructure;
     [SerializeField] bool fromItem;
 
-    [Header("외부에게 자신을 설명하는 태그(외부 호출)")]
+    [Header("충돌시 외부에게 보낼 정보 : 자신을 설명하는 태그(외부 호출)")]
     [SerializeField] bool player;
     [SerializeField] bool enemy;
     [SerializeField] bool attack;
@@ -27,7 +27,8 @@ public class AdobeTagBundle : MonoBehaviour
     const int INSPECTOR_TAGS_COUNT = 5;
     int inputTagValue; // receive tag from other
     int outputTagValue; // insert tag to other
-    System.Action<AdobeTagActionArguments> tagAction;
+    System.Action<AdobeTagActionArguments> tagActionReceiving;
+    System.Action<AdobeTagActionArguments> tagActionSending;
 
     public int GetInputTagID()
     {
@@ -61,20 +62,34 @@ public class AdobeTagBundle : MonoBehaviour
     {
         return (outputTagValue & (1 << tagIndex)) == (1 << tagIndex);
     }
+    [System.Obsolete]
     public bool IsSame(AdobeTagBundle other)
     {
         return (this.inputTagValue & other.outputTagValue) != 0;
     }
-    public void AddAction(System.Action<AdobeTagActionArguments> action)
+    public bool HasTagSent(AdobeTagBundle other)
     {
-        tagAction += action;
+        return (this.outputTagValue & other.inputTagValue) != 0;
+    }
+    public bool HasTagReceived(AdobeTagBundle other)
+    {
+        return (this.inputTagValue & other.outputTagValue) != 0;
+    }
+
+    public void AddReceiveAction(System.Action<AdobeTagActionArguments> action)
+    {
+        tagActionReceiving += action;
     }
 
     public void WhenChildCollide(AdobeTagBundle other, AdobeTagActionArguments arguments)
     {
-        if (IsSame(other))
+        if (HasTagSent(other))
         {
-            tagAction(arguments);
+            tagActionReceiving(arguments);
+        }
+        if (HasTagReceived(other))
+        {
+            tagActionReceiving(arguments);
         }
     }
 
@@ -86,12 +101,16 @@ public class AdobeTagBundle : MonoBehaviour
             return;
         }
 
-        if (IsSame(otherTag))
-        {
-            AdobeTagActionArguments arguments = new AdobeTagActionArguments();
-            arguments.other = other;
+        AdobeTagActionArguments arguments = new AdobeTagActionArguments();
+        arguments.other = other;
 
-            tagAction(arguments);
+        if (HasTagSent(otherTag))
+        {
+            tagActionSending(arguments);
+        }
+        if (HasTagReceived(otherTag))
+        {
+            tagActionReceiving(arguments);
         }
     }
 
@@ -104,19 +123,23 @@ public class AdobeTagBundle : MonoBehaviour
         }
         //Debug.Log($"{gameObject.name} : 충돌!");
         //Debug.Log($"{gameObject.name} : i {AdobeUtility.ShowBitArray(inputTagValue)} o : {AdobeUtility.ShowBitArray(outputTagValue)}");
-        if (IsSame(otherTag))
-        {
-            AdobeTagActionArguments arguments = new AdobeTagActionArguments();
-            arguments.SetCollision(collision);
+        AdobeTagActionArguments arguments = new AdobeTagActionArguments();
+        arguments.SetCollision(collision);
 
-            tagAction(arguments);
+        if (HasTagSent(otherTag))
+        {
+            tagActionReceiving(arguments);
+        }
+        if (HasTagReceived(otherTag))
+        {
+            tagActionReceiving(arguments);
         }
     }
 
     // Start is called before the first frame update
     void Start()
     {
-        tagAction += (AdobeTagActionArguments arguments) => { };
+        tagActionReceiving += (AdobeTagActionArguments arguments) => { };
         if (fromPlayer == true) AddInputTag(0);
         if (fromEnemy == true) AddInputTag(1);
         if (fromAttack == true) AddInputTag(2);

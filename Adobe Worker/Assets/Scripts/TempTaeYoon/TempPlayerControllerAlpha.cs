@@ -17,9 +17,9 @@ public class TempPlayerControllerAlpha : MonoBehaviour
     void Update()
     {
         transform.Translate(new Vector3(
-            Input.GetAxis("Horizontal") * Time.deltaTime * 3.0f,
+            Input.GetAxis("Horizontal") * Time.deltaTime * 7.0f,
             0,
-            Input.GetAxis("Vertical") * Time.deltaTime * 3.0f));
+            Input.GetAxis("Vertical") * Time.deltaTime * 7.0f));
 
         UseItems();
         SwitchItems();
