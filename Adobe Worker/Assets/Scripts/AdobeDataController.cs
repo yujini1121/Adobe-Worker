@@ -19,12 +19,11 @@ public class PlayerData
 	public int hunger;
 	public int sanity;
 
-	//[Space(30)]
+	[Space(30)]
 	[Header("Inventory")]
-	//public int[] items;
-	public AdobeItemPack inventory;
+    public List<int> items = new List<int>();
 
-	public PlayerData()
+    public PlayerData()
 	{
 		instance = this;
 	}
@@ -39,11 +38,6 @@ public class AdobeDataController : MonoBehaviour
 	{
 		DontDestroyOnLoad(gameObject);
 		LoadData();
-	}
-
-	private void Start()
-	{
-		playerData.inventory = AdobePlayerReference.playerInstance.GetComponent<AdobeItemPack>();
 	}
 
 	public void SaveData()

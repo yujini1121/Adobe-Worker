@@ -24,9 +24,16 @@ public class AdobeDroppedItem : MonoBehaviour
         {
             playerInventory.inventory.Add(thisItems.inventory[index]);
             Debug.Log($"아이템 획득 : 아이템 번호 : {thisItems.inventory[index].id}");
+
+            PlayerData.instance.items.Add(thisItems.inventory[index].id);
         }
 
-        Destroy(gameObject);
+
+        gameObject.SetActive(false);
+        //Destroy(gameObject);
+
+        
+        //PlayerData.instance.items += thisItems.inventory[].id;
     }
 
 

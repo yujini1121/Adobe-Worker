@@ -1,4 +1,5 @@
 using Cinemachine;
+using System.Text;
 using UnityEngine;
 
 public class AdobePlayerController : MonoBehaviour
@@ -36,10 +37,12 @@ public class AdobePlayerController : MonoBehaviour
     [SerializeField] private float dashDecelete = 0;
     private bool dashInput;
 
+    AdobeItemPack inventory;
 
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
+        inventory = GetComponent<AdobeItemPack>();
 
         //Debug.LogWarning("Mouse cursor is locked");
         //Cursor.visible = false;
@@ -50,6 +53,11 @@ public class AdobePlayerController : MonoBehaviour
     {
 		CameraSwitch();
 		PlayerMove();
+
+
+        UseItems();
+        SwitchItems();
+        ShowInventory();
 
         if (Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.RightShift))
             dashInput = true;
@@ -130,11 +138,6 @@ public class AdobePlayerController : MonoBehaviour
         afterDashPower = 10f;
     }
 
-	void ResetDash()
-    {
-
-    }
-
     void PlayerRotation()
     {
         Vector2 inputMousePos = new Vector2(Input.GetAxisRaw("Mouse X"), Input.GetAxisRaw("Mouse Y"));
@@ -156,5 +159,48 @@ public class AdobePlayerController : MonoBehaviour
         if (lfAngle < -360f) lfAngle += 360f;
         if (lfAngle > 360f) lfAngle -= 360f;
         return Mathf.Clamp(lfAngle, lfMin, lfMax);
+    }
+
+    void UseItems()
+    {
+        if (Input.GetKeyDown(KeyCode.U) == false)
+        {
+            return;
+        }
+
+        AdobeItemUseArguments args = new AdobeItemUseArguments();
+        args.itemUser = gameObject;
+        inventory.Use(args);
+    }
+
+    void SwitchItems()
+    {
+        if (Input.GetKeyDown(KeyCode.K))
+        {
+            inventory.SwitchItem(-1);
+            Debug.Log($"아이템을 바꾸었습니다. 순서 : {inventory.inventoryIndex} {inventory.inventory[inventory.inventoryIndex].id}");
+        }
+        if (Input.GetKeyDown(KeyCode.L))
+        {
+            inventory.SwitchItem(1);
+            Debug.Log($"아이템을 바꾸었습니다. 순서 : {inventory.inventoryIndex} {inventory.inventory[inventory.inventoryIndex].id}");
+        }
+
+    }
+
+    void ShowInventory()
+    {
+        if (Input.GetKeyDown(KeyCode.I) == false)
+        {
+            return;
+        }
+
+        StringBuilder answer = new StringBuilder();
+        foreach (AdobeItemBase item in inventory.inventory)
+        {
+            answer.AppendLine($"[아이템 아이디 {item.id}, 아이템 갯수 {item.amount}]");
+        }
+
+        Debug.Log(answer.ToString());
     }
 }
