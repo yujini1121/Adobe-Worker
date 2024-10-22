@@ -10,7 +10,8 @@ public class AdobeMapGenerator : MonoBehaviour
     [SerializeField] List<AdobeMapChunk> chunkPrefab;
     [Header("특정 로직이 적용된 덩어리입니다.")]
     [SerializeField] List<AdobeMapChunk> registeredPrefab;
-
+    [SerializeField] AdobeMapChunk dirtRoadPrefab;
+    [SerializeField] AdobeMapChunk cobbleRoadPrefab;
     
     [SerializeField] Vector2 chunkSize;
 
@@ -60,8 +61,8 @@ public class AdobeMapGenerator : MonoBehaviour
     {
         Vector3 position = AdobePlayerReference.playerInstance.transform.position;
 
-        if (Mathf.Abs((position - pivot).x) > radiusX * chunkSize.x) return true;
-        if (Mathf.Abs((position - pivot).z) > radiusY * chunkSize.y) return true;
+        if (Mathf.Abs((position - pivot).x) > radiusX) return true;
+        if (Mathf.Abs((position - pivot).z) > radiusY) return true;
         return false;
     }
 
@@ -106,21 +107,23 @@ public class AdobeMapGenerator : MonoBehaviour
 
         // 자신의 위치 가져옴
         Vector3 position = AdobePlayerReference.playerInstance.transform.position;
-        int posiitonIndexX = middleX + (int)Mathf.Floor((position.x - chunkSize.x / 2) / chunkSize.x);
-        int posiitonIndexY = middleY + (int)Mathf.Floor((position.y - chunkSize.y / 2) / chunkSize.y);
+        int posiitonIndexX = middleX + (int)Mathf.Floor((position.x + chunkSize.x / 2) / chunkSize.x);
+        int posiitonIndexY = middleY + (int)Mathf.Floor((position.z + chunkSize.y / 2) / chunkSize.y);
 
+        Debug.Log($"posIndex = {posiitonIndexX} {posiitonIndexY}");
+        Debug.Log($"xa = {(int)Mathf.Floor((position.x - chunkSize.x / 2) / chunkSize.x)}");
         pivot = new Vector3((posiitonIndexX - middleX) * chunkSize.x, 0, (posiitonIndexY - middleY) * chunkSize.y);
 
         // 청크 생성
         int m_size = 1 + radius * 2 + padding * 2;
         for (int x = 0; x < m_size; ++x)
         {
-            int xIndex = x - radius - padding + posiitonIndexX + 1;
+            int xIndex = x - radius - padding + posiitonIndexX;
             if (xIndex < 0 || xIndex >= (int)mapSize.x) continue;
 
             for (int y = 0; y < m_size; ++y)
             {
-                int yIndex = y - radius - padding + posiitonIndexY + 1;
+                int yIndex = y - radius - padding + posiitonIndexY;
                 if (yIndex < 0 || yIndex >= (int)mapSize.y) continue;
 
                 if (isInstantiated[xIndex, yIndex]) continue;
@@ -155,6 +158,7 @@ public class AdobeMapGenerator : MonoBehaviour
 
             int x = Mathf.FloorToInt(m_oneIndex.x);
             int y = Mathf.FloorToInt(m_oneIndex.y);
+
 
 
         }
