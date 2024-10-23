@@ -1,0 +1,34 @@
+{
+    "items": [
+        {
+            "id": 1,
+            "type": "Resource",
+            "name": "Water",
+            "description": "물 말고 스파지오 ㄱㄱㄱㄱㄱㄱㄱㄱㄱ"
+        },
+        {
+            "id": 2,
+            "type": "Resource",
+            "name": "Wood",
+            "description": "나무"
+        },
+        {
+            "id": 3,
+            "type": "Tool",
+            "name": "Axe",
+            "description": "도끼"
+        },
+        {
+            "id": 4,
+            "type": "Weapon",
+            "name": "Sword",
+            "description": "칼"
+        },
+        {
+            "id": 5,
+            "type": "Weapon",
+            "name": "Bow",
+            "description": "활"
+        }
+    ]
+}

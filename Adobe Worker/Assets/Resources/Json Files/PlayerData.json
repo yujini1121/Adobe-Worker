@@ -1,0 +1,11 @@
+{
+    "isDead": true,
+    "name": "Yujin",
+    "gold": 24000,
+    "health": 100,
+    "hunger": 100,
+    "sanity": 100,
+    "items": [
+        3000
+    ]
+}
