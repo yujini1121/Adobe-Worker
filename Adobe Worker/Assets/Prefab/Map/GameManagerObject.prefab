@@ -45,7 +45,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   chunkPrefab:
-  - prefab: {fileID: 0}
+  - prefab: {fileID: 570195514331524545, guid: fefa919a600ed68469d217c8950caa4e, type: 3}
+    weight: 10
+  - prefab: {fileID: 7342416909703911144, guid: 7dc396f7f1f44b447a473c996ed8b9c5,
+      type: 3}
+    weight: 10
+  - prefab: {fileID: 7600920748442507840, guid: 6a6df47f651b2f94cbf9044d72b55dc4,
+      type: 3}
+    weight: 10
+  registeredPrefab: []
+  dirtRoadPrefab:
+    prefab: {fileID: 0}
     weight: 0
+  cobbleRoadPrefab:
+    prefab: {fileID: 0}
+    weight: 0
+  chunkSize: {x: 20, y: 20}
   mapSize: {x: 1000, y: 1000}
-  padding: 0
+  padding: 5
+  radius: 2
+  isDebuggingMethodCall: 0
+  isDebuggingArrangeMap: 1

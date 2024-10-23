@@ -29,10 +29,16 @@ public class AdobeMapGenerator : MonoBehaviour
     int[,] mapChunkType;
     List<(Vector2, GameObject)> instantiatedChunkList; // O(Xsize * Ysize)보다 더 줄일 수 있는 탐색을 위한 자료구조입니다.
     Vector3 pivot;
+    System.Action<Vector3> newChunkAction;
 
     [Header("디버깅")]
     [SerializeField] bool isDebuggingMethodCall;
     [SerializeField] bool isDebuggingArrangeMap;
+
+    public void AddChunkGenerateAction(System.Action<Vector3> action)
+    {
+        newChunkAction += action;
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -177,6 +183,8 @@ public class AdobeMapGenerator : MonoBehaviour
 
         pivot = new Vector3(0, 0, 0);
         instantiatedChunkList = new List<(Vector2, GameObject)>();
+
+        newChunkAction = (Vector3 vector) => { };
     }
 
     private void OnDrawGizmos()

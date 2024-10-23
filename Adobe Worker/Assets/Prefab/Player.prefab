@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 7195076460946895588}
   - component: {fileID: 7777917589168011212}
   - component: {fileID: 2389708427043168628}
+  - component: {fileID: -1981280119114631583}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -136,7 +137,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 80
+  m_Constraints: 112
   m_CollisionDetection: 0
 --- !u!114 &2389708427043168628
 MonoBehaviour:
@@ -163,6 +164,20 @@ MonoBehaviour:
   dashDuration: 0.5
   dashCooltime: 0
   delayedForceToApply: {x: 0, y: 0, z: 0}
+  afterDashPower: 0
+  dashDecelete: 0
+--- !u!114 &-1981280119114631583
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 579263862584192173}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e6d4acdbd45e7a488d07863403a3c15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6341674594583726826
 GameObject:
   m_ObjectHideFlags: 0

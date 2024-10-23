@@ -88,6 +88,7 @@
     <Compile Include="Assets\Scripts\Items\Vanilla\AdobeItemPaper.cs" />
     <Compile Include="Assets\Scripts\Base\AdobeIDamageable.cs" />
     <Compile Include="Assets\Scripts\Utility\AdobeUtility.cs" />
+    <Compile Include="Assets\Scripts\Items\Weapon\AdobeItemSpear.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_ExampleScript_01.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMPro_InstructionOverlay.cs" />
     <Compile Include="Assets\Scripts\Structure\AdobeStructureBreakable.cs" />
@@ -115,6 +116,7 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshProFloatingText.cs" />
     <Compile Include="Assets\Scripts\Base\DataStructure\AdobeItemUseArguments.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ShaderPropAnimator.cs" />
+    <Compile Include="Assets\Scripts\Items\Weapon\AdobeItemBow.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextInfoDebugTool.cs" />
   </ItemGroup>
   <ItemGroup>
