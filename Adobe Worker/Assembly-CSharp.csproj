@@ -73,6 +73,7 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_FrameRateCounter.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshSpawner.cs" />
+    <Compile Include="Assets\_Scripts\Items\Weapon\AdobeItemBow.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />
     <Compile Include="Assets\_Scripts\Base\AdobeTagBundle.cs" />
     <Compile Include="Assets\_Scripts\Utility\AdobeUtility.cs" />
@@ -114,6 +115,7 @@
     <Compile Include="Assets\_Scripts\TempTaeYoon\TempPlayerControllerAlpha.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ShaderPropAnimator.cs" />
     <Compile Include="Assets\_Scripts\Unit\AdobeItemPack.cs" />
+    <Compile Include="Assets\_Scripts\Items\Weapon\AdobeItemSpear.cs" />
     <Compile Include="Assets\_Scripts\Structure\AdobeStructureColliderChild.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextInfoDebugTool.cs" />
     <Compile Include="Assets\_Scripts\Base\AdobeItemBase.cs" />

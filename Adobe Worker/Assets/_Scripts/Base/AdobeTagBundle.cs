@@ -80,12 +80,16 @@ public class AdobeTagBundle : MonoBehaviour
     {
         tagActionReceiving += action;
     }
+    public void AddSendAction(System.Action<AdobeTagActionArguments> action)
+    {
+        tagActionSending += action;
+    }
 
     public void WhenChildCollide(AdobeTagBundle other, AdobeTagActionArguments arguments)
     {
         if (HasTagSent(other))
         {
-            tagActionReceiving(arguments);
+            tagActionSending(arguments);
         }
         if (HasTagReceived(other))
         {
