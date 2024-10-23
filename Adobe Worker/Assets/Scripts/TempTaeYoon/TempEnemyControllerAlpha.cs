@@ -15,7 +15,7 @@ public class TempEnemyControllerAlpha : MonoBehaviour
     void Start()
     {
         myTagBundle = GetComponent<AdobeTagBundle>();
-        myTagBundle.AddAction(CollideHandler);
+        myTagBundle.AddReceiveAction(CollideHandler);
     }
 
     // Update is called once per frame

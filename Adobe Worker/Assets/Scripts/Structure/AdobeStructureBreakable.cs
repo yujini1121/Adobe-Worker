@@ -22,7 +22,7 @@ public class AdobeStructureBreakable : MonoBehaviour
     void Start()
     {
         myTags = GetComponent<AdobeTagBundle>();
-        myTags.AddAction(WhenGetAttacked);
+        myTags.AddReceiveAction(WhenGetAttacked);
     }
 
     // Update is called once per frame

@@ -17,7 +17,7 @@ public class AdobeStructureGoal : MonoBehaviour
     {
         myTags = GetComponent<AdobeTagBundle>();
 
-        myTags.AddAction(DoWhenReachedGoal);
+        myTags.AddReceiveAction(DoWhenReachedGoal);
     }
 
     // Update is called once per frame
