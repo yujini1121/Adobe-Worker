@@ -53,6 +53,9 @@ MonoBehaviour:
   - prefab: {fileID: 7600920748442507840, guid: 6a6df47f651b2f94cbf9044d72b55dc4,
       type: 3}
     weight: 10
+  - prefab: {fileID: 9178633447931752054, guid: bb548ae9d42251e4eb4d53c4a3992ddc,
+      type: 3}
+    weight: 10
   registeredPrefab: []
   dirtRoadPrefab:
     prefab: {fileID: 0}
