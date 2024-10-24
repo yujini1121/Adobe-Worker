@@ -33,7 +33,7 @@ public class AdobeDroppedItem : MonoBehaviour
 			{
                 if (entry.id == curItem.id)
                 {
-					entry.amount = curItem.amount;
+					entry.amount += curItem.amount;
 					itemExists = true;
 					break;
 				}

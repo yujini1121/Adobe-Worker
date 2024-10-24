@@ -60,16 +60,6 @@ public class AdobeDataController : MonoBehaviour
 
 	public void SaveData()
 	{
-		for (int i = 0; i < playerData.items.Count; i++)
-		{
-
-			if (itemEntry.id == playerData.items[i].id)
-			{
-				playerData.items[i].amount += itemEntry.amount;
-				Debug.Log(playerData.items[i].amount);
-			}
-		}
-
 		string json = JsonUtility.ToJson(playerData, true);
 		string path = Application.dataPath + "/Resources/Json Files/PlayerData.json";
 		File.WriteAllText(path, json);
