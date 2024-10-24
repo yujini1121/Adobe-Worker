@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static UnityEditor.Progress;
 
 public class AdobeDroppedItem : MonoBehaviour
 {
@@ -22,22 +23,31 @@ public class AdobeDroppedItem : MonoBehaviour
 
         for (int index = 0; index < thisItems.inventory.Count; ++index)
         {
-            playerInventory.inventory.Add(thisItems.inventory[index]);
-            Debug.Log($"아이템 획득 : 아이템 번호 : {thisItems.inventory[index].id}");
+			AdobeItemBase curItem = thisItems.inventory[index];
 
-            PlayerData.instance.items.Add(thisItems.inventory[index].id);
+			playerInventory.inventory.Add(curItem);
+            Debug.Log($"아이템 획득 - 아이템 번호 : {curItem.id}, 수량 : {curItem.amount}");
+
+            bool itemExists = false;
+			foreach (ItemEntry entry in PlayerData.instance.items)
+			{
+                if (entry.id == curItem.id)
+                {
+					entry.amount = curItem.amount;
+					itemExists = true;
+					break;
+				}
+            }
+            if (!itemExists)
+            {
+                // 아이템이 없으면 새로 추가
+                PlayerData.instance.items.Add(new ItemEntry(curItem.id, curItem.amount));
+            }
         }
-
-
         gameObject.SetActive(false);
-        //Destroy(gameObject);
-
-        
-        //PlayerData.instance.items += thisItems.inventory[].id;
     }
 
 
-    // Start is called before the first frame update
     void Start()
     {
         thisItems = GetComponent<AdobeItemPack>();

@@ -1125,7 +1125,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   memo: asdasdasd
   id: 100
-  amount: 1
+  amount: 4
 --- !u!114 &1438934255
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1381,7 +1381,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   memo: asdasdasd
   id: 300
-  amount: 1
+  amount: 3
 --- !u!114 &1546808821
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1558,7 +1558,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   memo: asdasdasd
   id: 200
-  amount: 1
+  amount: 2
 --- !u!114 &1838200376
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2017,7 +2017,7 @@ MonoBehaviour:
     health: 0
     hunger: 0
     sanity: 0
-    items: 
+    items: []
 --- !u!1 &2012862075
 GameObject:
   m_ObjectHideFlags: 0

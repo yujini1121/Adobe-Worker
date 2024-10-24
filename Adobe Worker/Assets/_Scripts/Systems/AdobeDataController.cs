@@ -21,13 +21,30 @@ public class PlayerData
 
 	[Space(30)]
 	[Header("Inventory")]
-    public List<int> items = new List<int>();
+	public List<ItemEntry> items = new List<ItemEntry>();
 
-    public PlayerData()
+	public PlayerData()
 	{
 		instance = this;
 	}
 }
+
+/// <summary>
+/// 단순히 인벤토리를 2차원 리스트로 바꾸었을 때, 직렬화가 되지 않아 새로 정의하는 클래스일뿐. 큰 뜻은 없음.
+/// </summary>
+[System.Serializable]
+public class ItemEntry
+{
+	public int id;
+	public int amount;  
+
+	public ItemEntry(int id, int amount)
+	{
+		this.id = id;
+		this.amount = amount;
+	}
+}
+
 
 
 public class AdobeDataController : MonoBehaviour
