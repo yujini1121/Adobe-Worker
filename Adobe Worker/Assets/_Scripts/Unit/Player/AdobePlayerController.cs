@@ -4,15 +4,11 @@ using UnityEngine;
 
 public class AdobePlayerController : MonoBehaviour
 {
-	[Header("Cinemachine Camera")]
-	[SerializeField] private GameObject TP_virtualCam;
-    [SerializeField] private GameObject FP_virtualCam;
-    [SerializeField] private GameObject virtualCamTarget;
-    private Rigidbody rb;
+    [Header("Cinemachine Camera")]
+	private float keyHorizontalAxisValue;
+	private float keyVerticalAxisValue;
 
-    private float keyHorizontalAxisValue;
-    private float keyVerticalAxisValue;
-
+	[SerializeField] private GameObject virtualCamTarget;
 	[SerializeField] private float virtualCamPitchTop = 70.0f;
 	[SerializeField] private float virtualCamPitchBottom = -30.0f;
 	private float virtualCamYaw;
@@ -24,9 +20,10 @@ public class AdobePlayerController : MonoBehaviour
 	[SerializeField] private float moveSpeed = 10.0f;
 	private float targetRotation = 0f;
     private float rotationVelocity = 0f;
+	private Rigidbody rb;
 
 
-    [Header("Dash Value")]
+	[Header("Dash Value")]
     [SerializeField] private float dashSpeed;
     [SerializeField] private float dashForce;
     [SerializeField] private float dashUpwardForce;
@@ -51,9 +48,7 @@ public class AdobePlayerController : MonoBehaviour
 
     void Update()
     {
-		CameraSwitch();
 		PlayerMove();
-
 
         UseItems();
         SwitchItems();
@@ -71,16 +66,6 @@ public class AdobePlayerController : MonoBehaviour
     private void FixedUpdate()
     {
         PlayerDash();
-    }
-
-
-    void CameraSwitch()
-    {
-        if (Input.GetKeyDown(KeyCode.Tab))
-        {
-            FP_virtualCam.SetActive(!FP_virtualCam.active);
-            TP_virtualCam.SetActive(!TP_virtualCam.active);
-        }
     }
 
     void PlayerMove()

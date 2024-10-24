@@ -93,8 +93,8 @@
     <Compile Include="Assets\_Scripts\Maps\AdobeMapGenerator.cs" />
     <Compile Include="Assets\_Scripts\UserIO\AdobeKeyBinding.cs" />
     <Compile Include="Assets\_Scripts\Base\DataStructure\AdobeSquareGraph.cs" />
+    <Compile Include="Assets\_Scripts\Systems\AdobeDataController.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ObjectSpin.cs" />
-    <Compile Include="Assets\_Scripts\AdobeDataController.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_PhoneNumberValidator.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexJitter.cs" />
     <Compile Include="Assets\_Scripts\Structure\AdobeStructureBreakable.cs" />
@@ -114,6 +114,7 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshProFloatingText.cs" />
     <Compile Include="Assets\_Scripts\TempTaeYoon\TempPlayerControllerAlpha.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ShaderPropAnimator.cs" />
+    <Compile Include="Assets\_Scripts\Systems\AdobeCameraController.cs" />
     <Compile Include="Assets\_Scripts\Unit\AdobeItemPack.cs" />
     <Compile Include="Assets\_Scripts\Items\Weapon\AdobeItemSpear.cs" />
     <Compile Include="Assets\_Scripts\Structure\AdobeStructureColliderChild.cs" />
