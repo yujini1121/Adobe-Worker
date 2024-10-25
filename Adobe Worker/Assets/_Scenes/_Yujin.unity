@@ -1124,8 +1124,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   memo: asdasdasd
-  id: 100
-  amount: 4
+  id: 6
+  amount: 1
 --- !u!114 &1438934255
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1155,6 +1155,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 702a7c788b4c23a4e9fab83e4a1f7f26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  combineCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  combineDistance: 1.5
 --- !u!114 &1438934257
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1380,8 +1387,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   memo: asdasdasd
-  id: 300
-  amount: 3
+  id: 6
+  amount: 1
 --- !u!114 &1546808821
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1411,6 +1418,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 702a7c788b4c23a4e9fab83e4a1f7f26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  combineCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  combineDistance: 1.5
 --- !u!114 &1546808823
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1557,8 +1571,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   memo: asdasdasd
-  id: 200
-  amount: 2
+  id: 6
+  amount: 1
 --- !u!114 &1838200376
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1588,6 +1602,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 702a7c788b4c23a4e9fab83e4a1f7f26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  combineCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  combineDistance: 1.5
 --- !u!114 &1838200378
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2018,6 +2039,9 @@ MonoBehaviour:
     hunger: 0
     sanity: 0
     items: []
+  itemEntry:
+    id: 0
+    amount: 0
 --- !u!1 &2012862075
 GameObject:
   m_ObjectHideFlags: 0

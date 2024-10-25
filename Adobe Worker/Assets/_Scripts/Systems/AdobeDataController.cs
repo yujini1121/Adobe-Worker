@@ -30,6 +30,7 @@ public class PlayerData
 }
 
 /// <summary>
+/// 인스펙터 창에서는 무시하고 토글 접어두면 됨.
 /// 단순히 인벤토리를 2차원 리스트로 바꾸었을 때, 직렬화가 되지 않아 새로 정의하는 클래스일뿐. 큰 뜻은 없음.
 /// </summary>
 [System.Serializable]
