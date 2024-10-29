@@ -2,12 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AdobeItemSword : AdobeItemBase
+public class AdobeItemSword : AdobeItemConsumable
 {
-    [SerializeField] GameObject attackRange;
-
     public override void Use(AdobeItemUseArguments arguments)
     {
-        GameObject instantiated = Instantiate(attackRange, arguments.itemUser.transform.position, attackRange.transform.rotation);
+        GameObject instantiated = Instantiate(
+            AdobePrefabManager.swordRange,
+            arguments.itemUser.transform.position + 2.0f * arguments.direction,
+            arguments.rotation);
+
+        Consume(this);
     }
 }

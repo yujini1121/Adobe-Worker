@@ -119,8 +119,8 @@ public class AdobeMapGenerator : MonoBehaviour
         int posiitonIndexX = middleX + (int)Mathf.Floor((position.x + chunkSize.x / 2) / chunkSize.x);
         int posiitonIndexY = middleY + (int)Mathf.Floor((position.z + chunkSize.y / 2) / chunkSize.y);
 
-        Debug.Log($"posIndex = {posiitonIndexX} {posiitonIndexY}");
-        Debug.Log($"xa = {(int)Mathf.Floor((position.x - chunkSize.x / 2) / chunkSize.x)}");
+        //Debug.Log($"posIndex = {posiitonIndexX} {posiitonIndexY}");
+        //Debug.Log($"xa = {(int)Mathf.Floor((position.x - chunkSize.x / 2) / chunkSize.x)}");
         pivot = new Vector3((posiitonIndexX - middleX) * chunkSize.x, 0, (posiitonIndexY - middleY) * chunkSize.y);
 
         // 没农 积己

@@ -11,6 +11,12 @@ public class AdobeItemBase : MonoBehaviour
 
     public int id;
     public int amount;
+    protected AdobeItemPack itemPack;
+
+    public void Start()
+    {
+        itemPack = GetComponent<AdobeItemPack>();
+    }
 
     public virtual void Use(AdobeItemUseArguments arguments)
     {

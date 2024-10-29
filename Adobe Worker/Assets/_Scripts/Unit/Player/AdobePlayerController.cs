@@ -1,4 +1,6 @@
 using Cinemachine;
+using MalbersAnimations.Controller;
+using System;
 using System.Text;
 using UnityEngine;
 
@@ -35,6 +37,25 @@ public class AdobePlayerController : MonoBehaviour
     private bool dashInput;
 
     AdobeItemPack inventory;
+
+    [Header("Dash Value")]
+    [SerializeField] private float maxHealth;
+    float health;
+
+    public void GetHurt(float damage)
+    {
+        health -= damage;
+
+        if (health < 0)
+        {
+            DoWhenDead();
+        }
+    }
+
+    private void Awake()
+    {
+        health = maxHealth;
+    }
 
     private void Start()
     {
@@ -148,24 +169,28 @@ public class AdobePlayerController : MonoBehaviour
 
     void UseItems()
     {
-        if (Input.GetKeyDown(KeyCode.U) == false)
+        if (Input.GetMouseButtonDown(0) == false)
         {
             return;
         }
 
         AdobeItemUseArguments args = new AdobeItemUseArguments();
         args.itemUser = gameObject;
+        args.direction = transform.forward;
+        args.rotation = transform.rotation;
         inventory.Use(args);
     }
 
     void SwitchItems()
     {
-        if (Input.GetKeyDown(KeyCode.K))
+        Debug.Log($">> {Input.mouseScrollDelta}");
+
+        if (Input.mouseScrollDelta.y > 0.5f)
         {
             inventory.SwitchItem(-1);
             Debug.Log($"아이템을 바꾸었습니다. 순서 : {inventory.inventoryIndex} {inventory.inventory[inventory.inventoryIndex].id}");
         }
-        if (Input.GetKeyDown(KeyCode.L))
+        if (Input.mouseScrollDelta.y < -0.5f)
         {
             inventory.SwitchItem(1);
             Debug.Log($"아이템을 바꾸었습니다. 순서 : {inventory.inventoryIndex} {inventory.inventory[inventory.inventoryIndex].id}");
@@ -187,5 +212,10 @@ public class AdobePlayerController : MonoBehaviour
         }
 
         Debug.Log(answer.ToString());
+    }
+
+    void DoWhenDead()
+    {
+        Debug.Log("플레이어가 사망했습니다!");
     }
 }
