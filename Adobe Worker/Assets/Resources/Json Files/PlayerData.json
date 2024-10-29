@@ -1,10 +1,10 @@
 {
-    "isDead": true,
+    "isDead": false,
     "name": "Yujin",
     "gold": 24000,
-    "health": 100,
-    "hunger": 100,
-    "sanity": 100,
+    "health": 80,
+    "hunger": 20,
+    "sanity": 90,
     "items": [
         {
             "id": 1,
@@ -21,6 +21,18 @@
         {
             "id": 2,
             "amount": 5
+        },
+        {
+            "id": 100,
+            "amount": 3000
+        },
+        {
+            "id": 200,
+            "amount": 3000
+        },
+        {
+            "id": 300,
+            "amount": 3000
         }
     ]
 }

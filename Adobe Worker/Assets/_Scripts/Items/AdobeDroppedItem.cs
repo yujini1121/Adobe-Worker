@@ -6,8 +6,22 @@ using static UnityEditor.Progress;
 public class AdobeDroppedItem : MonoBehaviour
 {
     AdobeItemPack thisItems;
+    bool itemExists = false;
 
-    void GiveItem(AdobeTagActionArguments arguments)
+    /// <summary>
+    /// Combine Nearby Items
+    /// </summary>
+    public AnimationCurve combineCurve;
+    public float combineDistance = 1.5f;
+
+
+	void Start()
+	{
+		thisItems = GetComponent<AdobeItemPack>();
+		GetComponent<AdobeTagBundle>().AddReceiveAction(GiveItem);
+	}
+
+	void GiveItem(AdobeTagActionArguments arguments)
     {
         if (arguments.other == null)
         {
@@ -28,12 +42,11 @@ public class AdobeDroppedItem : MonoBehaviour
 			playerInventory.inventory.Add(curItem);
             Debug.Log($"아이템 획득 - 아이템 번호 : {curItem.id}, 수량 : {curItem.amount}");
 
-            bool itemExists = false;
 			foreach (ItemEntry entry in PlayerData.instance.items)
 			{
                 if (entry.id == curItem.id)
                 {
-					entry.amount = curItem.amount;
+					entry.amount += curItem.amount;
 					itemExists = true;
 					break;
 				}
@@ -47,10 +60,19 @@ public class AdobeDroppedItem : MonoBehaviour
         gameObject.SetActive(false);
     }
 
-
-    void Start()
+    /// <summary>
+    /// 똑같은 아이템이 서로 가까이 있을 때 흡수하여 하나로 합치는 기능
+    /// </summary>
+    void CombineNearbyItem()
     {
-        thisItems = GetComponent<AdobeItemPack>();
-        GetComponent<AdobeTagBundle>().AddReceiveAction(GiveItem);
-    }
+        
+	}
+
+	void OnDrawGizmos()
+	{
+        Gizmos.color = Color.red;
+
+        //Physics.SphereCast()
+	}
+
 }
