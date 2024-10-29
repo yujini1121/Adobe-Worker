@@ -2,17 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AdobeItemBow : MonoBehaviour
+public class AdobeItemBow : AdobeItemConsumable
 {
-    // Start is called before the first frame update
-    void Start()
+    public override void Use(AdobeItemUseArguments arguments)
     {
-        
-    }
+        GameObject instantiated = Instantiate(
+            AdobePrefabManager.arrowRange,
+            arguments.itemUser.transform.position + 2.0f * arguments.direction,
+            arguments.rotation);
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        Consume(this);
     }
 }

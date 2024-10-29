@@ -132,7 +132,7 @@ public class AdobeTagBundle : MonoBehaviour
 
         if (HasTagSent(otherTag))
         {
-            tagActionReceiving(arguments);
+            tagActionSending(arguments);
         }
         if (HasTagReceived(otherTag))
         {
@@ -143,6 +143,7 @@ public class AdobeTagBundle : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        tagActionSending += (AdobeTagActionArguments arguments) => { };
         tagActionReceiving += (AdobeTagActionArguments arguments) => { };
         if (fromPlayer == true) AddInputTag(0);
         if (fromEnemy == true) AddInputTag(1);

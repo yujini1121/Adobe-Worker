@@ -10,6 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 3512314270528572284}
   - component: {fileID: 4997650210032607874}
+  - component: {fileID: 6677672654206841765}
+  - component: {fileID: 872439630073384820}
+  - component: {fileID: 6209258736025741721}
   m_Layer: 0
   m_Name: GameManagerObject
   m_TagString: Untagged
@@ -45,17 +48,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   chunkPrefab:
-  - prefab: {fileID: 570195514331524545, guid: fefa919a600ed68469d217c8950caa4e, type: 3}
-    weight: 10
-  - prefab: {fileID: 7342416909703911144, guid: 7dc396f7f1f44b447a473c996ed8b9c5,
+  - prefab: {fileID: 7158747318778534444, guid: 369efae0b4ab4914694b1128753ef14b,
       type: 3}
     weight: 10
-  - prefab: {fileID: 7600920748442507840, guid: 6a6df47f651b2f94cbf9044d72b55dc4,
+  - prefab: {fileID: 6883181244887210198, guid: 1848e2b7598d2f54eb9c47aed6c7e3cb,
       type: 3}
     weight: 10
-  - prefab: {fileID: 9178633447931752054, guid: bb548ae9d42251e4eb4d53c4a3992ddc,
+  - prefab: {fileID: 7750772018606093477, guid: bf33a985c3b835a40b69e12c89e2780e,
       type: 3}
-    weight: 10
+    weight: 1
   registeredPrefab: []
   dirtRoadPrefab:
     prefab: {fileID: 0}
@@ -63,9 +64,67 @@ MonoBehaviour:
   cobbleRoadPrefab:
     prefab: {fileID: 0}
     weight: 0
-  chunkSize: {x: 20, y: 20}
+  chunkSize: {x: 40, y: 40}
   mapSize: {x: 1000, y: 1000}
-  padding: 5
-  radius: 2
+  padding: 3
+  radius: 1
   isDebuggingMethodCall: 0
-  isDebuggingArrangeMap: 1
+  isDebuggingArrangeMap: 0
+--- !u!114 &6677672654206841765
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2568883311602602520}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ea0c9809dadea448b06e428884be630, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  swordAttackRange: {fileID: 8378799658704188605, guid: a4a270464a670c3418f6ad44a96ecdbd,
+    type: 3}
+  spearAttackRange: {fileID: 3217643164882817108, guid: ba15c0da8dd83cf4ea939ff1a72f5290,
+    type: 3}
+  arrowAttackRange: {fileID: 9048709265329161449, guid: 1d6783df7d20dd842847ec1fa899d221,
+    type: 3}
+  shurikenAttackRange: {fileID: 9048709265329161449, guid: 1d6783df7d20dd842847ec1fa899d221,
+    type: 3}
+  amuletAttackRange: {fileID: 9048709265329161449, guid: 1d6783df7d20dd842847ec1fa899d221,
+    type: 3}
+  defaultDropItemPrefab: {fileID: 5744674744600871171, guid: 087f263bfa08d524a9772e0fbf6de830,
+    type: 3}
+--- !u!114 &872439630073384820
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2568883311602602520}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d92415d3953e5744683073cf803c5022, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerData:
+    isDead: 0
+    name: 
+    gold: 0
+    health: 0
+    hunger: 0
+    sanity: 0
+    items: []
+--- !u!114 &6209258736025741721
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2568883311602602520}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8183c3b7bf80f0a42b3a0f25605d64fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FP_virtualCam: {fileID: 0}
+  TP_virtualCam: {fileID: 0}
