@@ -80,6 +80,7 @@
     <Compile Include="Assets\_Scripts\Items\Weapon\AdobeItem.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />
     <Compile Include="Assets\_Scripts\Base\AdobeTagBundle.cs" />
+    <Compile Include="Assets\MinimapCamera.cs" />
     <Compile Include="Assets\_Scripts\Utility\AdobeUtility.cs" />
     <Compile Include="Assets\_Scripts\Base\AdobeIDamageable.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\CameraController.cs" />
