@@ -150,6 +150,7 @@
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
     <None Include="Assets\Malbers Animations\Common\Shaders\Amplify Shader Editor\Fur.shader" />
     <None Include="Assets\Malbers Animations\Common\Shaders\Amplify Shader Editor\Color3x3.shader" />
+    <None Include="Assets\Survival Flat Icons by Kat Grabowska\read me - katgrabowska_survivalicons.txt" />
     <None Include="Assets\Malbers Animations\Common\Shaders\Amplify Shader Editor\Color4x3.shader" />
     <None Include="Assets\Malbers Animations\Common\Shaders\Amplify Shader Editor\Wind Shader.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
@@ -163,6 +164,7 @@
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
     <None Include="Assets\Malbers Animations\Common\Shaders\Amplify Shader Editor\AnisotropicWard.shader" />
     <None Include="Assets\Malbers Animations\Common\Shaders\Amplify Shader Editor\MWater2.shader" />
+    <None Include="Assets\Antharias\YokaiSet01\YokaiSet01_ReadMe.txt" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
     <None Include="Assets\Malbers Animations\Common\Shaders\Amplify Shader Editor\Gradient4.shader" />
     <None Include="Assets\Malbers Animations\Common\Shaders\Amplify Shader Editor\Color4x4 Unlit.shader" />

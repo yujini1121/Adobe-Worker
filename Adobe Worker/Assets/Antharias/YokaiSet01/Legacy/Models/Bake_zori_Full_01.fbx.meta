@@ -1,0 +1,771 @@
+fileFormatVersion: 2
+guid: 8b818c41c9e8bf24a969d5c95bd6c964
+ModelImporter:
+  serializedVersion: 21300
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: _Elbow
+  - first:
+      1: 100002
+    second: _Hand
+  - first:
+      1: 100004
+    second: _Shoulder
+  - first:
+      1: 100006
+    second: _Wrist
+  - first:
+      1: 100008
+    second: //RootNode
+  - first:
+      1: 100010
+    second: Bake_Zori_Model
+  - first:
+      1: 100012
+    second: Chest
+  - first:
+      1: 100014
+    second: Eye
+  - first:
+      1: 100016
+    second: Head
+  - first:
+      1: 100018
+    second: L_heel
+  - first:
+      1: 100020
+    second: L_Knee
+  - first:
+      1: 100022
+    second: L_leg
+  - first:
+      1: 100024
+    second: L_toes
+  - first:
+      1: 100026
+    second: Main
+  - first:
+      1: 100028
+    second: Neck
+  - first:
+      1: 100030
+    second: nurbsCircle17
+  - first:
+      1: 100032
+    second: nurbsCircle9
+  - first:
+      1: 100034
+    second: Pelvis
+  - first:
+      1: 100036
+    second: R_Elbow
+  - first:
+      1: 100038
+    second: R_Hand
+  - first:
+      1: 100040
+    second: R_heel
+  - first:
+      1: 100042
+    second: R_Knee
+  - first:
+      1: 100044
+    second: R_leg
+  - first:
+      1: 100046
+    second: R_Shoulder
+  - first:
+      1: 100048
+    second: R_toes
+  - first:
+      1: 100050
+    second: R_Wrist
+  - first:
+      1: 100052
+    second: Stomach
+  - first:
+      1: 100054
+    second: Tongue_02
+  - first:
+      1: 100056
+    second: Tongue_03
+  - first:
+      1: 100058
+    second: Tongue_base
+  - first:
+      1: 100060
+    second: Tongue_tip
+  - first:
+      4: 400000
+    second: _Elbow
+  - first:
+      4: 400002
+    second: _Hand
+  - first:
+      4: 400004
+    second: _Shoulder
+  - first:
+      4: 400006
+    second: _Wrist
+  - first:
+      4: 400008
+    second: //RootNode
+  - first:
+      4: 400010
+    second: Bake_Zori_Model
+  - first:
+      4: 400012
+    second: Chest
+  - first:
+      4: 400014
+    second: Eye
+  - first:
+      4: 400016
+    second: Head
+  - first:
+      4: 400018
+    second: L_heel
+  - first:
+      4: 400020
+    second: L_Knee
+  - first:
+      4: 400022
+    second: L_leg
+  - first:
+      4: 400024
+    second: L_toes
+  - first:
+      4: 400026
+    second: Main
+  - first:
+      4: 400028
+    second: Neck
+  - first:
+      4: 400030
+    second: nurbsCircle17
+  - first:
+      4: 400032
+    second: nurbsCircle9
+  - first:
+      4: 400034
+    second: Pelvis
+  - first:
+      4: 400036
+    second: R_Elbow
+  - first:
+      4: 400038
+    second: R_Hand
+  - first:
+      4: 400040
+    second: R_heel
+  - first:
+      4: 400042
+    second: R_Knee
+  - first:
+      4: 400044
+    second: R_leg
+  - first:
+      4: 400046
+    second: R_Shoulder
+  - first:
+      4: 400048
+    second: R_toes
+  - first:
+      4: 400050
+    second: R_Wrist
+  - first:
+      4: 400052
+    second: Stomach
+  - first:
+      4: 400054
+    second: Tongue_02
+  - first:
+      4: 400056
+    second: Tongue_03
+  - first:
+      4: 400058
+    second: Tongue_base
+  - first:
+      4: 400060
+    second: Tongue_tip
+  - first:
+      43: 4300000
+    second: Bake_Zori_Model
+  - first:
+      74: 7400000
+    second: T-Pose
+  - first:
+      74: 7400002
+    second: Idle
+  - first:
+      74: 7400004
+    second: Walk
+  - first:
+      74: 7400006
+    second: Attack
+  - first:
+      74: 7400008
+    second: Death
+  - first:
+      95: 9500000
+    second: //RootNode
+  - first:
+      137: 13700000
+    second: Bake_Zori_Model
+  externalObjects: {}
+  materials:
+    materialImportMode: 0
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 0
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: T-Pose
+      takeName: Take 001
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 0.10000001
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 1
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Bake_Zori_Model
+        weight: 1
+      - path: Main
+        weight: 1
+      - path: Main/Pelvis
+        weight: 1
+      - path: Main/Pelvis/L_leg
+        weight: 1
+      - path: Main/Pelvis/L_leg/L_Knee
+        weight: 1
+      - path: Main/Pelvis/L_leg/L_Knee/L_heel
+        weight: 1
+      - path: Main/Pelvis/L_leg/L_Knee/L_heel/L_toes
+        weight: 1
+      - path: Main/Pelvis/R_leg
+        weight: 1
+      - path: Main/Pelvis/R_leg/R_Knee
+        weight: 1
+      - path: Main/Pelvis/R_leg/R_Knee/R_heel
+        weight: 1
+      - path: Main/Pelvis/R_leg/R_Knee/R_heel/R_toes
+        weight: 1
+      - path: Main/Stomach
+        weight: 1
+      - path: Main/Stomach/Chest
+        weight: 1
+      - path: Main/Stomach/Chest/Neck
+        weight: 1
+      - path: Main/Stomach/Chest/Neck/_Shoulder
+        weight: 1
+      - path: Main/Stomach/Chest/Neck/_Shoulder/_Elbow
+        weight: 1
+      - path: Main/Stomach/Chest/Neck/_Shoulder/_Elbow/_Wrist
+        weight: 1
+      - path: Main/Stomach/Chest/Neck/_Shoulder/_Elbow/_Wrist/_Hand
+        weight: 1
+      - path: Main/Stomach/Chest/Neck/Eye
+        weight: 1
+      - path: Main/Stomach/Chest/Neck/Eye/Head
+        weight: 1
+      - path: Main/Stomach/Chest/Neck/R_Shoulder
+        weight: 1
+      - path: Main/Stomach/Chest/Neck/R_Shoulder/R_Elbow
+        weight: 1
+      - path: Main/Stomach/Chest/Neck/R_Shoulder/R_Elbow/R_Wrist
+        weight: 1
+      - path: Main/Stomach/Chest/Neck/R_Shoulder/R_Elbow/R_Wrist/R_Hand
+        weight: 1
+      - path: Main/Stomach/Chest/Tongue_base
+        weight: 1
+      - path: Main/Stomach/Chest/Tongue_base/Tongue_02
+        weight: 1
+      - path: Main/Stomach/Chest/Tongue_base/Tongue_02/Tongue_03
+        weight: 1
+      - path: Main/Stomach/Chest/Tongue_base/Tongue_02/Tongue_03/Tongue_tip
+        weight: 1
+      - path: nurbsCircle17
+        weight: 1
+      - path: nurbsCircle17/nurbsCircle9
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Idle
+      takeName: Take 001
+      internalID: 0
+      firstFrame: 2
+      lastFrame: 29
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 1
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Bake_Zori_Model
+        weight: 1
+      - path: Main
+        weight: 1
+      - path: Main/Pelvis
+        weight: 1
+      - path: Main/Pelvis/L_leg
+        weight: 1
+      - path: Main/Pelvis/L_leg/L_Knee
+        weight: 1
+      - path: Main/Pelvis/L_leg/L_Knee/L_heel
+        weight: 1
+      - path: Main/Pelvis/L_leg/L_Knee/L_heel/L_toes
+        weight: 1
+      - path: Main/Pelvis/R_leg
+        weight: 1
+      - path: Main/Pelvis/R_leg/R_Knee
+        weight: 1
+      - path: Main/Pelvis/R_leg/R_Knee/R_heel
+        weight: 1
+      - path: Main/Pelvis/R_leg/R_Knee/R_heel/R_toes
+        weight: 1
+      - path: Main/Stomach
+        weight: 1
+      - path: Main/Stomach/Chest
+        weight: 1
+      - path: Main/Stomach/Chest/Neck
+        weight: 1
+      - path: Main/Stomach/Chest/Neck/_Shoulder
+        weight: 1
+      - path: Main/Stomach/Chest/Neck/_Shoulder/_Elbow
+        weight: 1
+      - path: Main/Stomach/Chest/Neck/_Shoulder/_Elbow/_Wrist
+        weight: 1
+      - path: Main/Stomach/Chest/Neck/_Shoulder/_Elbow/_Wrist/_Hand
+        weight: 1
+      - path: Main/Stomach/Chest/Neck/Eye
+        weight: 1
+      - path: Main/Stomach/Chest/Neck/Eye/Head
+        weight: 1
+      - path: Main/Stomach/Chest/Neck/R_Shoulder
+        weight: 1
+      - path: Main/Stomach/Chest/Neck/R_Shoulder/R_Elbow
+        weight: 1
+      - path: Main/Stomach/Chest/Neck/R_Shoulder/R_Elbow/R_Wrist
+        weight: 1
+      - path: Main/Stomach/Chest/Neck/R_Shoulder/R_Elbow/R_Wrist/R_Hand
+        weight: 1
+      - path: Main/Stomach/Chest/Tongue_base
+        weight: 1
+      - path: Main/Stomach/Chest/Tongue_base/Tongue_02
+        weight: 1
+      - path: Main/Stomach/Chest/Tongue_base/Tongue_02/Tongue_03
+        weight: 1
+      - path: Main/Stomach/Chest/Tongue_base/Tongue_02/Tongue_03/Tongue_tip
+        weight: 1
+      - path: nurbsCircle17
+        weight: 1
+      - path: nurbsCircle17/nurbsCircle9
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Walk
+      takeName: Take 001
+      internalID: 0
+      firstFrame: 32
+      lastFrame: 59
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 1
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Bake_Zori_Model
+        weight: 1
+      - path: Main
+        weight: 1
+      - path: Main/Pelvis
+        weight: 1
+      - path: Main/Pelvis/L_leg
+        weight: 1
+      - path: Main/Pelvis/L_leg/L_Knee
+        weight: 1
+      - path: Main/Pelvis/L_leg/L_Knee/L_heel
+        weight: 1
+      - path: Main/Pelvis/L_leg/L_Knee/L_heel/L_toes
+        weight: 1
+      - path: Main/Pelvis/R_leg
+        weight: 1
+      - path: Main/Pelvis/R_leg/R_Knee
+        weight: 1
+      - path: Main/Pelvis/R_leg/R_Knee/R_heel
+        weight: 1
+      - path: Main/Pelvis/R_leg/R_Knee/R_heel/R_toes
+        weight: 1
+      - path: Main/Stomach
+        weight: 1
+      - path: Main/Stomach/Chest
+        weight: 1
+      - path: Main/Stomach/Chest/Neck
+        weight: 1
+      - path: Main/Stomach/Chest/Neck/_Shoulder
+        weight: 1
+      - path: Main/Stomach/Chest/Neck/_Shoulder/_Elbow
+        weight: 1
+      - path: Main/Stomach/Chest/Neck/_Shoulder/_Elbow/_Wrist
+        weight: 1
+      - path: Main/Stomach/Chest/Neck/_Shoulder/_Elbow/_Wrist/_Hand
+        weight: 1
+      - path: Main/Stomach/Chest/Neck/Eye
+        weight: 1
+      - path: Main/Stomach/Chest/Neck/Eye/Head
+        weight: 1
+      - path: Main/Stomach/Chest/Neck/R_Shoulder
+        weight: 1
+      - path: Main/Stomach/Chest/Neck/R_Shoulder/R_Elbow
+        weight: 1
+      - path: Main/Stomach/Chest/Neck/R_Shoulder/R_Elbow/R_Wrist
+        weight: 1
+      - path: Main/Stomach/Chest/Neck/R_Shoulder/R_Elbow/R_Wrist/R_Hand
+        weight: 1
+      - path: Main/Stomach/Chest/Tongue_base
+        weight: 1
+      - path: Main/Stomach/Chest/Tongue_base/Tongue_02
+        weight: 1
+      - path: Main/Stomach/Chest/Tongue_base/Tongue_02/Tongue_03
+        weight: 1
+      - path: Main/Stomach/Chest/Tongue_base/Tongue_02/Tongue_03/Tongue_tip
+        weight: 1
+      - path: nurbsCircle17
+        weight: 1
+      - path: nurbsCircle17/nurbsCircle9
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Attack
+      takeName: Take 001
+      internalID: 0
+      firstFrame: 61
+      lastFrame: 90
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 1
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Bake_Zori_Model
+        weight: 1
+      - path: Main
+        weight: 1
+      - path: Main/Pelvis
+        weight: 1
+      - path: Main/Pelvis/L_leg
+        weight: 1
+      - path: Main/Pelvis/L_leg/L_Knee
+        weight: 1
+      - path: Main/Pelvis/L_leg/L_Knee/L_heel
+        weight: 1
+      - path: Main/Pelvis/L_leg/L_Knee/L_heel/L_toes
+        weight: 1
+      - path: Main/Pelvis/R_leg
+        weight: 1
+      - path: Main/Pelvis/R_leg/R_Knee
+        weight: 1
+      - path: Main/Pelvis/R_leg/R_Knee/R_heel
+        weight: 1
+      - path: Main/Pelvis/R_leg/R_Knee/R_heel/R_toes
+        weight: 1
+      - path: Main/Stomach
+        weight: 1
+      - path: Main/Stomach/Chest
+        weight: 1
+      - path: Main/Stomach/Chest/Neck
+        weight: 1
+      - path: Main/Stomach/Chest/Neck/_Shoulder
+        weight: 1
+      - path: Main/Stomach/Chest/Neck/_Shoulder/_Elbow
+        weight: 1
+      - path: Main/Stomach/Chest/Neck/_Shoulder/_Elbow/_Wrist
+        weight: 1
+      - path: Main/Stomach/Chest/Neck/_Shoulder/_Elbow/_Wrist/_Hand
+        weight: 1
+      - path: Main/Stomach/Chest/Neck/Eye
+        weight: 1
+      - path: Main/Stomach/Chest/Neck/Eye/Head
+        weight: 1
+      - path: Main/Stomach/Chest/Neck/R_Shoulder
+        weight: 1
+      - path: Main/Stomach/Chest/Neck/R_Shoulder/R_Elbow
+        weight: 1
+      - path: Main/Stomach/Chest/Neck/R_Shoulder/R_Elbow/R_Wrist
+        weight: 1
+      - path: Main/Stomach/Chest/Neck/R_Shoulder/R_Elbow/R_Wrist/R_Hand
+        weight: 1
+      - path: Main/Stomach/Chest/Tongue_base
+        weight: 1
+      - path: Main/Stomach/Chest/Tongue_base/Tongue_02
+        weight: 1
+      - path: Main/Stomach/Chest/Tongue_base/Tongue_02/Tongue_03
+        weight: 1
+      - path: Main/Stomach/Chest/Tongue_base/Tongue_02/Tongue_03/Tongue_tip
+        weight: 1
+      - path: nurbsCircle17
+        weight: 1
+      - path: nurbsCircle17/nurbsCircle9
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Death
+      takeName: Take 001
+      internalID: 0
+      firstFrame: 91
+      lastFrame: 140
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 1
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Bake_Zori_Model
+        weight: 1
+      - path: Main
+        weight: 1
+      - path: Main/Pelvis
+        weight: 1
+      - path: Main/Pelvis/L_leg
+        weight: 1
+      - path: Main/Pelvis/L_leg/L_Knee
+        weight: 1
+      - path: Main/Pelvis/L_leg/L_Knee/L_heel
+        weight: 1
+      - path: Main/Pelvis/L_leg/L_Knee/L_heel/L_toes
+        weight: 1
+      - path: Main/Pelvis/R_leg
+        weight: 1
+      - path: Main/Pelvis/R_leg/R_Knee
+        weight: 1
+      - path: Main/Pelvis/R_leg/R_Knee/R_heel
+        weight: 1
+      - path: Main/Pelvis/R_leg/R_Knee/R_heel/R_toes
+        weight: 1
+      - path: Main/Stomach
+        weight: 1
+      - path: Main/Stomach/Chest
+        weight: 1
+      - path: Main/Stomach/Chest/Neck
+        weight: 1
+      - path: Main/Stomach/Chest/Neck/_Shoulder
+        weight: 1
+      - path: Main/Stomach/Chest/Neck/_Shoulder/_Elbow
+        weight: 1
+      - path: Main/Stomach/Chest/Neck/_Shoulder/_Elbow/_Wrist
+        weight: 1
+      - path: Main/Stomach/Chest/Neck/_Shoulder/_Elbow/_Wrist/_Hand
+        weight: 1
+      - path: Main/Stomach/Chest/Neck/Eye
+        weight: 1
+      - path: Main/Stomach/Chest/Neck/Eye/Head
+        weight: 1
+      - path: Main/Stomach/Chest/Neck/R_Shoulder
+        weight: 1
+      - path: Main/Stomach/Chest/Neck/R_Shoulder/R_Elbow
+        weight: 1
+      - path: Main/Stomach/Chest/Neck/R_Shoulder/R_Elbow/R_Wrist
+        weight: 1
+      - path: Main/Stomach/Chest/Neck/R_Shoulder/R_Elbow/R_Wrist/R_Hand
+        weight: 1
+      - path: Main/Stomach/Chest/Tongue_base
+        weight: 1
+      - path: Main/Stomach/Chest/Tongue_base/Tongue_02
+        weight: 1
+      - path: Main/Stomach/Chest/Tongue_base/Tongue_02/Tongue_03
+        weight: 1
+      - path: Main/Stomach/Chest/Tongue_base/Tongue_02/Tongue_03/Tongue_tip
+        weight: 1
+      - path: nurbsCircle17
+        weight: 1
+      - path: nurbsCircle17/nurbsCircle9
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 0
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    nodeNameCollisionStrategy: 0
+    fileIdsGeneration: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 0
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 4
+    normalCalculationMode: 0
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: Main
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 1
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 0
+  remapMaterialsIfMaterialImportModeIsNone: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

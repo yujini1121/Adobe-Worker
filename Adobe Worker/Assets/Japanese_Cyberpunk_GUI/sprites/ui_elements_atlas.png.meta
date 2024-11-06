@@ -1,0 +1,1886 @@
+fileFormatVersion: 2
+guid: 691e7c7c1abb14848a5ce1754a123d7a
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Box_Purple_Info_Text
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 1873
+        width: 174
+        height: 145
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 27, y: 38, z: 38, w: 23}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8f8355c4edfd92468ee5624b8a0b034
+      internalID: -379458094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Box_Dark_Purple_cont
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 1873
+        width: 176
+        height: 145
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 27, y: 38, z: 38, w: 23}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4408feb6b7e319e409b13751770b8342
+      internalID: 1437875264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue_Container_Highlighter
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 1797
+        width: 98
+        height: 202
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3e04a96ec2999e43be30cd03146d374
+      internalID: 1223064492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Box_Dark_Purple_Item
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 1775
+        width: 240
+        height: 240
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0b1c31ba2186814fa8acd185dda23f0
+      internalID: 1528375459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shuriken_Silhouette
+      rect:
+        serializedVersion: 2
+        x: 968
+        y: 1902
+        width: 110
+        height: 109
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2abdf22568874134e884c945056cd584
+      internalID: 1902219850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Title_pink
+      rect:
+        serializedVersion: 2
+        x: 1162
+        y: 1917
+        width: 860
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 429, y: 0, z: 429, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80963a7b7db486245b8b143c811ec787
+      internalID: -1677100842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Box_Small_Purple_cont
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 1800
+        width: 122
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 62, y: 0, z: 59, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 621020f24be21094496ad5cc8b591f48
+      internalID: 569049846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Box_Small_Dark_Purple
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 1800
+        width: 122
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 62, y: 0, z: 59, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8b54747dc124654e9f80b360c76d3c4
+      internalID: -940010823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kunai_Silhouette
+      rect:
+        serializedVersion: 2
+        x: 964
+        y: 1759
+        width: 121
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db77f96e255160a46b7e8dfed5064931
+      internalID: 1576266872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Title_green
+      rect:
+        serializedVersion: 2
+        x: 1161
+        y: 1790
+        width: 860
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 429, y: 0, z: 429, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1450d968043c3c543a5bbc3d8f13d58a
+      internalID: 1948227962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Input_Text_01
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 1731
+        width: 91
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 45, y: 5, z: 45, w: 5}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfe809d69fc5f5f4d9d0edb7874a1066
+      internalID: -120538015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arrow
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 1741
+        width: 31
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65f87137f53b2394e9ea95dd6d98499d
+      internalID: -776029535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScrollBar_BG_Hor
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 1729
+        width: 203
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 101, y: 0, z: 101, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 376f1f700f16cfb44a0417c9f8f516f4
+      internalID: -1614595620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scrollbar_Knob
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 1707
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 706bc4a55b6bbfe49bebfdc7dde4be31
+      internalID: 1764282430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pink_Container_Highlighter
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 1563
+        width: 98
+        height: 202
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fad6206f0488d8142bdd68350dc2cdea
+      internalID: -517687775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Box_Magenta_Item
+      rect:
+        serializedVersion: 2
+        x: 637
+        y: 1515
+        width: 253
+        height: 254
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 838dc046757a0cf4aa0b87285f64e9ae
+      internalID: -1482065376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Title_blue
+      rect:
+        serializedVersion: 2
+        x: 1162
+        y: 1669
+        width: 860
+        height: 99
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 429, y: 0, z: 429, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00a8092e495370140ae677c40d350333
+      internalID: 1942334980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Check_Empty_Box
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 1674
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 10, y: 10, z: 10, w: 10}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85e5c3198d66d7149b5006f6a7c20df0
+      internalID: -450461121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Check_Box
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 1674
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0549be2f8dc70c54f893c299c838c172
+      internalID: 873824887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScrollBar_hor
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 1697
+        width: 165
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 66, y: 0, z: 66, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d13895da031a90468d411f421ba50a6
+      internalID: -856891011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Axe_Silhouette
+      rect:
+        serializedVersion: 2
+        x: 973
+        y: 1477
+        width: 104
+        height: 251
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53df6f32094124a4a9284f5bee4fa3d6
+      internalID: -673587291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue_Paper_Bird
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 1554
+        width: 125
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c4bd8d02d4428b458fea521c6cb0710
+      internalID: -1559205432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pink_Paper_Bird
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 1554
+        width: 125
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c4136c48e0c3224c9edf23022f621b4
+      internalID: 1059795907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green_Paper_Bird_Flying
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 1580
+        width: 72
+        height: 78
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e1ebc5bce647f84bb41271a9d50c4b1
+      internalID: -158007368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green_Paper_Bird
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 1441
+        width: 125
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 511c8beff78a0fb41ac466d72e6e73ee
+      internalID: 754788137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Currency_icon
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 1433
+        width: 79
+        height: 79
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d680eb1f6300424bb3c215e10fd9b91
+      internalID: -258478861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green_Container_Highlighter
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 1330
+        width: 98
+        height: 202
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85caca966d8657e4da7fb450280dd6f8
+      internalID: 624342077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Box_Purple_Item
+      rect:
+        serializedVersion: 2
+        x: 629
+        y: 1256
+        width: 253
+        height: 253
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0c082c95741cd4479c04d801bcd329f
+      internalID: -750080562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Locked_Item_Container
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 1152
+        width: 128
+        height: 299
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acbddd18ab39dcc498cdb7ede9c03a1b
+      internalID: 1471192515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Life_Bar_Container
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 1312
+        width: 389
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 194, y: 0, z: 194, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6173bfec92f206a49ba8e6ab23802b3b
+      internalID: -734211976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Life_Bar
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 1261
+        width: 248
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 16, y: 0, z: 16, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eac27bdbe4a34504fbdf3ce9a3241f35
+      internalID: 810385377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cloud
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 1192
+        width: 102
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bcebf0fb048e664a90ce8a82a1af4b1
+      internalID: -817542608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arrow_Next_dialogue
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 1181
+        width: 47
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79fb58c4d61e20844b2e732fb7ef43cb
+      internalID: 484349321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icon_X
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 1177
+        width: 44
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2dca2d9d2bae406479f1383a1cb811c6
+      internalID: 433591714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icon_Settings
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 1180
+        width: 40
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb96e4ecfc9270d4eb37e16dc2e058da
+      internalID: -1673094359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Empty_Button
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 1061
+        width: 80
+        height: 79
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 424519afd1be92a40a8971447d6727a9
+      internalID: -711506618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green_Subtitle_Button
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 1081
+        width: 290
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 106, y: 0, z: 182, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2301259a117b6c7429c4c5a5bfb97181
+      internalID: -704833518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue_Subtitle_Button
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 1081
+        width: 290
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 106, y: 0, z: 182, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d2ae65070684d342ba110c20427ca04
+      internalID: 1061765960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pink_Subtitle_Button
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 1001
+        width: 290
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 106, y: 0, z: 182, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b7bf0214914a9546b86dac5ff6c08e2
+      internalID: -1948296847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cian_Subtitle_Button
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 1004
+        width: 290
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 106, y: 0, z: 182, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ea742098e5a3ff4c9f8613c97235322
+      internalID: 1937868179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pink_Cloud_Style_Button_1
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 917
+        width: 175
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 87, y: 0, z: 87, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 744b2a4a82361434790e79d8016855ee
+      internalID: 1608402064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cian_Cloud_Style_Button_1
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 917
+        width: 175
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 87, y: 0, z: 87, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d8c6076ba3b4694989005b6a6c6b6f0
+      internalID: 1902284894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green_Cloud_Style_Button_1
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 917
+        width: 174
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 55, y: 0, z: 55, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7a44b73f3a8d89498d0f745d50db533
+      internalID: 1805570843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue_Cloud_Style_Button_1
+      rect:
+        serializedVersion: 2
+        x: 597
+        y: 917
+        width: 174
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 87, y: 0, z: 87, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 463b40d12f8393941abef76ee652f44d
+      internalID: 1711498541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pink_Cloud_Style_Button_2
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 840
+        width: 174
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 87, y: 0, z: 86, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8b57d2d627b2eb488cdfb5b56906600
+      internalID: 1084079658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cian_Cloud_Style_Button_2
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 840
+        width: 173
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 86, y: 0, z: 86, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 422c7106bf8b14d4aa20f7c278e4d453
+      internalID: -1585804622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green_Cloud_Style_Button_2
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 840
+        width: 173
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 86, y: 0, z: 86, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8563b022685c474f8c176476ac4954a
+      internalID: 346937221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue_Cloud_Style_Button_2
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 840
+        width: 174
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 86, y: 0, z: 86, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be05248015cb0564e8ddc993e1236cad
+      internalID: -1786220650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pink_Triangles_Button
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 766
+        width: 165
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 81, y: 0, z: 81, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2056d439882a91e4f8a789a99ccfe06a
+      internalID: -310060568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cian_Triangles_Button
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 766
+        width: 165
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 81, y: 0, z: 81, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6128f174c40c5f14ab25f4fa05dcfe9c
+      internalID: -72357632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green_Triangles_Button
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 766
+        width: 165
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 81, y: 0, z: 81, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48b47812f9006284f8d6d33436833c40
+      internalID: 2068067779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue_Triangles_Button
+      rect:
+        serializedVersion: 2
+        x: 603
+        y: 766
+        width: 165
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 81, y: 0, z: 81, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb51559cabda8bd4a8053db82e0336bb
+      internalID: 466558284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pink_Box_White_button
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 670
+        width: 166
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 82, y: 0, z: 82, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efa54dd11e6ef674289099d81698f982
+      internalID: -1871682204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cian_Box_White_button
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 668
+        width: 160
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 79, y: 0, z: 79, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd2f74bf4d81ac548933ced0b8e13505
+      internalID: -1764293152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green_Box_White_button
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 669
+        width: 160
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 79, y: 0, z: 79, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1812d57d049e8c6438efed8b721b1076
+      internalID: 1004196549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue_Box_White_button
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 669
+        width: 160
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 79, y: 0, z: 79, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f39f0b941c24c2e4ea9d71261c52fd1d
+      internalID: -1351593515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pink_Box_Down_White_button
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 587
+        width: 154
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 76, y: 0, z: 76, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5932bc36f11eead44ad48606152292b4
+      internalID: -921055557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cian_Box_Down_White_button
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 587
+        width: 154
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 76, y: 0, z: 76, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03d8c0703509b2045b35b9977a06c13f
+      internalID: 1992027629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green_Box_Down_White_button
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 587
+        width: 155
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 76, y: 0, z: 76, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df6e3be927a82f44c84bb313ac800d61
+      internalID: 723935373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue_Box_Down_White_button
+      rect:
+        serializedVersion: 2
+        x: 607
+        y: 587
+        width: 155
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 76, y: 0, z: 76, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8b5640fc75238648bee6582fffe283f
+      internalID: 786943658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: white_Pink_neon_style_button
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 504
+        width: 162
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 80, y: 0, z: 80, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fce5fc1a18e96e4bb2232d083405aee
+      internalID: 1453817750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: White_neon_style_button
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 504
+        width: 162
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 80, y: 0, z: 80, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96c58b138305d5d479b2eb03952dfda4
+      internalID: -88824097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: White_Green_neon_style_button
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 504
+        width: 162
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 80, y: 0, z: 80, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f913809163d124a4a8129bcfe204bbb9
+      internalID: 87886273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: White_Purple_neon_style_button
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 504
+        width: 161
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 80, y: 0, z: 80, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ca96c7c869495f41a5423e1bf4a03a8
+      internalID: -840566911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pink_neon_style_button
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 422
+        width: 162
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 80, y: 0, z: 80, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3afa4b6eff48d84d92845f844abb019
+      internalID: 2090684586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue_neon_style_button
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 423
+        width: 162
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 80, y: 0, z: 80, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d67b411296e2534fbd0e6b29242dd11
+      internalID: -1906454866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green_neon_style_button
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 423
+        width: 162
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 80, y: 0, z: 80, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be0a6c36ae373e7429d8b4bafdaa41ae
+      internalID: -1321727512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_neon_style_button
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 423
+        width: 161
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 80, y: 0, z: 80, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01824ca6ecbadec459940c81e32eea3d
+      internalID: 779248457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: popup_decoration_all
+      rect:
+        serializedVersion: 2
+        x: 1179
+        y: 1290
+        width: 291
+        height: 313
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 123, y: 129, z: 122, w: 136}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ab74370a4a72b748a5c8a698c43c4a9
+      internalID: 645650334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Text_Picker_1
+      rect:
+        serializedVersion: 2
+        x: 1583
+        y: 1420
+        width: 281
+        height: 185
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 128, y: 0, z: 128, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dca2d3b8ccf7e694d8d1bc0ff3fe694c
+      internalID: -397373757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slider_left
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 1671
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a9bee1d00003bd44916afec5bdf77f6
+      internalID: -1753313268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slider_right
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 1672
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a961ac260bcb38b4685a7e3646f8e428
+      internalID: -1931217624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scroll_bg_vert
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 1464
+        width: 24
+        height: 205
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 27, z: 0, w: 27}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a4f80686835e2941b44b36a98dd45a2
+      internalID: -1811090132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slider_top
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 1646
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 825cecc5a61f3144c968b0c897e12958
+      internalID: -633490601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slider_bot
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 1472
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad4dd27e49daba24f8bfbb1a804eff32
+      internalID: 1029730757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScrollBar_vert
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 1483
+        width: 20
+        height: 167
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 12, z: 0, w: 12}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bf261903e41c2f40a1cdf3ebcf519cb
+      internalID: -1710764640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mask_sprite
+      rect:
+        serializedVersion: 2
+        x: 919
+        y: 852
+        width: 209
+        height: 209
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8796cce8bb6860145afdef56682098db
+      internalID: -1212551300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Disabled_Microphone_Icon: 917583588
+      Disabled_Danger_Icon: -13803583
+      Logo: -2067656797
+      Search_Icon: 1385337226
+      Title_pink: -1677100842
+      Locked_Item_Container: 1471192515
+      Microphone_Icon: 1308745842
+      popup_decoration_down_right: -1260786482
+      Cian_Cloud_Style_Button_1: 1902284894
+      Disabled_pause_icon: 1481576447
+      Arrow_Right_Icon: -1668786636
+      Check_Empty_Box: -450461121
+      popup_decoration_up_right: 1024336454
+      Scrollbar_Knob: 1764282430
+      Blue_Triangles_Button: 466558284
+      Locked_Icon: -306894725
+      Blue_Cloud_Style_Button_1: -1786220650
+      Pink_Box_Down_White_button: -921055557
+      Blue_Paper_Bird: -1559205432
+      Disabled_Shield_Icon: -1091283193
+      Disabled_Search_Icon: 703998989
+      Remove_Icon: -357278316
+      Blue_Subtitle_Button: -1948296847
+      ScrollBar_BG_Hor: -1614595620
+      Disabled_List_Icon: 271829821
+      Box_Small_Purple_cont: 569049846
+      Box_Purple_Info_Text: 1437875264
+      Kunai_Silhouette: -1482065376
+      Pink_Paper_Bird: 1321977369
+      Box_Dark_Purple_Item: 1528375459
+      Shop_Icon: -887711660
+      Box_Dark_Purple_cont: 1437875264
+      Sake_Asset: 1223064492
+      Blue_Container_Highlighter: 1059737475
+      Star_Icon: 1640266708
+      Disabled_Combat_Icon: 1258419576
+      Sound_Icon: -72357632
+      Cian_Triangles_Button: -840566911
+      Green_Subtitle_Button: 1061765960
+      Question_Mark_Icon: -1906454866
+      Blue_neon_style_button: -1740595074
+      List_Icon: -940010823
+      Arrow_Up_Icon: 779248457
+      Purple_neon_style_button: -1812678180
+      Atlas_1_83: 624342077
+      Green_Container_Highlighter: 1004196549
+      Green_Box_White_button: -1595405493
+      Arrow_Left_Icon: -310060568
+      Pink_Subtitle_Button: 1937868179
+      Pink_Triangles_Button: -673587291
+      Axe_Silhouette: 1902219850
+      Shuriken_Silhouette: -379458094
+      Blue_Box_White_button: 2068067779
+      Green_Triangles_Button: -922475408
+      Atlas_1_73: -1583533330
+      Disabled_Star_Icon: -1082441729
+      Disabled_Update_Icon: -379599364
+      Scroll_bg_vert: -1811090132
+      Power_Icon: 526870858
+      Box_Magenta_Item: -1482065376
+      Text_Picker_1: -1363353814
+      Cian_Cloud_Style_Button_2: -1585804622
+      Atlas_1_44: 264045854
+      Main_menu_Icon: 2100835008
+      Disabled_Mission_Icon: -1764293152
+      white_Pink_neon_style_button: 1453817750
+      ScrollBar_vert: -1710764640
+      Cian_Box_White_button: -750080562
+      Arrow_Next_dialogue: 484349321
+      Empty_Button: 1764282430
+      Pink_Cloud_Style_Button_2: 1084079658
+      Alert_Icon: 759790192
+      Disabled_Alert_Icon: 1333462247
+      Disabled_Play_Icon: 751546731
+      Green_Cloud_Style_Button_1: 1711498541
+      Danger_Icon: 2005285735
+      Dragon_Fruit_Asset: 645650334
+      Box_Small_Dark_Purple: -940010823
+      Disabled_Arrow_Right_Icon: 926886604
+      popup_decoration_all: 851952380
+      Shield_Icon: -385812830
+      Text_Picker_2: -427773973
+      Disabled_Arrow_Down_Icon: -1398804199
+      slider_top: -633490601
+      Title_green: -478248931
+      Disabled_Shop_Icon: 1948227962
+      Disabled_Question_Mark_Icon: -517687775
+      Pink_Container_Highlighter: 810385377
+      Life_Bar: 754788137
+      Green_Paper_Bird: 1826049645
+      Mission_Icon: -258478861
+      Currency_icon: -1921335476
+      Settings_Icon: -1321727512
+      Green_neon_style_button: 936016457
+      Blue_Cloud_Style_Button_2: 346937221
+      popup_decoration_up_left: 1360290429
+      Plus_Icon: -1614595620
+      ScrollBar_hor: -856891011
+      mask_sprite: -1212551300
+      Heart_Icon: 1437875264
+      slider_left: -1753313268
+      Pink_Box_White_button: 723935373
+      Disabled_Settings_Icon: 110071255
+      Green_Box_Down_White_button: 344498833
+      Combat_Icon: -120538015
+      Input_Text_01: -840566911
+      White_Purple_neon_style_button: 906488177
+      Atlas_1_70: 1528486870
+      Off_On_Icon: -459034017
+      Update_Icon: 1453817750
+      pause_icon: 2090684586
+      pink_neon_style_button: 484349321
+      Arrow: 1029730757
+      slider_bot: -817542608
+      Disabled_Arrow_Left_Icon: -734211976
+      Cloud: -234037891
+      Life_Bar_Container: 2090684586
+      Disabled_locked_Icon: 1377131758
+      Disabled_Arrow_Up_Icon: 1528375459
+      Blue_Box_Down_White_button: -1072566523
+      Atlas_1_85: 1695339040
+      Disabled_Music_Icon: -88824097
+      Potion_life_Asset: 786943658
+      White_neon_style_button: -120538015
+      Disabled_Heart_Icon: 1408880725
+      icon_Settings: -1673094359
+      Title_blue: -1592904948
+      Disabled_Main_menu_Icon: -704537660
+      Arrow_Down_Icon: -361717805
+      popup_decoration_down_left: 1608402064
+      Cian_Subtitle_Button: 873824887
+      Disabled_Off_On_Icon: 1992027629
+      Check_Box: -1604213032
+      Cian_Box_Down_White_button: 87886273
+      Disabled_Sound_Icon: -158007368
+      White_Green_neon_style_button: 1902284894
+      Green_Cloud_Style_Button_2: -1905775684
+      Green_Paper_Bird_Flying: 1754259015
+      Music_Icon: 433591714
+      icon_X: 1805570843
+      Pink_Cloud_Style_Button_1: 987289542
+      Play_Icon: -1931217624
+      slider_right: 1700215721
+      Disabled_Power_Icon: -2128806438
+      Box_Purple_Item: -750080562
+      Disabled_Remove_Icon: -704833518
+      Disabled_Plus_Icon: -940010823
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

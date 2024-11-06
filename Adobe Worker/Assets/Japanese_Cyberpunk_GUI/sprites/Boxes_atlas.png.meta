@@ -1,0 +1,655 @@
+fileFormatVersion: 2
+guid: 9b236d24ab0f153479969b7e7b629728
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Box_Purple_Text_up
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 1807
+        width: 365
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2434bfae9e08bb4f8b18d697ea5ef59
+      internalID: 1951433756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Box_Dark_Purple_Text_up
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 1807
+        width: 365
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dab32ba8490801c4c88713c495273ece
+      internalID: 414792040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pop_Up
+      rect:
+        serializedVersion: 2
+        x: 991
+        y: 1567
+        width: 1022
+        height: 440
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 511, y: 219, z: 510, w: 219}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24362a50094324d4081384b9a5c3f367
+      internalID: -1523330176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Box_Purple_Text_Medium
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 1571
+        width: 346
+        height: 193
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d883fa2ba422784d94f30b1db45ac13
+      internalID: -985488063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Box_Dark_Purple_Text_Medium
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 1571
+        width: 347
+        height: 193
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 736cb6ece85a9564b8c009359996ee79
+      internalID: -717730021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Box_Purple_Text_Down
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 1309
+        width: 360
+        height: 209
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3455881b0f49fb742b3db93558cd7d5e
+      internalID: -1745674688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Box_Dark_Purple_Text_Down
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 1309
+        width: 360
+        height: 209
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6c6dba90e814e0488a47ebb8637c49e
+      internalID: 743869351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: box_item_Big
+      rect:
+        serializedVersion: 2
+        x: 897
+        y: 995
+        width: 216
+        height: 543
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 107, y: 271, z: 107, w: 271}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf8058a284af99a4a98f7e13525a1cfe
+      internalID: 939121784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Box_Text
+      rect:
+        serializedVersion: 2
+        x: 1164
+        y: 1279
+        width: 433
+        height: 259
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 216, y: 129, z: 216, w: 129}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bd3efa404f3a354ab047157307203d0
+      internalID: 1039958299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tooltip
+      rect:
+        serializedVersion: 2
+        x: 1632
+        y: 1371
+        width: 393
+        height: 173
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 56, y: 62, z: 63, w: 55}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2139099ca4531584fbcc3f10d8b1b622
+      internalID: -1466355170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bar_Tooltip_1
+      rect:
+        serializedVersion: 2
+        x: 1678
+        y: 1344
+        width: 329
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 60, y: 0, z: 60, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7147b1dc468d9cb40824df499a731d40
+      internalID: 1837571726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Box_Purple_Text
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 1040
+        width: 245
+        height: 219
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 122, y: 109, z: 122, w: 109}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 159020e42ad328e4a924332e66a16d08
+      internalID: -969754637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Box_Dark_Purple_Text
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 1040
+        width: 244
+        height: 219
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 121, y: 109, z: 121, w: 109}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 364ff733777306f4985417c75c66d0d8
+      internalID: 1231983392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: box_character
+      rect:
+        serializedVersion: 2
+        x: 1126
+        y: 1011
+        width: 245
+        height: 219
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 122, y: 108, z: 122, w: 109}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbf01618830c47342a0e12409e7f5eac
+      internalID: 1430685479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: box_character_selected
+      rect:
+        serializedVersion: 2
+        x: 1382
+        y: 1009
+        width: 229
+        height: 228
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 114, y: 113, z: 114, w: 113}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70965cf58c0fafa49bed95f453d88a0a
+      internalID: -148109245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: box_Pink_Text
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 795
+        width: 245
+        height: 219
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 122, y: 109, z: 122, w: 109}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ec3153daf587dc46a7659a551c2d39a
+      internalID: 321236592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Box_Dark_Pink_Text
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 795
+        width: 244
+        height: 219
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 121, y: 109, z: 121, w: 109}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c092dc3cd39ed754cb5ee06d4062e4b3
+      internalID: -926041511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Box_Title_Dialogue
+      rect:
+        serializedVersion: 2
+        x: 1815
+        y: 1162
+        width: 200
+        height: 105
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 99, y: 0, z: 99, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31d1818f04a99bd43954d41638c88765
+      internalID: -58622341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Box_item_Empty
+      rect:
+        serializedVersion: 2
+        x: 1172
+        y: 783
+        width: 151
+        height: 176
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 16, y: 16, z: 16, w: 16}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19230c77d9a045844be6911462a61b9d
+      internalID: 1843145026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Box_Item_Shade
+      rect:
+        serializedVersion: 2
+        x: 1352
+        y: 782
+        width: 151
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 16, y: 16, z: 16, w: 16}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1db15010a9057ca4aa0bde812f705ea2
+      internalID: -1856689585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: box_icon
+      rect:
+        serializedVersion: 2
+        x: 1540
+        y: 803
+        width: 144
+        height: 145
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0161455b7043f9646b999bfa22aa716a
+      internalID: 718050971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Box_Dialogue
+      rect:
+        serializedVersion: 2
+        x: 1735
+        y: 798
+        width: 271
+        height: 321
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 135, y: 160, z: 135, w: 160}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68d1c6d032769734cb1f7ad6426b8477
+      internalID: -2124861675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: box_White_Purple_Text
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 525
+        width: 266
+        height: 245
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 132, y: 122, z: 132, w: 122}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c9f6a6337521da44a54527be9b36124
+      internalID: -45537399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: box_White_Dark_Purple
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 525
+        width: 266
+        height: 245
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 132, y: 122, z: 132, w: 122}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50c28ffaab2fe244a814218301e229e4
+      internalID: -2066568671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Box_Dark_Purple_Text_Down: 743869351
+      Tooltip: -1466355170
+      Box_item_Empty: 1843145026
+      Box_Purple_Text: -969754637
+      Box_Purple_Text_up: 1951433756
+      Samurai_Silhouette: 460711430
+      Box_Title_Dialogue: -58622341
+      box_White_Dark_Purple: -2066568671
+      Warrior_Silhouette: 17371930
+      Box_Item_Shade: -1856689585
+      Bar_Tooltip_1: 1837571726
+      Tooltip_2: -637196052
+      Box_Dark_Purple_Text_Medium: -717730021
+      Box_Text: 1039958299
+      Box_Purple_Text_Medium: -985488063
+      Box_Dialogue: -2124861675
+      Bar_Tooltip_2: 1887076651
+      Box_Purple_Text_Down: -1745674688
+      Geisha_Silhouette: -1325934457
+      box_White_Purple_Text: -45537399
+      box_item_Big: 939121784
+      box_character_selected: -148109245
+      Box_Dark_Pink_Text: -926041511
+      Box_Dark_Purple_Text: 1231983392
+      box_Pink_Text: 321236592
+      Pop_Up: -1523330176
+      box_character: 1430685479
+      box_icon: 718050971
+      Box_Dark_Purple_Text_up: 414792040
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
