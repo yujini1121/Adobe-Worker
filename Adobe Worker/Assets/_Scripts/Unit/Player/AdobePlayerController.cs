@@ -23,12 +23,13 @@ public class AdobePlayerController : MonoBehaviour
 	private float targetRotation = 0f;
     private float rotationVelocity = 0f;
 	private Rigidbody rb;
+    Vector3 targetDirection;
 
 
-	[Header("Dash Value")]
+    [Header("Dash Value")]
+    [SerializeField] private bool isDash = false;
     [SerializeField] private float dashSpeed;
     [SerializeField] private float dashForce;
-    [SerializeField] private float dashUpwardForce;
     [SerializeField] private float dashDuration;
     [SerializeField] private float dashCooltime;
     [SerializeField] private Vector3 delayedForceToApply;
@@ -74,9 +75,6 @@ public class AdobePlayerController : MonoBehaviour
         UseItems();
         SwitchItems();
         ShowInventory();
-
-        if (Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.RightShift))
-            dashInput = true;
     }
 
     private void LateUpdate()
@@ -104,7 +102,7 @@ public class AdobePlayerController : MonoBehaviour
             transform.rotation = Quaternion.Euler(0.0f, rotation, 0.0f);
         }
 
-        Vector3 targetDirection = Quaternion.Euler(0.0f, targetRotation, 0.0f) * Vector3.forward + transform.TransformDirection(new Vector3(0f, 0f, afterDashPower));
+        targetDirection = Quaternion.Euler(0.0f, targetRotation, 0.0f) * Vector3.forward + transform.TransformDirection(new Vector3(0f, 0f, afterDashPower)).normalized;
 
         rb.velocity = targetDirection * (inputDir != Vector3.zero ? moveSpeed : 0.0f)
                         + new Vector3(0.0f, rb.velocity.y, 0.0f);
@@ -112,36 +110,12 @@ public class AdobePlayerController : MonoBehaviour
 
     void PlayerDash()
     {
-        Debug.Log(dashCooltime);
-		//if (dashCooltime > 0) return;
-
-        if (dashInput)
+        if (isDash = false && Input.GetKeyDown(KeyCode.LeftShift))
         {
-            dashCooltime -= Time.deltaTime;
-            Vector3 forceToApply = rb.transform.forward * dashForce + rb.transform.up * dashUpwardForce;
-
-            delayedForceToApply = forceToApply;
-            Invoke("DelayedDashForce", 0.025f);
-            Invoke("ResetDash", dashDuration);
-            dashCooltime = 1.5f;
-
-            dashInput = false;
+            isDash = true;
+            
+            rb.velocity = targetDirection * dashForce * 0.98f;
         }
-        else if (afterDashPower >= 0)
-        {
-            afterDashPower *= dashDecelete ;
-            //afterDashPower -= Time.deltaTime;
-
-            if ( afterDashPower < 0)
-            {
-                afterDashPower = 0;
-            }
-        }
-    }
-
-    private void DelayedDashForce()
-    {
-        afterDashPower = 10f;
     }
 
     void PlayerRotation()

@@ -591,6 +591,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2389708427043168628, guid: 70a51ad0c95461b49b5db4b26db7c870,
         type: 3}
+      propertyPath: dashForce
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 2389708427043168628, guid: 70a51ad0c95461b49b5db4b26db7c870,
+        type: 3}
       propertyPath: FP_virtualCam
       value: 
       objectReference: {fileID: 889227683}
@@ -657,7 +662,7 @@ PrefabInstance:
     - target: {fileID: 8152322075031029352, guid: 70a51ad0c95461b49b5db4b26db7c870,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
