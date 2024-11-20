@@ -11,8 +11,13 @@ public class AdobePrefabManager : MonoBehaviour
     [SerializeField] GameObject shurikenAttackRange;
     [SerializeField] GameObject amuletAttackRange;
 
+    [Header("ActionRange")]
+    [SerializeField] GameObject axeActionRange;
+    [SerializeField] GameObject pickaxeActionRange;
+
     [Header("DropItem")]
     [SerializeField] GameObject defaultDropItemPrefab;
+
 
     static public GameObject swordRange { get; private set; }
     static public GameObject spearRange { get; private set; }
@@ -20,6 +25,10 @@ public class AdobePrefabManager : MonoBehaviour
     static public GameObject shurikenRange { get; private set; }
     static public GameObject amuletRange { get; private set; }
     static public GameObject defaultDropItem { get; private set; }
+
+    static public GameObject axeRange { get; private set; }
+    static public GameObject pickaxeRange { get; private set; }
+
 
     private void Awake()
     {
@@ -29,6 +38,8 @@ public class AdobePrefabManager : MonoBehaviour
         shurikenRange = shurikenAttackRange;
         amuletRange = amuletAttackRange;
 
+        axeRange = axeActionRange;
+        pickaxeRange = pickaxeActionRange;
 
         defaultDropItem = defaultDropItemPrefab;
     }

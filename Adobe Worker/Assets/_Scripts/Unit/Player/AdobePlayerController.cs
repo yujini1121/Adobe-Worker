@@ -157,8 +157,6 @@ public class AdobePlayerController : MonoBehaviour
 
     void SwitchItems()
     {
-        Debug.Log($">> {Input.mouseScrollDelta}");
-
         if (Input.mouseScrollDelta.y > 0.5f)
         {
             inventory.SwitchItem(-1);
