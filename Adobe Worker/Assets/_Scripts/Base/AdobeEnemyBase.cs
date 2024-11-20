@@ -14,6 +14,7 @@ public class AdobeEnemyBase : MonoBehaviour, AdobeIDamageable
     public virtual void DoWhenDamaged(float damage)
     {
         health -= damage;
+        print("Hello");
 
         if (health < 0)
         {

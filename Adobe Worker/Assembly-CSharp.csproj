@@ -107,6 +107,7 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexJitter.cs" />
     <Compile Include="Assets\_Scripts\Structure\AdobeStructureBreakable.cs" />
     <Compile Include="Assets\_Scripts\Structure\AdobeStructureGoal.cs" />
+    <Compile Include="Assets\_Scripts\Base\AdobeHarvestBase.cs" />
     <Compile Include="Assets\_Scripts\Unit\Player\AdobePlayerController.cs" />
     <Compile Include="Assets\_Scripts\Items\Vanilla\AdobeItemStoneArrow.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextConsoleSimulator.cs" />
@@ -127,8 +128,8 @@
     <Compile Include="Assets\_Scripts\TempTaeYoon\TempPlayerControllerAlpha.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ShaderPropAnimator.cs" />
     <Compile Include="Assets\_Scripts\Systems\AdobeCameraController.cs" />
-    <Compile Include="Assets\_Scripts\Unit\AdobeItemPack.cs" />
     <Compile Include="Assets\_Scripts\Items\Tools\AdobeItemPickaxe.cs" />
+    <Compile Include="Assets\_Scripts\Unit\AdobeItemPack.cs" />
     <Compile Include="Assets\_Scripts\Items\Weapon\AdobeItemSpear.cs" />
     <Compile Include="Assets\_Scripts\Base\AdobeItemConsumable.cs" />
     <Compile Include="Assets\_Scripts\Structure\AdobeStructureColliderChild.cs" />

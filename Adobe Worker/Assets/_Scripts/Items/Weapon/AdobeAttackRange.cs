@@ -23,7 +23,11 @@ public class AdobeAttackRange : MonoBehaviour
             enemy.DoWhenDamaged(damage);
         }
 
-        
+        AdobeHarvestBase harvest = attackTarget.GetComponent<AdobeHarvestBase>();
+        if (harvest != null)
+        {
+            harvest.TakeDamage(damage);
+        }
     }
 
     void Start()
