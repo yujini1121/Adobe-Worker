@@ -34,10 +34,13 @@ public class AdobeAttackRange : MonoBehaviour
             enemy.DoWhenDamaged(damage);
         }
 
-        
+        AdobeHarvestBase harvest = attackTarget.GetComponent<AdobeHarvestBase>();
+        if (harvest != null)
+        {
+            harvest.TakeDamage(damage);
+        }
     }
 
-    // Start is called before the first frame update
     void Start()
     {
         AdobeTagBundle tagBundle = GetComponent<AdobeTagBundle>();
@@ -54,11 +57,5 @@ public class AdobeAttackRange : MonoBehaviour
 
 #warning TODO: 생성 및 삭제를 오브젝트 풀링으로 표현하기. 게임메니저의 한 컴포넌트에서 생성 요청 후, 시간 지나면 반환
         Destroy(gameObject, destroyTime);
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }

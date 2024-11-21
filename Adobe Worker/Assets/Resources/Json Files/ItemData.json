@@ -1,34 +1,79 @@
 {
     "items": [
         {
-            "id": 1,
-            "type": "Resource",
-            "name": "Water",
-            "description": "물 말고 스파지오 ㄱㄱㄱㄱㄱㄱㄱㄱㄱ"
+            "id": 101,
+            "name": "나무",
+            "sprite": ""
         },
         {
-            "id": 2,
-            "type": "Resource",
-            "name": "Wood",
-            "description": "나무"
+            "id": 102,
+            "name": "돌",
+            "sprite": ""
         },
         {
-            "id": 3,
-            "type": "Tool",
-            "name": "Axe",
-            "description": "도끼"
+            "id": 103,
+            "name": "철광석",
+            "sprite": ""
         },
         {
-            "id": 4,
-            "type": "Weapon",
-            "name": "Sword",
-            "description": "칼"
+            "id": 104,
+            "name": "철",
+            "sprite": ""
         },
         {
-            "id": 5,
-            "type": "Weapon",
-            "name": "Bow",
-            "description": "활"
+            "id": 105,
+            "name": "밧줄",
+            "sprite": ""
+        },
+        {
+            "id": 106,
+            "name": "종이",
+            "sprite": ""
+        },
+        {
+            "id": 107,
+            "name": "몬스터의 증표",
+            "sprite": ""
+        },
+        {
+            "id": 108,
+            "name": "빈 유리병",
+            "sprite": ""
+        },
+        {
+            "id": 109,
+            "name": "물병",
+            "sprite": ""
+        },
+        {
+            "id": 110,
+            "name": "염력 포션",
+            "sprite": ""
+        },
+        {
+            "id": 111,
+            "name": "깃털",
+            "sprite": ""
+        },
+        {
+            "id": 112,
+            "name": "고기",
+            "sprite": ""
+        },
+        {
+            "id": 113,
+            "name": "야채",
+            "sprite": ""
+        },
+        {
+            "id": 114,
+            "name": "거미줄",
+            "sprite": ""
+        },
+        {
+            "id": 115,
+            "name": "기름",
+            "sprite": ""
         }
     ]
 }

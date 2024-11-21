@@ -1,0 +1,14 @@
+{
+    "ItemRecipe": 
+    [
+      {
+        "ingredients": ["Stone", "Wood", "Feather"],
+        "result": "StoneArrow"
+      },
+      {
+        "ingredients": ["Iron", "Wood", "Feather"],
+        "result": "IronArrow"
+      }
+    ]
+  }
+  

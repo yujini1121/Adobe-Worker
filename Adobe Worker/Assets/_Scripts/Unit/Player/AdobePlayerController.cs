@@ -24,21 +24,18 @@ public class AdobePlayerController : MonoBehaviour
 	private float targetRotation = 0f;
     private float rotationVelocity = 0f;
 	private Rigidbody rb;
+    Vector3 targetDirection;
 
-
-	[Header("Dash Value")]
+    [Header("Dash Value")]
+    [SerializeField] private bool isDash = false;
     [SerializeField] private float dashSpeed;
     [SerializeField] private float dashForce;
-    [SerializeField] private float dashUpwardForce;
     [SerializeField] private float dashDuration;
     [SerializeField] private float dashCooltime;
     [SerializeField] private Vector3 delayedForceToApply;
     [SerializeField] private float afterDashPower = 0;
     [SerializeField] private float dashDecelete = 0;
     private bool dashInput;
-
-    AdobeItemPack inventory;
-    PlayerMovement playerMovement;
 
     [Header("Dash Value")]
     [SerializeField] private float maxHealth;
@@ -51,6 +48,10 @@ public class AdobePlayerController : MonoBehaviour
     [SerializeField] private bool isDebugging;
     [SerializeField] private bool isDebuggingDash;
     [SerializeField] private bool isDebuggingHeal;
+
+    // other component
+    AdobeItemPack inventory;
+    PlayerMovement playerMovement;
 
     public void GetHurt(float damage)
     {
@@ -118,9 +119,6 @@ public class AdobePlayerController : MonoBehaviour
         ShowInventory();
         PlayerStatusManager();
         m_HurtPlayer();
-
-        if (Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.RightShift))
-            dashInput = true;
     }
 
     private void LateUpdate()
@@ -155,7 +153,7 @@ public class AdobePlayerController : MonoBehaviour
             transform.rotation = Quaternion.Euler(0.0f, rotation, 0.0f);
         }
 
-        Vector3 targetDirection = Quaternion.Euler(0.0f, targetRotation, 0.0f) * Vector3.forward + transform.TransformDirection(new Vector3(0f, 0f, afterDashPower));
+        targetDirection = Quaternion.Euler(0.0f, targetRotation, 0.0f) * Vector3.forward + transform.TransformDirection(new Vector3(0f, 0f, afterDashPower)).normalized;
 
         rb.velocity = targetDirection * (inputDir != Vector3.zero ? moveSpeed : 0.0f)
                         + new Vector3(0.0f, rb.velocity.y, 0.0f);
@@ -169,41 +167,19 @@ public class AdobePlayerController : MonoBehaviour
         }
 
         //if (dashCooltime > 0) return;
-
-        if (dashInput)
+        if (isDash = false && Input.GetKeyDown(KeyCode.LeftShift))
         {
-            dashCooltime -= Time.deltaTime;
-            Vector3 forceToApply = rb.transform.forward * dashForce + rb.transform.up * dashUpwardForce;
-
-            delayedForceToApply = forceToApply;
-            Invoke("DelayedDashForce", 0.025f);
-            Invoke("ResetDash", dashDuration);
-            dashCooltime = 1.5f;
-
-            dashInput = false;
+            isDash = true;
+            
+            rb.velocity = targetDirection * dashForce * 0.98f;
         }
-        else if (afterDashPower >= 0)
-        {
-            afterDashPower *= dashDecelete ;
-            //afterDashPower -= Time.deltaTime;
-
-            if ( afterDashPower < 0)
-            {
-                afterDashPower = 0;
-            }
-        }
-    }
-
-    private void DelayedDashForce()
-    {
-        afterDashPower = 10f;
     }
 
     void PlayerRotation()
     {
         Vector2 inputMousePos = new Vector2(Input.GetAxisRaw("Mouse X"), Input.GetAxisRaw("Mouse Y"));
 
-        if (inputMousePos.sqrMagnitude >= 0.01f) //ÁöÅÍ¸µ ¹æÁö
+        if (inputMousePos.sqrMagnitude >= 0.01f) //ì§€í„°ë§ ë°©ì§€
         {
             virtualCamYaw += inputMousePos.x;
             virtualCamPitch += inputMousePos.y;
@@ -249,16 +225,15 @@ public class AdobePlayerController : MonoBehaviour
             Debug.Log($">> {Input.mouseScrollDelta}");
         }
 
-
         if (Input.mouseScrollDelta.y > 0.5f)
         {
             inventory.SwitchItem(-1);
-            Debug.Log($"¾ÆÀÌÅÛÀ» ¹Ù²Ù¾ú½À´Ï´Ù. ¼ø¼­ : {inventory.InventoryIndex} {inventory.inventory[inventory.InventoryIndex].id}");
+            Debug.Log($"ì•„ì´í…œì„ ë°”ê¾¸ì—ˆìŠµë‹ˆë‹¤. ìˆœì„œ : {inventory.InventoryIndex} {inventory.inventory[inventory.InventoryIndex].id}");
         }
         if (Input.mouseScrollDelta.y < -0.5f)
         {
             inventory.SwitchItem(1);
-            Debug.Log($"¾ÆÀÌÅÛÀ» ¹Ù²Ù¾ú½À´Ï´Ù. ¼ø¼­ : {inventory.InventoryIndex} {inventory.inventory[inventory.InventoryIndex].id}");
+            Debug.Log($"ì•„ì´í…œì„ ë°”ê¾¸ì—ˆìŠµë‹ˆë‹¤. ìˆœì„œ : {inventory.InventoryIndex} {inventory.inventory[inventory.InventoryIndex].id}");
         }
 
     }
@@ -273,7 +248,7 @@ public class AdobePlayerController : MonoBehaviour
         StringBuilder answer = new StringBuilder();
         foreach (AdobeItemBase item in inventory.inventory)
         {
-            answer.AppendLine($"[¾ÆÀÌÅÛ ¾ÆÀÌµğ {item.id}, ¾ÆÀÌÅÛ °¹¼ö {item.amount}]");
+            answer.AppendLine($"[ì•„ì´í…œ ì•„ì´ë”” {item.id}, ì•„ì´í…œ ê°¯ìˆ˜ {item.amount}]");
         }
 
         Debug.Log(answer.ToString());
@@ -281,7 +256,7 @@ public class AdobePlayerController : MonoBehaviour
 
     void DoWhenDead()
     {
-        Debug.Log("ÇÃ·¹ÀÌ¾î°¡ »ç¸ÁÇß½À´Ï´Ù!");
+        Debug.Log("í”Œë ˆì´ì–´ê°€ ì‚¬ë§í–ˆìŠµë‹ˆë‹¤!");
     }
 
     void PlayerStatusManager()
