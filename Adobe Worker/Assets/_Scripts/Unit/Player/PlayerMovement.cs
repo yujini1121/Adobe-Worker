@@ -42,6 +42,8 @@ public class PlayerMovement : MonoBehaviour
     AdobeItemPack inventory;
     Animator animator;
 
+    Transform characterMeshTransform;
+
     private void Awake()
     {
         ActionableTime = Time.time;
@@ -51,7 +53,17 @@ public class PlayerMovement : MonoBehaviour
     {
         inventory = GetComponent<AdobeItemPack>();
         // 만약 여기 아래에 에러가 나면, 원래 했던대로 주인공 캐릭터 메쉬 받아서 쓰기
-        animator = transform.Find("Idle").GetComponent<Animator>();
+
+        characterMeshTransform = transform.Find("Idle");
+
+        if (characterMeshTransform != null)
+        {
+            animator = characterMeshTransform.GetComponent<Animator>();
+        }
+        else
+        {
+            Debug.Log("<!>PlayerMovement.Start() : Idle이라는 자식 게임오브젝트가 존재하지 않습니다!");
+        }
     }
 
     // Update is called once per frame
@@ -92,7 +104,11 @@ public class PlayerMovement : MonoBehaviour
         {
             currentAction = EActionType.none;
         }
-        animator.SetBool("IsUsingItem", IsActionable() == false);
+        
+        if (animator != null)
+        {
+            animator.SetBool("IsUsingItem", IsActionable() == false);
+        }
     }
 
     public void DoAction()
@@ -100,8 +116,11 @@ public class PlayerMovement : MonoBehaviour
         ActionableTime = Time.time + timeForActions[currentAction];
 
         // 여기에 애니메이션 실행 함수
-        animator.SetBool("IsUsingItem", true);
-        animator.SetInteger("CurrentItemType", itemType);
+        if (animator != null)
+        {
+            animator.SetBool("IsUsingItem", true);
+            animator.SetInteger("CurrentItemType", itemType);
+        }
 
     }
 
@@ -110,7 +129,10 @@ public class PlayerMovement : MonoBehaviour
         float m_keyHorizontalAxisValue = Mathf.Abs(Input.GetAxisRaw("Horizontal"));
         float m_keyVerticalAxisValue = Mathf.Abs(Input.GetAxisRaw("Vertical"));
 
-        animator.SetFloat("MoveSpeed", Mathf.Clamp(m_keyHorizontalAxisValue + m_keyVerticalAxisValue, -1, 1));
+        if (animator != null)
+        {
+            animator.SetFloat("MoveSpeed", Mathf.Clamp(m_keyHorizontalAxisValue + m_keyVerticalAxisValue, -1, 1));
+        }
     }
 
     public bool IsActionable()
