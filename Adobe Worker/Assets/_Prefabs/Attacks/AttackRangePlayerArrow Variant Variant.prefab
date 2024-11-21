@@ -13,6 +13,11 @@ PrefabInstance:
       propertyPath: fromEnemy
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6956819693353563502, guid: 0ea515abb77a8b44495fec797f4f2c5c,
+        type: 3}
+      propertyPath: damage
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 7434469927688880793, guid: 0ea515abb77a8b44495fec797f4f2c5c,
         type: 3}
       propertyPath: m_LocalPosition.x

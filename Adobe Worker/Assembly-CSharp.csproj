@@ -64,9 +64,11 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeA.cs" />
     <Compile Include="Assets\_Scripts\Items\Weapon\AdobeItemSword.cs" />
     <Compile Include="Assets\_Scripts\Items\Weapon\AdobeItemShuriken.cs" />
+    <Compile Include="Assets\_Scripts\Items\Weapon\SimpleWeaponSpec.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\EnvMapAnimator.cs" />
     <Compile Include="Assets\_Scripts\Systems\AdobePrefabManager.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_A.cs" />
+    <Compile Include="Assets\_Scripts\Base\DataStructure\Healamount.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SimpleScript.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark04.cs" />
@@ -129,6 +131,8 @@
     <Compile Include="Assets\_Scripts\Items\Weapon\AdobeItemSpear.cs" />
     <Compile Include="Assets\_Scripts\Base\AdobeItemConsumable.cs" />
     <Compile Include="Assets\_Scripts\Structure\AdobeStructureColliderChild.cs" />
+    <Compile Include="Assets\_Scripts\Unit\Player\PlayerMovement.cs" />
+    <Compile Include="Assets\_Scripts\Base\ItemHealable.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextInfoDebugTool.cs" />
     <Compile Include="Assets\_Scripts\Base\AdobeItemBase.cs" />
   </ItemGroup>

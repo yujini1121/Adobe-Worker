@@ -13,6 +13,11 @@ public class AdobeAttackRangeFlying : MonoBehaviour
     [Header("Debug")]
     [SerializeField] bool debugField;
 
+    public void End(AdobeTagActionArguments arguments)
+    {
+        Destroy(gameObject);
+    }
+
     // Start is called before the first frame update
     void Start()
     {

@@ -2,6 +2,7 @@ using Cinemachine;
 using MalbersAnimations.Controller;
 using System;
 using System.Text;
+using Unity.Mathematics;
 using UnityEngine;
 
 public class AdobePlayerController : MonoBehaviour
@@ -37,10 +38,19 @@ public class AdobePlayerController : MonoBehaviour
     private bool dashInput;
 
     AdobeItemPack inventory;
+    PlayerMovement playerMovement;
 
     [Header("Dash Value")]
     [SerializeField] private float maxHealth;
-    float health;
+    [SerializeField] private float maxStamina;
+    [SerializeField] private float healthRegainPerSecondWhenStaminaFull;
+    private float health;
+    private float stamina;
+
+    [Header("Debugging")]
+    [SerializeField] private bool isDebugging;
+    [SerializeField] private bool isDebuggingDash;
+    [SerializeField] private bool isDebuggingHeal;
 
     public void GetHurt(float damage)
     {
@@ -52,15 +62,47 @@ public class AdobePlayerController : MonoBehaviour
         }
     }
 
+    public void Heal(float addHealth, float addStamina)
+    {
+        health = Mathf.Min(health + addHealth, maxHealth);
+        stamina = Mathf.Min(stamina + addStamina, maxStamina);
+
+        if (isDebuggingHeal)
+        {
+            Debug.Log($"Heal({addHealth}, {addStamina}) : {health} {stamina}");
+        }
+    }
+
+    public void HealStamina(float addStamina, float staminaLimit)
+    {
+        stamina = Mathf.Min(stamina + addStamina, staminaLimit);
+        if (isDebuggingHeal)
+        {
+            Debug.Log($"HealStamina({addStamina}, {addStamina}) : {health} {stamina}");
+        }
+    }
+
+    public bool DemandStamina(float demand)
+    {
+        if (demand > stamina)
+        {
+            return false;
+        }
+        stamina -= demand;
+        return true;
+    }
+
     private void Awake()
     {
         health = maxHealth;
+        stamina = maxStamina;
     }
 
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
         inventory = GetComponent<AdobeItemPack>();
+        playerMovement = GetComponent<PlayerMovement>();
 
         //Debug.LogWarning("Mouse cursor is locked");
         //Cursor.visible = false;
@@ -74,6 +116,8 @@ public class AdobePlayerController : MonoBehaviour
         UseItems();
         SwitchItems();
         ShowInventory();
+        PlayerStatusManager();
+        m_HurtPlayer();
 
         if (Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.RightShift))
             dashInput = true;
@@ -91,6 +135,13 @@ public class AdobePlayerController : MonoBehaviour
 
     void PlayerMove()
     {
+        if (playerMovement.IsActionable() == false)
+        {
+            rb.velocity *= 0.95f;
+            return;
+        }
+        playerMovement.DoMove();
+
         keyHorizontalAxisValue = Input.GetAxisRaw("Horizontal");
         keyVerticalAxisValue = Input.GetAxisRaw("Vertical");
 
@@ -112,8 +163,12 @@ public class AdobePlayerController : MonoBehaviour
 
     void PlayerDash()
     {
-        Debug.Log(dashCooltime);
-		//if (dashCooltime > 0) return;
+        if (isDebuggingDash)
+        {
+            Debug.Log(dashCooltime);
+        }
+
+        //if (dashCooltime > 0) return;
 
         if (dashInput)
         {
@@ -169,10 +224,16 @@ public class AdobePlayerController : MonoBehaviour
 
     void UseItems()
     {
+        if (playerMovement.IsActionable() == false)
+        {
+            return;
+        }
         if (Input.GetMouseButtonDown(0) == false)
         {
             return;
         }
+
+        playerMovement.DoAction();
 
         AdobeItemUseArguments args = new AdobeItemUseArguments();
         args.itemUser = gameObject;
@@ -183,17 +244,21 @@ public class AdobePlayerController : MonoBehaviour
 
     void SwitchItems()
     {
-        Debug.Log($">> {Input.mouseScrollDelta}");
+        if (isDebugging)
+        {
+            Debug.Log($">> {Input.mouseScrollDelta}");
+        }
+
 
         if (Input.mouseScrollDelta.y > 0.5f)
         {
             inventory.SwitchItem(-1);
-            Debug.Log($"아이템을 바꾸었습니다. 순서 : {inventory.inventoryIndex} {inventory.inventory[inventory.inventoryIndex].id}");
+            Debug.Log($"아이템을 바꾸었습니다. 순서 : {inventory.InventoryIndex} {inventory.inventory[inventory.InventoryIndex].id}");
         }
         if (Input.mouseScrollDelta.y < -0.5f)
         {
             inventory.SwitchItem(1);
-            Debug.Log($"아이템을 바꾸었습니다. 순서 : {inventory.inventoryIndex} {inventory.inventory[inventory.inventoryIndex].id}");
+            Debug.Log($"아이템을 바꾸었습니다. 순서 : {inventory.InventoryIndex} {inventory.inventory[inventory.InventoryIndex].id}");
         }
 
     }
@@ -217,5 +282,25 @@ public class AdobePlayerController : MonoBehaviour
     void DoWhenDead()
     {
         Debug.Log("플레이어가 사망했습니다!");
+    }
+
+    void PlayerStatusManager()
+    {
+        if (maxStamina - stamina <= float.Epsilon)
+        {
+            health += healthRegainPerSecondWhenStaminaFull * Time.deltaTime;
+            health = Mathf.Min(health, maxHealth);
+        }
+    }
+
+    void m_HurtPlayer()
+    {
+        if (Input.GetKeyDown(KeyCode.Minus))
+        {
+            health = Mathf.Max(health - 10, 0);
+            stamina = Mathf.Max(stamina - 10, 0);
+
+            Debug.Log($"m_HurtPlayer() : {health} {stamina}");
+        }
     }
 }
