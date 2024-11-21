@@ -20,8 +20,9 @@ GameObject:
   - component: {fileID: 7509795421225043282}
   - component: {fileID: 7699564339226646012}
   - component: {fileID: 9191165895652268156}
-  - component: {fileID: 5957224771004223105}
   - component: {fileID: 4748641847755700961}
+  - component: {fileID: 1317610750748933195}
+  - component: {fileID: 4301863294720699271}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -171,7 +172,12 @@ MonoBehaviour:
   delayedForceToApply: {x: 0, y: 0, z: 0}
   afterDashPower: 0
   dashDecelete: 0
-  maxHealth: 0
+  maxHealth: 100
+  maxStamina: 100
+  healthRegainPerSecondWhenStaminaFull: 0
+  isDebugging: 0
+  isDebuggingDash: 0
+  isDebuggingHeal: 0
 --- !u!114 &-1981280119114631583
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -224,9 +230,10 @@ MonoBehaviour:
   - {fileID: 7509795421225043282}
   - {fileID: 7699564339226646012}
   - {fileID: 9191165895652268156}
-  - {fileID: 5957224771004223105}
   - {fileID: 4748641847755700961}
-  inventoryIndex: 0
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   radius: 0
 --- !u!114 &7509795421225043282
 MonoBehaviour:
@@ -241,8 +248,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   memo: "\uAC80"
-  id: 1
+  id: 1202
   amount: 0
+  duability: 30
 --- !u!114 &7699564339226646012
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -256,8 +264,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   memo: 
-  id: 0
+  id: 1203
   amount: 0
+  duability: 30
 --- !u!114 &9191165895652268156
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -271,23 +280,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   memo: 
-  id: 0
+  id: 1204
   amount: 0
---- !u!114 &5957224771004223105
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 579263862584192173}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ba29228272a466642a0c500abc1cc4f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  memo: 
-  id: 0
-  amount: 0
+  duability: 30
 --- !u!114 &4748641847755700961
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -301,8 +296,41 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   memo: 
-  id: 0
+  id: 1206
   amount: 0
+--- !u!114 &1317610750748933195
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 579263862584192173}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3968c8abdbd6844987be7d3a6bce5d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!95 &4301863294720699271
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 579263862584192173}
+  m_Enabled: 0
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 29ac1260899c8d049a685fc8537daea8, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &6341674594583726826
 GameObject:
   m_ObjectHideFlags: 0

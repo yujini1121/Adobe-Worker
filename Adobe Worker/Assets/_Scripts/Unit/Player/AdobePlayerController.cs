@@ -2,6 +2,7 @@ using Cinemachine;
 using MalbersAnimations.Controller;
 using System;
 using System.Text;
+using Unity.Mathematics;
 using UnityEngine;
 
 public class AdobePlayerController : MonoBehaviour
@@ -25,8 +26,6 @@ public class AdobePlayerController : MonoBehaviour
 	private Rigidbody rb;
     Vector3 targetDirection;
 
-    AdobeItemPack inventory;
-
     [Header("Dash Value")]
     [SerializeField] private bool isDash = false;
     [SerializeField] private float dashSpeed;
@@ -40,7 +39,19 @@ public class AdobePlayerController : MonoBehaviour
 
     [Header("Dash Value")]
     [SerializeField] private float maxHealth;
-    float health;
+    [SerializeField] private float maxStamina;
+    [SerializeField] private float healthRegainPerSecondWhenStaminaFull;
+    private float health;
+    private float stamina;
+
+    [Header("Debugging")]
+    [SerializeField] private bool isDebugging;
+    [SerializeField] private bool isDebuggingDash;
+    [SerializeField] private bool isDebuggingHeal;
+
+    // other component
+    AdobeItemPack inventory;
+    PlayerMovement playerMovement;
 
     public void GetHurt(float damage)
     {
@@ -52,15 +63,47 @@ public class AdobePlayerController : MonoBehaviour
         }
     }
 
+    public void Heal(float addHealth, float addStamina)
+    {
+        health = Mathf.Min(health + addHealth, maxHealth);
+        stamina = Mathf.Min(stamina + addStamina, maxStamina);
+
+        if (isDebuggingHeal)
+        {
+            Debug.Log($"Heal({addHealth}, {addStamina}) : {health} {stamina}");
+        }
+    }
+
+    public void HealStamina(float addStamina, float staminaLimit)
+    {
+        stamina = Mathf.Min(stamina + addStamina, staminaLimit);
+        if (isDebuggingHeal)
+        {
+            Debug.Log($"HealStamina({addStamina}, {addStamina}) : {health} {stamina}");
+        }
+    }
+
+    public bool DemandStamina(float demand)
+    {
+        if (demand > stamina)
+        {
+            return false;
+        }
+        stamina -= demand;
+        return true;
+    }
+
     private void Awake()
     {
         health = maxHealth;
+        stamina = maxStamina;
     }
 
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
         inventory = GetComponent<AdobeItemPack>();
+        playerMovement = GetComponent<PlayerMovement>();
 
         //Debug.LogWarning("Mouse cursor is locked");
         //Cursor.visible = false;
@@ -74,6 +117,8 @@ public class AdobePlayerController : MonoBehaviour
         UseItems();
         SwitchItems();
         ShowInventory();
+        PlayerStatusManager();
+        m_HurtPlayer();
     }
 
     private void LateUpdate()
@@ -88,6 +133,13 @@ public class AdobePlayerController : MonoBehaviour
 
     void PlayerMove()
     {
+        if (playerMovement.IsActionable() == false)
+        {
+            rb.velocity *= 0.95f;
+            return;
+        }
+        playerMovement.DoMove();
+
         keyHorizontalAxisValue = Input.GetAxisRaw("Horizontal");
         keyVerticalAxisValue = Input.GetAxisRaw("Vertical");
 
@@ -109,6 +161,12 @@ public class AdobePlayerController : MonoBehaviour
 
     void PlayerDash()
     {
+        if (isDebuggingDash)
+        {
+            Debug.Log(dashCooltime);
+        }
+
+        //if (dashCooltime > 0) return;
         if (isDash = false && Input.GetKeyDown(KeyCode.LeftShift))
         {
             isDash = true;
@@ -121,7 +179,7 @@ public class AdobePlayerController : MonoBehaviour
     {
         Vector2 inputMousePos = new Vector2(Input.GetAxisRaw("Mouse X"), Input.GetAxisRaw("Mouse Y"));
 
-        if (inputMousePos.sqrMagnitude >= 0.01f) //ÁöÅÍ¸µ ¹æÁö
+        if (inputMousePos.sqrMagnitude >= 0.01f) //ì§€í„°ë§ ë°©ì§€
         {
             virtualCamYaw += inputMousePos.x;
             virtualCamPitch += inputMousePos.y;
@@ -142,10 +200,16 @@ public class AdobePlayerController : MonoBehaviour
 
     void UseItems()
     {
+        if (playerMovement.IsActionable() == false)
+        {
+            return;
+        }
         if (Input.GetMouseButtonDown(0) == false)
         {
             return;
         }
+
+        playerMovement.DoAction();
 
         AdobeItemUseArguments args = new AdobeItemUseArguments();
         args.itemUser = gameObject;
@@ -156,15 +220,20 @@ public class AdobePlayerController : MonoBehaviour
 
     void SwitchItems()
     {
+        if (isDebugging)
+        {
+            Debug.Log($">> {Input.mouseScrollDelta}");
+        }
+
         if (Input.mouseScrollDelta.y > 0.5f)
         {
             inventory.SwitchItem(-1);
-            Debug.Log($"¾ÆÀÌÅÛÀ» ¹Ù²Ù¾ú½À´Ï´Ù. ¼ø¼­ : {inventory.inventoryIndex} {inventory.inventory[inventory.inventoryIndex].id}");
+            Debug.Log($"ì•„ì´í…œì„ ë°”ê¾¸ì—ˆìŠµë‹ˆë‹¤. ìˆœì„œ : {inventory.InventoryIndex} {inventory.inventory[inventory.InventoryIndex].id}");
         }
         if (Input.mouseScrollDelta.y < -0.5f)
         {
             inventory.SwitchItem(1);
-            Debug.Log($"¾ÆÀÌÅÛÀ» ¹Ù²Ù¾ú½À´Ï´Ù. ¼ø¼­ : {inventory.inventoryIndex} {inventory.inventory[inventory.inventoryIndex].id}");
+            Debug.Log($"ì•„ì´í…œì„ ë°”ê¾¸ì—ˆìŠµë‹ˆë‹¤. ìˆœì„œ : {inventory.InventoryIndex} {inventory.inventory[inventory.InventoryIndex].id}");
         }
 
     }
@@ -179,7 +248,7 @@ public class AdobePlayerController : MonoBehaviour
         StringBuilder answer = new StringBuilder();
         foreach (AdobeItemBase item in inventory.inventory)
         {
-            answer.AppendLine($"[¾ÆÀÌÅÛ ¾ÆÀÌµğ {item.id}, ¾ÆÀÌÅÛ °¹¼ö {item.amount}]");
+            answer.AppendLine($"[ì•„ì´í…œ ì•„ì´ë”” {item.id}, ì•„ì´í…œ ê°¯ìˆ˜ {item.amount}]");
         }
 
         Debug.Log(answer.ToString());
@@ -187,6 +256,26 @@ public class AdobePlayerController : MonoBehaviour
 
     void DoWhenDead()
     {
-        Debug.Log("ÇÃ·¹ÀÌ¾î°¡ »ç¸ÁÇß½À´Ï´Ù!");
+        Debug.Log("í”Œë ˆì´ì–´ê°€ ì‚¬ë§í–ˆìŠµë‹ˆë‹¤!");
+    }
+
+    void PlayerStatusManager()
+    {
+        if (maxStamina - stamina <= float.Epsilon)
+        {
+            health += healthRegainPerSecondWhenStaminaFull * Time.deltaTime;
+            health = Mathf.Min(health, maxHealth);
+        }
+    }
+
+    void m_HurtPlayer()
+    {
+        if (Input.GetKeyDown(KeyCode.Minus))
+        {
+            health = Mathf.Max(health - 10, 0);
+            stamina = Mathf.Max(stamina - 10, 0);
+
+            Debug.Log($"m_HurtPlayer() : {health} {stamina}");
+        }
     }
 }

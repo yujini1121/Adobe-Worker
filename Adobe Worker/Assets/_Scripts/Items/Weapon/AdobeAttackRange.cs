@@ -4,8 +4,19 @@ using UnityEngine;
 
 public class AdobeAttackRange : MonoBehaviour
 {
+    static bool isDebugging = true;
+
     [SerializeField] float damage;
     [SerializeField] float destroyTime = 1.5f;
+
+    public void SetDamage(float damage)
+    {
+        this.damage = damage;
+        if (isDebugging)
+        {
+            Debug.Log($"AdobeAttackRange.SetDamage(float damage) 데미지 설정함 : {damage}");
+        }
+    }
 
     void Attack(AdobeTagActionArguments arguments)
     {
@@ -32,7 +43,16 @@ public class AdobeAttackRange : MonoBehaviour
 
     void Start()
     {
-        GetComponent<AdobeTagBundle>().AddReceiveAction(Attack);
+        AdobeTagBundle tagBundle = GetComponent<AdobeTagBundle>();
+
+        tagBundle.AddReceiveAction(Attack);
+        AdobeAttackRangeFlying attackRangeFlying = GetComponent<AdobeAttackRangeFlying>();
+        if (attackRangeFlying != null)
+        {
+            tagBundle.AddReceiveAction(attackRangeFlying.End);
+        }
+
+
         GetComponent<BoxCollider>().enabled = true;
 
 #warning TODO: 생성 및 삭제를 오브젝트 풀링으로 표현하기. 게임메니저의 한 컴포넌트에서 생성 요청 후, 시간 지나면 반환

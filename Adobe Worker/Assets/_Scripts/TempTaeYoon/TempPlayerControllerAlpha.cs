@@ -43,12 +43,12 @@ public class TempPlayerControllerAlpha : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.K))
         {
             inventory.SwitchItem(-1);
-            Debug.Log($"아이템을 바꾸었습니다. 순서 : {inventory.inventoryIndex} {inventory.inventory[inventory.inventoryIndex].id}");
+            Debug.Log($"아이템을 바꾸었습니다. 순서 : {inventory.InventoryIndex} {inventory.inventory[inventory.InventoryIndex].id}");
         }
         if (Input.GetKeyDown(KeyCode.L))
         {
             inventory.SwitchItem(1);
-            Debug.Log($"아이템을 바꾸었습니다. 순서 : {inventory.inventoryIndex} {inventory.inventory[inventory.inventoryIndex].id}");
+            Debug.Log($"아이템을 바꾸었습니다. 순서 : {inventory.InventoryIndex} {inventory.inventory[inventory.InventoryIndex].id}");
         }
 
     }
