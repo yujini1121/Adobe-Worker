@@ -1,27 +1,14 @@
 {
-    "ItemRecipe":[
-        {
-            "input": [
-                {"id": 103, "name": "철광석", "amount": 1},
-                {"id": 115, "name": "기름", "amount": 1}
-            ],
-            "output": {"id": 104, "name": "철", "amount":1}
-        },
-
-
-        {
-            "input": [
-                {"id": 101, "name": "나무", "amount": 2}
-            ],
-            "output": {"id": 201, "name": "나무 검", "amount": 1}
-        },
-        {
-            "input": [
-                {"id": 101, "name": "나무", "amount": 1},
-                {"id": 102, "name": "돌", "amount": 1},
-                {"id": 105, "name": "밧줄", "amount": 1}
-            ],
-            "output": {"id": 202, "name": "돌 검", "amount":1}
-        }
+    "ItemRecipe": 
+    [
+      {
+        "ingredients": ["Stone", "Wood", "Feather"],
+        "result": "StoneArrow"
+      },
+      {
+        "ingredients": ["Iron", "Wood", "Feather"],
+        "result": "IronArrow"
+      }
     ]
-}
+  }
+  

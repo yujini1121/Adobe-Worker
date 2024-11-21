@@ -25,6 +25,7 @@ public class AdobePlayerController : MonoBehaviour
 	private Rigidbody rb;
     Vector3 targetDirection;
 
+    AdobeItemPack inventory;
 
     [Header("Dash Value")]
     [SerializeField] private bool isDash = false;
@@ -36,8 +37,6 @@ public class AdobePlayerController : MonoBehaviour
     [SerializeField] private float afterDashPower = 0;
     [SerializeField] private float dashDecelete = 0;
     private bool dashInput;
-
-    AdobeItemPack inventory;
 
     [Header("Dash Value")]
     [SerializeField] private float maxHealth;
