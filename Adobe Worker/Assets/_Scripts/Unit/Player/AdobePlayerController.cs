@@ -1,6 +1,7 @@
 using Cinemachine;
 using MalbersAnimations.Controller;
 using System;
+using System.Collections;
 using System.Text;
 using Unity.Mathematics;
 using UnityEngine;
@@ -33,8 +34,10 @@ public class AdobePlayerController : MonoBehaviour
     [SerializeField] private Vector3 delayedForceToApply;
     [SerializeField] private float afterDashPower = 0;
     [SerializeField] private float dashDecelete = 0;
+	[SerializeField] private bool isCooldown = false;
 
-    [Header("Player Stats")]
+
+	[Header("Player Stats")]
     [SerializeField] private float maxHealth;
     [SerializeField] private float maxStamina;
     [SerializeField] private float healthRegainPerSecondWhenStaminaFull;
@@ -128,51 +131,63 @@ public class AdobePlayerController : MonoBehaviour
         PlayerDash();
     }
 
-    void PlayerMove()
-    {
-        if (playerMovement.IsActionable() == false)
-        {
-            rb.velocity *= 0.95f;
-            return;
-        }
-        playerMovement.DoMove();
+	void PlayerMove()
+	{
+		keyHorizontalAxisValue = Input.GetAxisRaw("Horizontal");
+		keyVerticalAxisValue = Input.GetAxisRaw("Vertical");
 
-        keyHorizontalAxisValue = Input.GetAxisRaw("Horizontal");
-        keyVerticalAxisValue = Input.GetAxisRaw("Vertical");
+		Vector3 inputDir = new Vector3(keyHorizontalAxisValue, 0.0f, keyVerticalAxisValue).normalized;
 
-        Vector3 inputDir = new Vector3(keyHorizontalAxisValue, 0.0f, keyVerticalAxisValue).normalized;
+		if (inputDir.sqrMagnitude > 0.01f) // 입력이 있을 때만 이동 처리
+		{
+			// 이동 방향 계산
+			targetRotation = Mathf.Atan2(inputDir.x, inputDir.z) * Mathf.Rad2Deg + Camera.main.transform.eulerAngles.y;
+			float rotation = Mathf.SmoothDampAngle(transform.eulerAngles.y, targetRotation, ref rotationVelocity, rotationSmoothTime);
+			transform.rotation = Quaternion.Euler(0.0f, rotation, 0.0f);
 
-        if (inputDir.sqrMagnitude > 0)
-        {
-            targetRotation = Mathf.Atan2(inputDir.x, inputDir.z) * Mathf.Rad2Deg + Camera.main.transform.eulerAngles.y;
-            float rotation = Mathf.SmoothDampAngle(transform.eulerAngles.y, targetRotation, ref rotationVelocity, rotationSmoothTime);
+			targetDirection = Quaternion.Euler(0.0f, targetRotation, 0.0f) * Vector3.forward;
 
-            transform.rotation = Quaternion.Euler(0.0f, rotation, 0.0f);
-        }
+			// 이동 속도 설정 (대쉬 시 속도 증가)
+			float currentSpeed = isDash ? dashForce : moveSpeed;
+			rb.velocity = targetDirection * currentSpeed + new Vector3(0.0f, rb.velocity.y, 0.0f);
+		}
+		else
+		{
+			// 입력이 없을 경우 이동 멈춤
+			rb.velocity = new Vector3(0.0f, rb.velocity.y, 0.0f);
+		}
+	}
 
-        targetDirection = Quaternion.Euler(0.0f, targetRotation, 0.0f) * Vector3.forward + transform.TransformDirection(new Vector3(0f, 0f, afterDashPower)).normalized;
+	void PlayerDash()
+	{
+		if (Input.GetKeyDown(KeyCode.LeftShift) && !isDash && !isCooldown) // 대쉬 조건
+		{
+			StartCoroutine(DashRoutine());
+		}
+	}
 
-        rb.velocity = targetDirection * (inputDir != Vector3.zero ? moveSpeed : 0.0f)
-                        + new Vector3(0.0f, rb.velocity.y, 0.0f);
-    }
+	private IEnumerator DashRoutine()
+	{
+		isDash = true; // 대쉬 시작
+		if (isDebuggingDash) Debug.Log("Dash Started!");
 
-    void PlayerDash()
-    {
-        if (isDebuggingDash)
-        {
-            Debug.Log(dashCooltime);
-        }
+		float originalSpeed = moveSpeed; // 기존 이동 속도 저장
+		moveSpeed = dashForce; // 대쉬 속도로 변경
 
-        //if (dashCooltime > 0) return;
-        if (isDash = false && Input.GetKeyDown(KeyCode.LeftShift))
-        {
-			isDash = true;
-            
-            rb.velocity = targetDirection * dashForce * 0.98f;
-        }
-    }
+		yield return new WaitForSeconds(0.3f); // 대쉬 지속 시간
 
-    void PlayerRotation()
+		moveSpeed = originalSpeed; // 대쉬 종료 시 속도 복구
+		isDash = false;
+		if (isDebuggingDash) Debug.Log("Dash Ended!");
+
+		// 쿨타임 시작
+		isCooldown = true;
+		yield return new WaitForSeconds(dashCooltime); // 쿨타임 동안 대쉬 비활성화
+		isCooldown = false;
+		if (isDebuggingDash) Debug.Log("Dash Cooldown Ended!");
+	}
+
+	void PlayerRotation()
     {
         Vector2 inputMousePos = new Vector2(Input.GetAxisRaw("Mouse X"), Input.GetAxisRaw("Mouse Y"));
 
