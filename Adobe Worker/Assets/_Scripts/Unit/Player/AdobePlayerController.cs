@@ -17,7 +17,6 @@ public class AdobePlayerController : MonoBehaviour
 	private float virtualCamYaw;
     private float virtualCamPitch;
 
-
     [Header("Move Value")]
 	[SerializeField] private float rotationSmoothTime = 0.12f;
 	[SerializeField] private float moveSpeed = 10.0f;
@@ -30,14 +29,12 @@ public class AdobePlayerController : MonoBehaviour
     [SerializeField] private bool isDash = false;
     [SerializeField] private float dashSpeed;
     [SerializeField] private float dashForce;
-    [SerializeField] private float dashDuration;
     [SerializeField] private float dashCooltime;
     [SerializeField] private Vector3 delayedForceToApply;
     [SerializeField] private float afterDashPower = 0;
     [SerializeField] private float dashDecelete = 0;
-    private bool dashInput;
 
-    [Header("Dash Value")]
+    [Header("Player Stats")]
     [SerializeField] private float maxHealth;
     [SerializeField] private float maxStamina;
     [SerializeField] private float healthRegainPerSecondWhenStaminaFull;
@@ -169,7 +166,7 @@ public class AdobePlayerController : MonoBehaviour
         //if (dashCooltime > 0) return;
         if (isDash = false && Input.GetKeyDown(KeyCode.LeftShift))
         {
-            isDash = true;
+			isDash = true;
             
             rb.velocity = targetDirection * dashForce * 0.98f;
         }
