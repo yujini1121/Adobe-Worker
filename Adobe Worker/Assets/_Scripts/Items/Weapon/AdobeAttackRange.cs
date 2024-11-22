@@ -55,7 +55,6 @@ public class AdobeAttackRange : MonoBehaviour
 
         GetComponent<BoxCollider>().enabled = true;
 
-#warning TODO: 생성 및 삭제를 오브젝트 풀링으로 표현하기. 게임메니저의 한 컴포넌트에서 생성 요청 후, 시간 지나면 반환
         Destroy(gameObject, destroyTime);
     }
 }

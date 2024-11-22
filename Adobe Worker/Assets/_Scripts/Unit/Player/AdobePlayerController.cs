@@ -119,16 +119,18 @@ public class AdobePlayerController : MonoBehaviour
         ShowInventory();
         PlayerStatusManager();
         m_HurtPlayer();
-    }
 
-    private void LateUpdate()
+		PlayerDash();
+
+	}
+
+	private void LateUpdate()
     {
         PlayerRotation();
     }
 
     private void FixedUpdate()
     {
-        PlayerDash();
     }
 
 	void PlayerMove()

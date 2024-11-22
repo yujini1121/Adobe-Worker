@@ -8,7 +8,7 @@ public class MinimapFollow : MonoBehaviour
     [Tooltip("0~1 사이의 값")]
     [SerializeField] private float smoothSpeed = 0.125f;
 
-    void LateUpdate()
+    void Update()
     {
         Vector3 desiredPosition = player.position + cameraOffset;
         Vector3 smoothedPosition = Vector3.Lerp(transform.position, desiredPosition, smoothSpeed);

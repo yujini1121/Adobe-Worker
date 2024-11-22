@@ -1156,6 +1156,36 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 2389708427043168628, guid: 70a51ad0c95461b49b5db4b26db7c870,
+        type: 3}
+      propertyPath: dashForce
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 2389708427043168628, guid: 70a51ad0c95461b49b5db4b26db7c870,
+        type: 3}
+      propertyPath: dashSpeed
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 2389708427043168628, guid: 70a51ad0c95461b49b5db4b26db7c870,
+        type: 3}
+      propertyPath: dashCooltime
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2389708427043168628, guid: 70a51ad0c95461b49b5db4b26db7c870,
+        type: 3}
+      propertyPath: dashDecelete
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2389708427043168628, guid: 70a51ad0c95461b49b5db4b26db7c870,
+        type: 3}
+      propertyPath: afterDashPower
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2389708427043168628, guid: 70a51ad0c95461b49b5db4b26db7c870,
+        type: 3}
+      propertyPath: isDebuggingDash
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3203936975631623712, guid: 70a51ad0c95461b49b5db4b26db7c870,
         type: 3}
       propertyPath: m_LocalPosition.x
