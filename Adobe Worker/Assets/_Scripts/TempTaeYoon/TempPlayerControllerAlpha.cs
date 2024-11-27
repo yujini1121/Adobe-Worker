@@ -43,12 +43,12 @@ public class TempPlayerControllerAlpha : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.K))
         {
             inventory.SwitchItem(-1);
-            Debug.Log($"아이템을 바꾸었습니다. 순서 : {inventory.InventoryIndex} {inventory.inventory[inventory.InventoryIndex].id}");
+            Debug.Log($"아이템을 바꾸었습니다. 순서 : {inventory.InventoryIndex} {inventory.inventory[inventory.InventoryIndex].Id}");
         }
         if (Input.GetKeyDown(KeyCode.L))
         {
             inventory.SwitchItem(1);
-            Debug.Log($"아이템을 바꾸었습니다. 순서 : {inventory.InventoryIndex} {inventory.inventory[inventory.InventoryIndex].id}");
+            Debug.Log($"아이템을 바꾸었습니다. 순서 : {inventory.InventoryIndex} {inventory.inventory[inventory.InventoryIndex].Id}");
         }
 
     }
@@ -63,7 +63,7 @@ public class TempPlayerControllerAlpha : MonoBehaviour
         StringBuilder answer = new StringBuilder();
         foreach (AdobeItemBase item in inventory.inventory)
         {
-            answer.AppendLine($"[아이템 아이디 {item.id}, 아이템 갯수 {item.amount}]");
+            answer.AppendLine($"[아이템 아이디 {item.Id}, 아이템 갯수 {item.amount}]");
         }
 
         Debug.Log(answer.ToString());

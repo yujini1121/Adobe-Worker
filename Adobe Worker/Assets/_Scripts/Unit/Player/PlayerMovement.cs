@@ -41,8 +41,10 @@ public class PlayerMovement : MonoBehaviour
     EActionType currentAction = EActionType.none;
     AdobeItemPack inventory;
     Animator animator;
-
+    Rigidbody rigidbodyPlayer;
     Transform characterMeshTransform;
+
+    [SerializeField] private bool isDebugging = true;
 
     private void Awake()
     {
@@ -54,7 +56,7 @@ public class PlayerMovement : MonoBehaviour
         inventory = GetComponent<AdobeItemPack>();
         // 만약 여기 아래에 에러가 나면, 원래 했던대로 주인공 캐릭터 메쉬 받아서 쓰기
 
-        characterMeshTransform = transform.Find("Idle");
+        characterMeshTransform = transform.Find("stand");
 
         if (characterMeshTransform != null)
         {
@@ -64,6 +66,8 @@ public class PlayerMovement : MonoBehaviour
         {
             Debug.Log("<!>PlayerMovement.Start() : Idle이라는 자식 게임오브젝트가 존재하지 않습니다!");
         }
+
+        rigidbodyPlayer = GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
@@ -71,7 +75,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (inventory.inventory.Count > 0)
         {
-            switch (inventory.inventory[inventory.InventoryIndex].id)
+            switch (inventory.inventory[inventory.InventoryIndex].Id)
             {
                 case 201: currentAction = EActionType.sword; itemType = 1; break;
                 case 202: currentAction = EActionType.sword; itemType = 1; break;
@@ -108,11 +112,14 @@ public class PlayerMovement : MonoBehaviour
         if (animator != null)
         {
             animator.SetBool("IsUsingItem", IsActionable() == false);
+            DoMove();
         }
     }
 
     public void DoAction()
     {
+
+
         ActionableTime = Time.time + timeForActions[currentAction];
 
         // 여기에 애니메이션 실행 함수
@@ -121,7 +128,10 @@ public class PlayerMovement : MonoBehaviour
             animator.SetBool("IsUsingItem", true);
             animator.SetInteger("CurrentItemType", itemType);
         }
-
+        if (isDebugging)
+        {
+            Debug.Log($"PlayerMovement.DoAction() 호출됨 ActionableTime = {ActionableTime} / timeForActions[currentAction] = {timeForActions[currentAction]} / item id = {inventory.inventory[inventory.InventoryIndex].Id}");
+        }
     }
 
     public void DoMove()
@@ -131,7 +141,9 @@ public class PlayerMovement : MonoBehaviour
 
         if (animator != null)
         {
+            //Debug.Log($"speed = {Mathf.Clamp(rigidbodyPlayer.velocity.magnitude, -1, 1)}");
             animator.SetFloat("MoveSpeed", Mathf.Clamp(m_keyHorizontalAxisValue + m_keyVerticalAxisValue, -1, 1));
+            //animator.SetFloat("MoveSpeed", Mathf.Clamp(rigidbodyPlayer.velocity.magnitude, -1, 1));
         }
     }
 

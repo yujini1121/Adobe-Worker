@@ -124,6 +124,7 @@
     <Compile Include="Assets\_Scripts\Items\AdobeDroppedItem.cs" />
     <Compile Include="Assets\_Scripts\Base\AdobeEnemyBase.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_B.cs" />
+    <Compile Include="Assets\_Scripts\UserIO\DurabilityBarController.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SkewTextExample.cs" />
     <Compile Include="Assets\_Scripts\Items\AdobeRecipeManager.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\WarpTextExample.cs" />
@@ -131,8 +132,8 @@
     <Compile Include="Assets\_Scripts\TempTaeYoon\TempPlayerControllerAlpha.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ShaderPropAnimator.cs" />
     <Compile Include="Assets\_Scripts\Systems\AdobeCameraController.cs" />
-    <Compile Include="Assets\_Scripts\Unit\AdobeItemPack.cs" />
     <Compile Include="Assets\_Scripts\Items\Tools\AdobeItemPickaxe.cs" />
+    <Compile Include="Assets\_Scripts\Unit\AdobeItemPack.cs" />
     <Compile Include="Assets\_Scripts\Items\Weapon\AdobeItemSpear.cs" />
     <Compile Include="Assets\_Scripts\Base\AdobeItemConsumable.cs" />
     <Compile Include="Assets\_Scripts\Structure\AdobeStructureColliderChild.cs" />

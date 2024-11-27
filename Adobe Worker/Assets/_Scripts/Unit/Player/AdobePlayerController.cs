@@ -112,7 +112,7 @@ public class AdobePlayerController : MonoBehaviour
 
     void Update()
     {
-		PlayerMove();
+        MoveOrStop();
 
         UseItems();
         SwitchItems();
@@ -131,6 +131,19 @@ public class AdobePlayerController : MonoBehaviour
 
     private void FixedUpdate()
     {
+    }
+
+    void MoveOrStop()
+    {
+        if (playerMovement.IsActionable())
+        {
+            PlayerMove();
+        }
+        else
+        {
+            rb.velocity *= 0.95f;
+            return;
+        }
     }
 
 	void PlayerMove()
@@ -242,12 +255,12 @@ public class AdobePlayerController : MonoBehaviour
         if (Input.mouseScrollDelta.y > 0.5f)
         {
             inventory.SwitchItem(-1);
-            Debug.Log($"아이템을 바꾸었습니다. 순서 : {inventory.InventoryIndex} {inventory.inventory[inventory.InventoryIndex].id}");
+            Debug.Log($"아이템을 바꾸었습니다. 순서 : {inventory.InventoryIndex} {inventory.inventory[inventory.InventoryIndex].Id}");
         }
         if (Input.mouseScrollDelta.y < -0.5f)
         {
             inventory.SwitchItem(1);
-            Debug.Log($"아이템을 바꾸었습니다. 순서 : {inventory.InventoryIndex} {inventory.inventory[inventory.InventoryIndex].id}");
+            Debug.Log($"아이템을 바꾸었습니다. 순서 : {inventory.InventoryIndex} {inventory.inventory[inventory.InventoryIndex].Id}");
         }
 
     }
@@ -262,7 +275,7 @@ public class AdobePlayerController : MonoBehaviour
         StringBuilder answer = new StringBuilder();
         foreach (AdobeItemBase item in inventory.inventory)
         {
-            answer.AppendLine($"[아이템 아이디 {item.id}, 아이템 갯수 {item.amount}]");
+            answer.AppendLine($"[아이템 아이디 {item.Id}, 아이템 갯수 {item.amount}]");
         }
 
         Debug.Log(answer.ToString());

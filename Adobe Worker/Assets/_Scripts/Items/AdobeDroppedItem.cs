@@ -40,11 +40,11 @@ public class AdobeDroppedItem : MonoBehaviour
 			AdobeItemBase curItem = thisItems.inventory[index];
 
 			playerInventory.inventory.Add(curItem);
-            Debug.Log($"아이템 획득 - 아이템 번호 : {curItem.id}, 수량 : {curItem.amount}");
+            Debug.Log($"아이템 획득 - 아이템 번호 : {curItem.Id}, 수량 : {curItem.amount}");
 
 			foreach (ItemEntry entry in PlayerData.instance.items)
 			{
-                if (entry.id == curItem.id)
+                if (entry.id == curItem.Id)
                 {
 					entry.amount += curItem.amount;
 					itemExists = true;
@@ -54,7 +54,7 @@ public class AdobeDroppedItem : MonoBehaviour
             if (!itemExists)
             {
                 // 아이템이 없으면 새로 추가
-                PlayerData.instance.items.Add(new ItemEntry(curItem.id, curItem.amount));
+                PlayerData.instance.items.Add(new ItemEntry(curItem.Id, curItem.amount));
             }
         }
         gameObject.SetActive(false);
