@@ -163,7 +163,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1611ab8cb55f0d142a286260931bc804, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 100
+  health: 30
   speed: 3
   detectRange: 50
 --- !u!54 &5408920002045801190
@@ -209,7 +209,6 @@ MonoBehaviour:
   - {fileID: 2590737085372630525}
   - {fileID: 3851833724049796364}
   - {fileID: 3855203658020334317}
-  inventoryIndex: 0
   radius: 3
 --- !u!114 &2590737085372630525
 MonoBehaviour:
@@ -224,8 +223,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   memo: 
-  id: 0
   amount: 0
+  m_id: 0
 --- !u!114 &3851833724049796364
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -239,8 +238,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   memo: 
-  id: 0
   amount: 0
+  m_id: 0
 --- !u!114 &3855203658020334317
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -254,5 +253,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   memo: 
-  id: 0
   amount: 0
+  m_id: 0

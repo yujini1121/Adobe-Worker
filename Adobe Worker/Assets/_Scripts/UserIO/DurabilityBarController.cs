@@ -10,12 +10,77 @@ public class DurabilityBarController : MonoBehaviour
     private AdobeItemPack playerInventory;
     private Slider m_slider;
     private TextMeshProUGUI m_text;
+    private TextMeshProUGUI m_textItemName;
+    private Dictionary<int, string> m_itemName = new Dictionary<int, string>()
+    {
+        { 0, "None" },
+        { 100, "None" },
+        { 101, "³ª¹«" },
+        { 102, "µ¹" },
+        { 103, "Ã¶±¤¼®" },
+        { 105, "¹åÁÙ" },
+        { 106, "Á¾ÀÌ" },
+        { 108, "ºó À¯¸®º´" },
+        { 109, "¹°º´" },
+        { 111, "±êÅÐ" },
+        { 114, "°Å¹ÌÁÙ" },
+        { 116, "´ç±Ù" },
+        { 117, "°¨ÀÚ" },
+        { 118, "º£¸®" },
+        { 119, "¾ç¹èÃß" },
+        { 120, "¹ö¼¸" },
+        { 121, "»ç°ú" },
+        { 122, "°í±â" },
+        { 123, "¹Ð°¡·ç" },
+        { 124, "¾çÆÄ" },
+        { 125, "°è·¬" },
+        { 126, "Àû¿Á" },
+        { 127, "º®¿Á" },
+        { 128, "Ã»¿Á" },
+        { 200, "None" },
+        { 201, "³ª¹« °Ë" },
+        { 202, "µ¹ °Ë" },
+        { 203, "Ã¶ °Ë" },
+        { 204, "³ª¹« Ã¢" },
+        { 205, "µ¹ Ã¢" },
+        { 206, "Ã¶ Ã¢" },
+        { 207, "È°" },
+        { 208, "µ¹ È­»ì" },
+        { 209, "Ã¶ È­»ì" },
+        { 211, "ºÎÀû" },
+        { 400, "None" },
+        { 401, "°úÀÏ »ø·¯µå" },
+        { 402, "½ºÆ©" },
+        { 403, "Àü" },
+        { 404, "¸¸µÎ" },
+        { 405, "²¿Ä¡" },
+        { 406, "°è¶õ ÈÄ¶óÀÌ" },
+        { 500, "None" },
+        { 501, "È¸º¹ÀÇ ¹°¾à" },
+        { 502, "¿°·ÂÀÇ ¹°¾à" },
+        { 503, "ºØ´ë" },
+        { 600, "None" },
+        { 601, "°¡¸¶¼Ü" },
+        { 603, "¸ð´ÚºÒ" },
+        { 604, "°¡½Ã ¹Ù¸®°ÔÀÌÆ®" },
+        { 605, "µÐÈ­ Æ®·¦" },
+        { 606, "Á¶ÇÕ´ë" },
+        { 700, "None" },
+        { 701, "³ª¹« °î±ªÀÌ" },
+        { 702, "µ¹ °î±ªÀÌ" },
+        { 703, "Ã¶ °î±ªÀÌ" },
+        { 704, "³ª¹« µµ³¢" },
+        { 705, "µ¹ µµ³¢" },
+        { 706, "Ã¶ µµ³¢" },
+    };
+
 
     // Start is called before the first frame update
     void Start()
     {
         m_slider = GetComponent<Slider>();
         m_text = transform.Find("Text (TMP)").GetComponent<TextMeshProUGUI>();
+        m_textItemName = transform.Find("ItemName").GetComponent<TextMeshProUGUI>();
 
         GameObject player = AdobePlayerReference.playerInstance;
         if (player == null)
@@ -40,6 +105,8 @@ public class DurabilityBarController : MonoBehaviour
             M_ShowDefault();
             return;
         }
+
+        m_textItemName.text = m_itemName[playerInventory.inventory[playerInventory.InventoryIndex].Id];
 
         AdobeItemConsumable tool = playerInventory.inventory[playerInventory.InventoryIndex] as AdobeItemConsumable;
         if (tool == null)

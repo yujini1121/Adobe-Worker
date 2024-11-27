@@ -32,7 +32,7 @@ public class PlayerMovement : MonoBehaviour
         { EActionType.fist, 0.125f },
         { EActionType.sword, 0.5f },
         { EActionType.spear, 0.5f },
-        { EActionType.bow, 1.0f },
+        { EActionType.bow, 0.8f },
         { EActionType.shuriken, 0.25f },
         { EActionType.amulet, 0.25f },
         { EActionType.axe, 0.5f },
