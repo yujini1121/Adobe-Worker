@@ -13,16 +13,16 @@ GameObject:
   - component: {fileID: 931594099621227134}
   - component: {fileID: 7195076460946895588}
   - component: {fileID: 7777917589168011212}
-  - component: {fileID: 2389708427043168628}
-  - component: {fileID: -1981280119114631583}
+  - component: {fileID: 4301863294720699271}
   - component: {fileID: 9170062575733456985}
+  - component: {fileID: -1981280119114631583}
+  - component: {fileID: 2389708427043168628}
+  - component: {fileID: 1317610750748933195}
   - component: {fileID: 4859353026370584560}
   - component: {fileID: 7509795421225043282}
   - component: {fileID: 7699564339226646012}
   - component: {fileID: 9191165895652268156}
   - component: {fileID: 4748641847755700961}
-  - component: {fileID: 1317610750748933195}
-  - component: {fileID: 4301863294720699271}
   - component: {fileID: 5603550298066102077}
   - component: {fileID: 4260214745893830758}
   - component: {fileID: 3461028320362772888}
@@ -151,49 +151,27 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
---- !u!114 &2389708427043168628
-MonoBehaviour:
+--- !u!95 &4301863294720699271
+Animator:
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 579263862584192173}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e7ee78b2c72657a47a0512c7e9c8a275, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  virtualCamTarget: {fileID: 6341674594583726826}
-  virtualCamPitchTop: 70
-  virtualCamPitchBottom: -30
-  rotationSmoothTime: 0.12
-  moveSpeed: 10
-  isDash: 0
-  dashSpeed: 10
-  dashForce: 100
-  dashDuration: 0.5
-  dashCooltime: 0
-  delayedForceToApply: {x: 0, y: 0, z: 0}
-  afterDashPower: 0
-  dashDecelete: 0
-  maxHealth: 100
-  maxStamina: 100
-  healthRegainPerSecondWhenStaminaFull: 0
-  isDebugging: 0
-  isDebuggingDash: 0
-  isDebuggingHeal: 0
---- !u!114 &-1981280119114631583
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 579263862584192173}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e6d4acdbd45e7a488d07863403a3c15, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Enabled: 0
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 29ac1260899c8d049a685fc8537daea8, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &9170062575733456985
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -218,6 +196,61 @@ MonoBehaviour:
   item: 0
   inspectorInputTags: 
   inspectorOutputTags: 
+--- !u!114 &-1981280119114631583
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 579263862584192173}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e6d4acdbd45e7a488d07863403a3c15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2389708427043168628
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 579263862584192173}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7ee78b2c72657a47a0512c7e9c8a275, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  virtualCamTarget: {fileID: 6341674594583726826}
+  virtualCamPitchTop: 70
+  virtualCamPitchBottom: -30
+  rotationSmoothTime: 0.12
+  moveSpeed: 10
+  isDash: 0
+  dashSpeed: 10
+  dashForce: 100
+  dashCooltime: 0
+  delayedForceToApply: {x: 0, y: 0, z: 0}
+  afterDashPower: 0
+  dashDecelete: 0
+  isCooldown: 0
+  maxHealth: 100
+  maxStamina: 100
+  healthRegainPerSecondWhenStaminaFull: 0
+  isDebugging: 0
+  isDebuggingDash: 0
+  isDebuggingHeal: 0
+--- !u!114 &1317610750748933195
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 579263862584192173}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3968c8abdbd6844987be7d3a6bce5d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &4859353026370584560
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -301,39 +334,6 @@ MonoBehaviour:
   memo: 
   id: 1206
   amount: 0
---- !u!114 &1317610750748933195
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 579263862584192173}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f3968c8abdbd6844987be7d3a6bce5d4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!95 &4301863294720699271
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 579263862584192173}
-  m_Enabled: 0
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 29ac1260899c8d049a685fc8537daea8, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &5603550298066102077
 MonoBehaviour:
   m_ObjectHideFlags: 0

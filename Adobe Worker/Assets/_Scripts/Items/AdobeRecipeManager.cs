@@ -1,50 +1,59 @@
 using System.Collections.Generic;
 using UnityEngine;
-using System.Linq;
 
 [System.Serializable]
 public class Recipe
 {
-    public List<string> ingredients;
-    public string result;
+    public HashSet<int> ingredients;
+    public int result;
 }
 
-// 모든 조합 레시피
 [System.Serializable]
-public class RecipeBook
+public class RecipeList
 {
-    public List<Recipe> recipes;
+    public List<RecipeData> ItemRecipe;
 }
 
+[System.Serializable]
+public class RecipeData
+{
+    public List<int> ingredients;
+    public int result;
+}
 
 public class AdobeRecipeManager : MonoBehaviour
 {
-    [SerializeField] private TextAsset recipeData; 
-    private RecipeBook recipeBook;
+    private List<Recipe> recipeBook = new List<Recipe>();
 
     void Start()
     {
-        recipeBook = JsonUtility.FromJson<RecipeBook>(recipeData.text);
+        LoadRecipeData();
     }
 
-    // 아이템 조합 함수
-    public string Craft(List<string> inputIngredients)
+    private void LoadRecipeData()
     {
-        // 입력받은 재료를 정렬 (조합 순서 무시)
-        inputIngredients.Sort();
+        TextAsset recipeData = Resources.Load<TextAsset>("Json Files/ItemRecipe");
+        var recipes = JsonUtility.FromJson<RecipeList>(recipeData.text);
 
-        // 레시피 탐색
-        foreach (var recipe in recipeBook.recipes)
+        foreach (var r in recipes.ItemRecipe)
         {
-            var sortedRecipeIngredients = new List<string>(recipe.ingredients);
-            sortedRecipeIngredients.Sort();
-
-            if (sortedRecipeIngredients.SequenceEqual(inputIngredients))
+            recipeBook.Add(new Recipe
             {
-                return recipe.result;
+                ingredients = new HashSet<int>(r.ingredients),
+                result = r.result
+            });
+        }
+    }
+
+    public int Craft(HashSet<int> inputIngredients)
+    {
+        foreach (var recipe in recipeBook)
+        {
+            if (recipe.ingredients.SetEquals(inputIngredients))  // HashSet 비교
+            {
+                return recipe.result;  // 결과 아이템 ID 반환
             }
         }
-
-        return "Invalid";
+        return -1;  // 유효하지 않은 조합
     }
 }

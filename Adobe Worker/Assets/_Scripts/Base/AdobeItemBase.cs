@@ -5,13 +5,26 @@ using UnityEngine;
 [System.Serializable]
 public class AdobeItemBase : MonoBehaviour
 {
+    public static AdobeItemBase instance;
+
     [TextArea]
     [Tooltip("이 스트링은 코드 상에서 아무 짝에도 쓸모가 없지만, 적어도 인스펙터에서 주석 역할을 합니다.")]
     public string memo;
 
+    public Sprite sprite;
     public int id;
     public int amount;
+
     protected AdobeItemPack itemPack;
+
+
+    private void Awake()
+    {
+        if (null == instance)
+        {
+            instance = this;
+        }
+    }
 
     public void Start()
     {

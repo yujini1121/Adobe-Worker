@@ -9,16 +9,17 @@ public class AdobeDetectCraftingBox : MonoBehaviour
     [SerializeField] private LayerMask craftingBoxLayer;
     [SerializeField] private float interactionRange = 3f;
 
-    [Space(10)] [Header("Assign")]
+    [Space(10)]
+    [Header("Assign")]
     [SerializeField] private AdobeRecipeManager recipeManager;
     [SerializeField] private GameObject craftingUI;
-    [SerializeField] private Button craftButton; 
-    [SerializeField] private Image resultSlot; 
-    [SerializeField] private Image[] craftingSlots; 
+    [SerializeField] private Button craftButton;
+    [SerializeField] private Image resultSlot;
+    [SerializeField] private Image[] craftingSlots;
 
-    [Space(10)] [Header("Ingredients")]
-    [SerializeField] private List<string> craftingIngredients = new List<string>();
-
+    [Space(10)]
+    [Header("Ingredients")]
+    [SerializeField] private HashSet<int> craftingIngredients = new HashSet<int>();  // HashSet 사용
 
     private void Update()
     {
@@ -46,24 +47,23 @@ public class AdobeDetectCraftingBox : MonoBehaviour
         }
     }
 
-    public void AddIngredientToCraftingBox(string ingredient, Sprite ingredientSprite)
+    public void AddIngredientToCraftingBox(int ingredientId, Sprite ingredientSprite)
     {
         if (craftingIngredients.Count < 3)
         {
-            craftingIngredients.Add(ingredient);
+            craftingIngredients.Add(ingredientId);
             craftingSlots[craftingIngredients.Count - 1].sprite = ingredientSprite;
-            craftingSlots[craftingIngredients.Count - 1].enabled = true; // 이미지 활성화
+            craftingSlots[craftingIngredients.Count - 1].enabled = true;  // 이미지 활성화
             CheckCraftingResult();
         }
     }
 
     private void CheckCraftingResult()
     {
-        string result = recipeManager.Craft(craftingIngredients);
-        if (result != "Invalid")
+        int resultId = recipeManager.Craft(craftingIngredients);
+        if (resultId != -1)
         {
-            // 결과 아이템 이미지를 로드해 표시
-            Sprite resultSprite = LoadItemSprite(result);
+            Sprite resultSprite = LoadItemSprite(resultId);
             resultSlot.sprite = resultSprite;
             resultSlot.enabled = true;
             craftButton.interactable = true;
@@ -80,7 +80,7 @@ public class AdobeDetectCraftingBox : MonoBehaviour
     {
         if (craftButton.interactable)
         {
-            Debug.Log("조합 성공! 결과 아이템: " + recipeManager.Craft(craftingIngredients));
+            Debug.Log("조합 성공! 결과 아이템 ID: " + recipeManager.Craft(craftingIngredients));
             craftingIngredients.Clear();
 
             // 슬롯 초기화
@@ -95,16 +95,14 @@ public class AdobeDetectCraftingBox : MonoBehaviour
         }
     }
 
-    private Sprite LoadItemSprite(string itemName)
+    private Sprite LoadItemSprite(int itemId)
     {
-        // Resources 폴더에서 결과 아이템 스프라이트를 로드
-        return Resources.Load<Sprite>($"Items/{itemName}");
+        return Resources.Load<Sprite>($"Sprites/Items/{itemId}");
     }
 
     void OnDrawGizmosSelected()
     {
-        // 선택된 객체 주변에 Sphere를 그려줍니다.
-        Gizmos.color = Color.red;  // Sphere의 색상
-        Gizmos.DrawWireSphere(transform.position, interactionRange); // Sphere 범위 그리기
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(transform.position, interactionRange);
     }
 }

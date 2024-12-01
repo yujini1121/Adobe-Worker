@@ -10,6 +10,7 @@ public class AdobeItemPickaxe : AdobeItemConsumable
             AdobePrefabManager.pickaxeRange,
             arguments.itemUser.transform.position + 2.0f * arguments.direction,
             arguments.rotation);
+        instantiated.GetComponent<AdobeAttackRange>().SetDamage(SimpleWeaponSpec.Get(id).damage);
 
         Consume(this);
     }

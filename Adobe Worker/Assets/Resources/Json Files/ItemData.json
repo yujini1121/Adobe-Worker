@@ -1,79 +1,40 @@
 {
     "items": [
-        {
-            "id": 101,
-            "name": "나무",
-            "sprite": ""
-        },
-        {
-            "id": 102,
-            "name": "돌",
-            "sprite": ""
-        },
-        {
-            "id": 103,
-            "name": "철광석",
-            "sprite": ""
-        },
-        {
-            "id": 104,
-            "name": "철",
-            "sprite": ""
-        },
-        {
-            "id": 105,
-            "name": "밧줄",
-            "sprite": ""
-        },
-        {
-            "id": 106,
-            "name": "종이",
-            "sprite": ""
-        },
-        {
-            "id": 107,
-            "name": "몬스터의 증표",
-            "sprite": ""
-        },
-        {
-            "id": 108,
-            "name": "빈 유리병",
-            "sprite": ""
-        },
-        {
-            "id": 109,
-            "name": "물병",
-            "sprite": ""
-        },
-        {
-            "id": 110,
-            "name": "염력 포션",
-            "sprite": ""
-        },
-        {
-            "id": 111,
-            "name": "깃털",
-            "sprite": ""
-        },
-        {
-            "id": 112,
-            "name": "고기",
-            "sprite": ""
-        },
-        {
-            "id": 113,
-            "name": "야채",
-            "sprite": ""
-        },
-        {
-            "id": 114,
-            "name": "거미줄",
-            "sprite": ""
-        },
-        {
-            "id": 115,
-            "name": "기름",
-            "sprite": ""
-        }
+      {
+        "id": 101,
+        "name": "나무",
+        "sprite": "Sprites/Items/Wood"
+      },
+      {
+        "id": 102,
+        "name": "돌",
+        "sprite": "Sprites/Items/Stone"
+      },
+      {
+        "id": 103,
+        "name": "철광석",
+        "sprite": "Sprites/Items/IronOre"
+      },
+      {
+        "id": 104,
+        "name": "철",
+        "sprite": "Sprites/Items/Iron"
+      },
+      {
+        "id": 105,
+        "name": "밧줄",
+        "sprite": "Sprites/Items/Rope"
+      },
+      {
+        "id": 106,
+        "name": "종이",
+        "sprite": "Sprites/Items/Paper"
+      },
+      {
+        "id": 107,
+        "name": "몬스터의 증표",
+        "sprite": "Sprites/Items/MonsterToken"
+      }
     ]
-}
+  }
+  

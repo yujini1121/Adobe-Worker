@@ -1,13 +1,17 @@
+using MalbersAnimations;
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UI;
 
 [System.Serializable]
 public class AdobeItemPack : MonoBehaviour
 {
     [Tooltip("코드로 접근해서 수정할 수 있으나, AdobeItemBase를 상속하는 컴포넌트를 어태치하고, 인스펙터 창에서 드래그 앤 드롭으로 해도 됩니다.")]
+
+    public List<Image> quickslot;
     public List<AdobeItemBase> inventory;
+
     public int InventoryIndex { get => m_inventoryIndex; }
     private int m_inventoryIndex;
 
@@ -21,6 +25,25 @@ public class AdobeItemPack : MonoBehaviour
             inventory = new List<AdobeItemBase>();
         }
         m_inventoryIndex = 0;
+
+        ShowQuickSlot();
+    }
+
+    public void ShowQuickSlot()
+    {
+        int count = Mathf.Min(quickslot.Count, inventory.Count);
+
+        for (int i = 0; i < count; i++)
+        {
+            if (inventory[i] != null)
+            {
+                quickslot[i].sprite = inventory[i].sprite;
+            }
+            else
+            {
+                quickslot[i].sprite = null;
+            }
+        }
     }
 
     public void Use(AdobeItemUseArguments arguments)

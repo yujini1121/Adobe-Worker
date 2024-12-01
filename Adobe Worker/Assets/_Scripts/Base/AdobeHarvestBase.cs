@@ -16,7 +16,6 @@ public class AdobeHarvestBase : MonoBehaviour
         if (durability <= 0f)
         {
             gameObject.SetActive(false);
-            print("오브젝트가 파괴되었습니다.");
         }
     }
 }
