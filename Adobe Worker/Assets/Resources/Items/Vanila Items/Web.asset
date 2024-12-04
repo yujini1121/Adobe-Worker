@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f0a7186c20cab1940a5d97919902270f, type: 3}
-  m_Name: Wood 5
+  m_Name: Web
   m_EditorClassIdentifier: 
   mItemID: 114
   mItemName: "\uAC70\uBBF8\uC904"
