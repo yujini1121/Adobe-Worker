@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using static UnityEditor.Progress;
 
 [System.Serializable]
 public class AdobeItemPack : MonoBehaviour
@@ -18,6 +19,8 @@ public class AdobeItemPack : MonoBehaviour
     [SerializeField] float radius;
     const int PLAYER_INVENTORY_MAX_SIZE = 24;
 
+    public List<AdobeItemAttribute> items;
+
     private void Start()
     {
         if (inventory == null)
@@ -26,7 +29,16 @@ public class AdobeItemPack : MonoBehaviour
         }
         m_inventoryIndex = 0;
 
+        DisplayItems();
         ShowQuickSlot();
+    }
+
+    public void DisplayItems()
+    {
+        foreach (AdobeItemAttribute item in items)
+        {
+            Debug.Log($"아이템: {item.itemID}, 이름: {item.itemName}");
+        }
     }
 
     public void ShowQuickSlot()
