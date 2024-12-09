@@ -9,7 +9,9 @@ public class AdobeItemPack : MonoBehaviour
 {
     [Tooltip("코드로 접근해서 수정할 수 있으나, AdobeItemBase를 상속하는 컴포넌트를 어태치하고, 인스펙터 창에서 드래그 앤 드롭으로 해도 됩니다.")]
 
-    public List<Image> quickslot;
+    public List<Image> quickslotPanels;
+    public List<Image> inventoryPanels;
+
     public List<AdobeItemBase> inventory;
 
     public int InventoryIndex { get => m_inventoryIndex; }
@@ -26,26 +28,58 @@ public class AdobeItemPack : MonoBehaviour
         }
         m_inventoryIndex = 0;
 
-        ShowQuickSlot();
+
+        //ShowQuickSlot();
     }
 
-    public void ShowQuickSlot()
+    /// <summary>
+    /// ShowInventory()와 ShowQuickSlot()을 짜고 보니 공통으로 겹치는 부분이 많아 따로 빼뒀어요.
+    /// </summary>
+    /// <param name="slots"></param>
+    /// <param name="maxCount"></param>
+    private void UpdateSlots(List<Image> slots, int maxCount)
     {
-        int count = Mathf.Min(quickslot.Count, inventory.Count);
-
-        for (int i = 0; i < count; i++)
+        for (int i = 0; i < slots.Count; i++)
         {
-            if (inventory[i] != null)
+            if (i < inventory.Count && i < maxCount && inventory[i] != null)
             {
-                quickslot[i].sprite = inventory[i].sprite;
+                slots[i].sprite = inventory[i].sprite;
+                slots[i].enabled = true;
             }
             else
             {
-                quickslot[i].sprite = null;
+                slots[i].sprite = null;
+                slots[i].enabled = false;
             }
         }
     }
 
+    public void ShowInventory()
+    {
+        UpdateSlots(inventoryPanels, PLAYER_INVENTORY_MAX_SIZE);
+    }
+
+    public void ShowQuickSlot()
+    {
+        int quickSlotStartIndex = PLAYER_INVENTORY_MAX_SIZE - quickslotPanels.Count;
+        UpdateSlots(quickslotPanels, quickslotPanels.Count);
+
+        for (int i = 0; i < quickslotPanels.Count; i++)
+        {
+            if (quickSlotStartIndex + i < inventory.Count && inventory[quickSlotStartIndex + i] != null)
+            {
+                quickslotPanels[i].sprite = inventory[quickSlotStartIndex + i].sprite;
+                quickslotPanels[i].enabled = true;
+            }
+            else
+            {
+                quickslotPanels[i].sprite = null;
+                quickslotPanels[i].enabled = false;
+            }
+        }
+    }
+
+    #region 끼약
     public void Use(AdobeItemUseArguments arguments)
     {
         if (inventory.Count > 0)
@@ -157,4 +191,5 @@ public class AdobeItemPack : MonoBehaviour
         }
         inventory.Add(target);
     }
+    #endregion
 }
