@@ -29,7 +29,7 @@ public class AdobeItemPack : MonoBehaviour
         m_inventoryIndex = 0;
 
 
-        //ShowQuickSlot();
+        ShowInventory();
     }
 
     /// <summary>
