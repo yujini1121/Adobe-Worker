@@ -2357,6 +2357,36 @@ PrefabInstance:
       objectReference: {fileID: 474677124}
     - target: {fileID: 4859353026370584560, guid: 70a51ad0c95461b49b5db4b26db7c870,
         type: 3}
+      propertyPath: quickslotPanels.Array.data[0]
+      value: 
+      objectReference: {fileID: 2037518936}
+    - target: {fileID: 4859353026370584560, guid: 70a51ad0c95461b49b5db4b26db7c870,
+        type: 3}
+      propertyPath: quickslotPanels.Array.data[1]
+      value: 
+      objectReference: {fileID: 1042407200}
+    - target: {fileID: 4859353026370584560, guid: 70a51ad0c95461b49b5db4b26db7c870,
+        type: 3}
+      propertyPath: quickslotPanels.Array.data[2]
+      value: 
+      objectReference: {fileID: 269160997}
+    - target: {fileID: 4859353026370584560, guid: 70a51ad0c95461b49b5db4b26db7c870,
+        type: 3}
+      propertyPath: quickslotPanels.Array.data[3]
+      value: 
+      objectReference: {fileID: 1473782949}
+    - target: {fileID: 4859353026370584560, guid: 70a51ad0c95461b49b5db4b26db7c870,
+        type: 3}
+      propertyPath: quickslotPanels.Array.data[4]
+      value: 
+      objectReference: {fileID: 1019527080}
+    - target: {fileID: 4859353026370584560, guid: 70a51ad0c95461b49b5db4b26db7c870,
+        type: 3}
+      propertyPath: quickslotPanels.Array.data[5]
+      value: 
+      objectReference: {fileID: 1685440052}
+    - target: {fileID: 4859353026370584560, guid: 70a51ad0c95461b49b5db4b26db7c870,
+        type: 3}
       propertyPath: inventoryPanels.Array.data[10]
       value: 
       objectReference: {fileID: 1269157702}

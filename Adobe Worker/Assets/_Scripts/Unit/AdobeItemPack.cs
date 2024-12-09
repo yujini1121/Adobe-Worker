@@ -18,7 +18,8 @@ public class AdobeItemPack : MonoBehaviour
     private int m_inventoryIndex;
 
     [SerializeField] float radius;
-    const int PLAYER_INVENTORY_MAX_SIZE = 24;
+    const int PLAYER_INVENTORY_MAX_SIZE = 24;   // 6 * 4 슬롯
+    const int QUICK_SLOT_START_INDEX = 18;      // 마크처럼 맨 아랫줄이 퀵슬롯에 해당하는 슬롯
 
     private void Start()
     {
@@ -28,7 +29,7 @@ public class AdobeItemPack : MonoBehaviour
         }
         m_inventoryIndex = 0;
 
-
+        ShowQuickSlot();
         ShowInventory();
     }
 
@@ -61,20 +62,18 @@ public class AdobeItemPack : MonoBehaviour
 
     public void ShowQuickSlot()
     {
-        int quickSlotStartIndex = PLAYER_INVENTORY_MAX_SIZE - quickslotPanels.Count;
-        UpdateSlots(quickslotPanels, quickslotPanels.Count);
-
         for (int i = 0; i < quickslotPanels.Count; i++)
         {
-            if (quickSlotStartIndex + i < inventory.Count && inventory[quickSlotStartIndex + i] != null)
+            // 퀵슬롯은 고정적으로 인벤토리의 18~23칸이므로, 18 + i로 계산
+            int inventoryIndex = QUICK_SLOT_START_INDEX + i;
+
+            if (inventoryIndex < inventory.Count && inventory[inventoryIndex] != null)
             {
-                quickslotPanels[i].sprite = inventory[quickSlotStartIndex + i].sprite;
-                quickslotPanels[i].enabled = true;
+                quickslotPanels[i].sprite = inventory[inventoryIndex].sprite;
             }
             else
             {
                 quickslotPanels[i].sprite = null;
-                quickslotPanels[i].enabled = false;
             }
         }
     }
