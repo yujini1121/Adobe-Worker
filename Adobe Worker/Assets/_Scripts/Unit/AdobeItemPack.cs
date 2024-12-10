@@ -89,8 +89,8 @@ public class AdobeItemPack : MonoBehaviour
         inventory[fromIndex] = inventory[toIndex];
         inventory[toIndex] = temp;
 
-        //ShowInventory();
-        //ShowQuickSlot();
+        ShowInventory();
+        ShowQuickSlot();
     }
 
 

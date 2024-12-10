@@ -10,6 +10,7 @@ public class AdobeItemSlot : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
     private Transform originalParent; // 드래그 시작 시 원래 부모
     private CanvasGroup canvasGroup; // 드래그 시 상호작용 제어
     private Canvas canvas; // 드래그를 위한 최상위 캔버스
+    private Vector3 originalPosition; // 아이템의 원래 위치 저장
 
     private void Awake()
     {
@@ -23,6 +24,7 @@ public class AdobeItemSlot : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
         if (slotImage.sprite == null) return; // 빈 슬롯이면 드래그 불가
 
         originalParent = transform.parent; // 원래 부모 저장
+        originalPosition = transform.position; // 원래 위치 저장
         transform.SetParent(canvas.transform, true); // 캔버스로 이동
         canvasGroup.blocksRaycasts = false; // 드래그 중 Raycast 비활성화
         canvasGroup.alpha = 0.6f; // 투명도 변경
@@ -44,12 +46,12 @@ public class AdobeItemSlot : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
         if (dropTarget != null && dropTarget.TryGetComponent(out AdobeItemSlot targetSlot))
         {
             // 슬롯 간 아이템 교환
-            itemPack.SwapItems(slotIndex, targetSlot.slotIndex);
+            itemPack.SwapItems(slotIndex, targetSlot.slotIndex); // 아이템 교환
         }
 
-        // 원래 부모로 복귀
+        // 아이템이 원래 위치로 돌아가도록 설정
         transform.SetParent(originalParent, true);
-        transform.localPosition = Vector3.zero;
+        transform.position = originalPosition; // 원래 위치로 복귀
 
         // 슬롯 UI 갱신
         itemPack.ShowInventory();
