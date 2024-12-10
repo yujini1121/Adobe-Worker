@@ -33,28 +33,6 @@ public class AdobeItemPack : MonoBehaviour
         ShowInventory();
     }
 
-    /// <summary>
-    /// ShowInventory()와 ShowQuickSlot()을 짜고 보니 공통으로 겹치는 부분이 많아 따로 빼뒀어요.
-    /// </summary>
-    /// <param name="slots"></param>
-    /// <param name="maxCount"></param>
-    private void UpdateSlots(List<Image> slots, int maxCount)
-    {
-        for (int i = 0; i < slots.Count; i++)
-        {
-            if (i < inventory.Count && i < maxCount && inventory[i] != null)
-            {
-                slots[i].sprite = inventory[i].sprite;
-                slots[i].enabled = true;
-            }
-            else
-            {
-                slots[i].sprite = null;
-                slots[i].enabled = false;
-            }
-        }
-    }
-
     public void ShowInventory()
     {
         UpdateSlots(inventoryPanels, PLAYER_INVENTORY_MAX_SIZE);
@@ -77,6 +55,44 @@ public class AdobeItemPack : MonoBehaviour
             }
         }
     }
+
+    /// <summary>
+    /// ShowInventory()와 ShowQuickSlot()을 짜고 보니 공통으로 겹치는 부분이 많아 따로 빼뒀어요.
+    /// </summary>
+    /// <param name="slots"></param>
+    /// <param name="maxCount"></param>
+    private void UpdateSlots(List<Image> slots, int maxCount)
+    {
+        for (int i = 0; i < slots.Count; i++)
+        {
+            if (i < inventory.Count && i < maxCount && inventory[i] != null)
+            {
+                slots[i].sprite = inventory[i].sprite;
+                slots[i].enabled = true;
+            }
+            else
+            {
+                slots[i].sprite = null;
+                slots[i].enabled = false;
+            }
+        }
+    }
+
+    public void SwapItems(int fromIndex, int toIndex)
+    {
+        if (fromIndex < 0 || toIndex < 0 || fromIndex >= inventory.Count || toIndex >= inventory.Count)
+        {
+            return; // 유효하지 않은 인덱스 방어 코드
+        }
+
+        AdobeItemBase temp = inventory[fromIndex];
+        inventory[fromIndex] = inventory[toIndex];
+        inventory[toIndex] = temp;
+
+        //ShowInventory();
+        //ShowQuickSlot();
+    }
+
 
     #region 끼약
     public void Use(AdobeItemUseArguments arguments)
