@@ -1,0 +1,712 @@
+fileFormatVersion: 2
+guid: a9010db8a9fad754481253ceb82029b4
+ModelImporter:
+  serializedVersion: 25
+  internalIDToNameTable:
+  - first:
+      74: 5661149475953461668
+    second: SM_ENV_graveyard_shroom_06|SM_ENV_PLANT_shroom_v1_01|Take 001|Layer 001
+  - first:
+      74: -4009474840185012438
+    second: SM_ENV_graveyard_shroom_06|SM_ENV_PLANT_shroom_v1_02_cut|Take 001|Layer
+      001
+  - first:
+      74: -6754313069369859166
+    second: SM_ENV_graveyard_shroom_06|SM_ENV_PLANT_shroom_v1_02|Take 001|Layer 001
+  - first:
+      74: -2703480762663109475
+    second: SM_ENV_graveyard_shroom_06|SM_PROP_streetlamp_v01_01|SM_PROP_streetlamp_v01_01|SM_ENV_PLAN
+  - first:
+      74: -1656673010060670924
+    second: SM_ENV_graveyard_shroom_06|SM_PROP_streetlamp_v01_01|SM_PROP_streetlamp_v01_01|SM_PROP.000
+  - first:
+      74: -488863047443678267
+    second: SM_ENV_graveyard_shroom_06|SM_PROP_streetlamp_v01_01|SM_PROP_streetlamp_v01_01|SM_PROP.001
+  - first:
+      74: 7058336689780517289
+    second: SM_ENV_graveyard_shroom_06|SM_PROP_streetlamp_v01_01|SM_PROP_streetlamp_v01_01|SM_PROP.002
+  - first:
+      74: 7694603197029961365
+    second: SM_ENV_graveyard_shroom_06|SM_PROP_streetlamp_v01_01|SM_PROP_streetlamp_v01_01|SM_PROP.003
+  - first:
+      74: -5988369908204943806
+    second: SM_ENV_graveyard_shroom_06|SM_PROP_streetlamp_v01_01|SM_PROP_streetlamp_v01_01|SM_PROP.004
+  - first:
+      74: -3816189006053910612
+    second: SM_ENV_graveyard_shroom_06|SM_PROP_streetlamp_v01_01|SM_PROP_streetlamp_v01_01|SM_PROP.005
+  - first:
+      74: -8190432000703762776
+    second: SM_ENV_graveyard_shroom_06|SM_PROP_streetlamp_v01_01|SM_PROP_streetlamp_v01_01|SM_PROP.006
+  - first:
+      74: 3406798219636390269
+    second: SM_ENV_graveyard_shroom_06|SM_PROP_streetlamp_v01_01|SM_PROP_streetlamp_v01_01|SM_PROP.007
+  - first:
+      74: -1844061146202535345
+    second: SM_ENV_graveyard_shroom_06|SM_PROP_streetlamp_v01_01|SM_PROP_streetlamp_v01_01|SM_PROP.008
+  - first:
+      74: 6359182628650589308
+    second: SM_ENV_graveyard_shroom_06|SM_PROP_streetlamp_v01_01|SM_PROP_streetlamp_v01_01|SM_PROP.009
+  - first:
+      74: -6264892354039961220
+    second: SM_ENV_graveyard_shroom_06|SM_PROP_streetlamp_v01_01|SM_PROP_streetlamp_v01_01|SM_PROP.010
+  - first:
+      74: -673514926243004327
+    second: SM_ENV_graveyard_shroom_06|SM_PROP_streetlamp_v01_01|SM_PROP_streetlamp_v01_01|SM_PROP.011
+  - first:
+      74: -9108223518204139115
+    second: SM_ENV_graveyard_shroom_06|SM_PROP_streetlamp_v01_01|SM_PROP_streetlamp_v01_01|SM_PROP.012
+  - first:
+      74: -2952907699066505345
+    second: SM_ENV_graveyard_shroom_06|SM_PROP_streetlamp_v01_01|SM_PROP_streetlamp_v01_01|SM_PROP.013
+  - first:
+      74: 2658475758468428630
+    second: SM_ENV_graveyard_shroom_06|SM_PROP_streetlamp_v01_01|SM_PROP_streetlamp_v01_01|SM_PROP_PLA
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_ENV_shroom_graveyard
+    second: {fileID: 2100000, guid: 7cb2de0b02ea3174a98f7d00763dfc34, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: SM_ENV_graveyard_shroom_06|SM_ENV_PLANT_shroom_v1_01|Take 001|Layer 001
+      takeName: SM_ENV_graveyard_shroom_06|SM_ENV_PLANT_shroom_v1_01|Take 001|Layer
+        001
+      internalID: 5661149475953461668
+      firstFrame: 0
+      lastFrame: 120
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: SM_ENV_graveyard_shroom_06|SM_ENV_PLANT_shroom_v1_02_cut|Take 001|Layer
+        001
+      takeName: SM_ENV_graveyard_shroom_06|SM_ENV_PLANT_shroom_v1_02_cut|Take 001|Layer
+        001
+      internalID: -4009474840185012438
+      firstFrame: 0
+      lastFrame: 120
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: SM_ENV_graveyard_shroom_06|SM_ENV_PLANT_shroom_v1_02|Take 001|Layer 001
+      takeName: SM_ENV_graveyard_shroom_06|SM_ENV_PLANT_shroom_v1_02|Take 001|Layer
+        001
+      internalID: -6754313069369859166
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: SM_ENV_graveyard_shroom_06|SM_PROP_streetlamp_v01_01|SM_PROP_streetlamp_v01_01|SM_ENV_PLAN
+      takeName: SM_ENV_graveyard_shroom_06|SM_PROP_streetlamp_v01_01|SM_PROP_streetlamp_v01_01|SM_ENV_PLAN
+      internalID: -2703480762663109475
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: SM_ENV_graveyard_shroom_06|SM_PROP_streetlamp_v01_01|SM_PROP_streetlamp_v01_01|SM_PROP.000
+      takeName: SM_ENV_graveyard_shroom_06|SM_PROP_streetlamp_v01_01|SM_PROP_streetlamp_v01_01|SM_PROP.000
+      internalID: -1656673010060670924
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: SM_ENV_graveyard_shroom_06|SM_PROP_streetlamp_v01_01|SM_PROP_streetlamp_v01_01|SM_PROP.001
+      takeName: SM_ENV_graveyard_shroom_06|SM_PROP_streetlamp_v01_01|SM_PROP_streetlamp_v01_01|SM_PROP.001
+      internalID: -488863047443678267
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: SM_ENV_graveyard_shroom_06|SM_PROP_streetlamp_v01_01|SM_PROP_streetlamp_v01_01|SM_PROP.002
+      takeName: SM_ENV_graveyard_shroom_06|SM_PROP_streetlamp_v01_01|SM_PROP_streetlamp_v01_01|SM_PROP.002
+      internalID: 7058336689780517289
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: SM_ENV_graveyard_shroom_06|SM_PROP_streetlamp_v01_01|SM_PROP_streetlamp_v01_01|SM_PROP.003
+      takeName: SM_ENV_graveyard_shroom_06|SM_PROP_streetlamp_v01_01|SM_PROP_streetlamp_v01_01|SM_PROP.003
+      internalID: 7694603197029961365
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: SM_ENV_graveyard_shroom_06|SM_PROP_streetlamp_v01_01|SM_PROP_streetlamp_v01_01|SM_PROP.004
+      takeName: SM_ENV_graveyard_shroom_06|SM_PROP_streetlamp_v01_01|SM_PROP_streetlamp_v01_01|SM_PROP.004
+      internalID: -5988369908204943806
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: SM_ENV_graveyard_shroom_06|SM_PROP_streetlamp_v01_01|SM_PROP_streetlamp_v01_01|SM_PROP.005
+      takeName: SM_ENV_graveyard_shroom_06|SM_PROP_streetlamp_v01_01|SM_PROP_streetlamp_v01_01|SM_PROP.005
+      internalID: -3816189006053910612
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: SM_ENV_graveyard_shroom_06|SM_PROP_streetlamp_v01_01|SM_PROP_streetlamp_v01_01|SM_PROP.006
+      takeName: SM_ENV_graveyard_shroom_06|SM_PROP_streetlamp_v01_01|SM_PROP_streetlamp_v01_01|SM_PROP.006
+      internalID: -8190432000703762776
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: SM_ENV_graveyard_shroom_06|SM_PROP_streetlamp_v01_01|SM_PROP_streetlamp_v01_01|SM_PROP.007
+      takeName: SM_ENV_graveyard_shroom_06|SM_PROP_streetlamp_v01_01|SM_PROP_streetlamp_v01_01|SM_PROP.007
+      internalID: 3406798219636390269
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: SM_ENV_graveyard_shroom_06|SM_PROP_streetlamp_v01_01|SM_PROP_streetlamp_v01_01|SM_PROP.008
+      takeName: SM_ENV_graveyard_shroom_06|SM_PROP_streetlamp_v01_01|SM_PROP_streetlamp_v01_01|SM_PROP.008
+      internalID: -1844061146202535345
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: SM_ENV_graveyard_shroom_06|SM_PROP_streetlamp_v01_01|SM_PROP_streetlamp_v01_01|SM_PROP.009
+      takeName: SM_ENV_graveyard_shroom_06|SM_PROP_streetlamp_v01_01|SM_PROP_streetlamp_v01_01|SM_PROP.009
+      internalID: 6359182628650589308
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: SM_ENV_graveyard_shroom_06|SM_PROP_streetlamp_v01_01|SM_PROP_streetlamp_v01_01|SM_PROP.010
+      takeName: SM_ENV_graveyard_shroom_06|SM_PROP_streetlamp_v01_01|SM_PROP_streetlamp_v01_01|SM_PROP.010
+      internalID: -6264892354039961220
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: SM_ENV_graveyard_shroom_06|SM_PROP_streetlamp_v01_01|SM_PROP_streetlamp_v01_01|SM_PROP.011
+      takeName: SM_ENV_graveyard_shroom_06|SM_PROP_streetlamp_v01_01|SM_PROP_streetlamp_v01_01|SM_PROP.011
+      internalID: -673514926243004327
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: SM_ENV_graveyard_shroom_06|SM_PROP_streetlamp_v01_01|SM_PROP_streetlamp_v01_01|SM_PROP.012
+      takeName: SM_ENV_graveyard_shroom_06|SM_PROP_streetlamp_v01_01|SM_PROP_streetlamp_v01_01|SM_PROP.012
+      internalID: -9108223518204139115
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: SM_ENV_graveyard_shroom_06|SM_PROP_streetlamp_v01_01|SM_PROP_streetlamp_v01_01|SM_PROP.013
+      takeName: SM_ENV_graveyard_shroom_06|SM_PROP_streetlamp_v01_01|SM_PROP_streetlamp_v01_01|SM_PROP.013
+      internalID: -2952907699066505345
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: SM_ENV_graveyard_shroom_06|SM_PROP_streetlamp_v01_01|SM_PROP_streetlamp_v01_01|SM_PROP_PLA
+      takeName: SM_ENV_graveyard_shroom_06|SM_PROP_streetlamp_v01_01|SM_PROP_streetlamp_v01_01|SM_PROP_PLA
+      internalID: 2658475758468428630
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

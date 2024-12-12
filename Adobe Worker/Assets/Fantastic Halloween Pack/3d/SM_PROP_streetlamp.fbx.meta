@@ -1,0 +1,722 @@
+fileFormatVersion: 2
+guid: 25668c26c3a9a1648a788afe3d8897ea
+ModelImporter:
+  serializedVersion: 25
+  internalIDToNameTable:
+  - first:
+      74: -4935221859454759839
+    second: SM_PROP_streetlamp|SM_ENV_PLANT_shroom_v1_01|Take 001|Layer 001
+  - first:
+      74: 7369295265168914699
+    second: SM_PROP_streetlamp|SM_ENV_PLANT_shroom_v1_02_cut|Take 001|Layer 001
+  - first:
+      74: 1603110920577111595
+    second: SM_PROP_streetlamp|SM_ENV_PLANT_shroom_v1_02|Take 001|Layer 001
+  - first:
+      74: -8364219934197150438
+    second: SM_PROP_streetlamp|SM_PROP_streetlamp_v01_01|SM_PROP_streetlamp_v01_01|SM_ENV_PLAN
+  - first:
+      74: 83710074406664941
+    second: SM_PROP_streetlamp|SM_PROP_streetlamp_v01_01|SM_PROP_streetlamp_v01_01|SM_PROP.000
+  - first:
+      74: -5941174025542759280
+    second: SM_PROP_streetlamp|SM_PROP_streetlamp_v01_01|SM_PROP_streetlamp_v01_01|SM_PROP.001
+  - first:
+      74: -2237589741562249801
+    second: SM_PROP_streetlamp|SM_PROP_streetlamp_v01_01|SM_PROP_streetlamp_v01_01|SM_PROP.002
+  - first:
+      74: 2059916038225670997
+    second: SM_PROP_streetlamp|SM_PROP_streetlamp_v01_01|SM_PROP_streetlamp_v01_01|SM_PROP.003
+  - first:
+      74: -3984194912337245768
+    second: SM_PROP_streetlamp|SM_PROP_streetlamp_v01_01|SM_PROP_streetlamp_v01_01|SM_PROP.004
+  - first:
+      74: -8882739372110608807
+    second: SM_PROP_streetlamp|SM_PROP_streetlamp_v01_01|SM_PROP_streetlamp_v01_01|SM_PROP.005
+  - first:
+      74: 8643924037165861274
+    second: SM_PROP_streetlamp|SM_PROP_streetlamp_v01_01|SM_PROP_streetlamp_v01_01|SM_PROP.006
+  - first:
+      74: -5377946481297151166
+    second: SM_PROP_streetlamp|SM_PROP_streetlamp_v01_01|SM_PROP_streetlamp_v01_01|SM_PROP.007
+  - first:
+      74: 8747975294155260796
+    second: SM_PROP_streetlamp|SM_PROP_streetlamp_v01_01|SM_PROP_streetlamp_v01_01|SM_PROP.008
+  - first:
+      74: -1179782830672897696
+    second: SM_PROP_streetlamp|SM_PROP_streetlamp_v01_01|SM_PROP_streetlamp_v01_01|SM_PROP.009
+  - first:
+      74: 1151164435142574944
+    second: SM_PROP_streetlamp|SM_PROP_streetlamp_v01_01|SM_PROP_streetlamp_v01_01|SM_PROP.010
+  - first:
+      74: -8660148679759223216
+    second: SM_PROP_streetlamp|SM_PROP_streetlamp_v01_01|SM_PROP_streetlamp_v01_01|SM_PROP.011
+  - first:
+      74: 7329559819364435097
+    second: SM_PROP_streetlamp|SM_PROP_streetlamp_v01_01|SM_PROP_streetlamp_v01_01|SM_PROP.012
+  - first:
+      74: -3642640958549054763
+    second: SM_PROP_streetlamp|SM_PROP_streetlamp_v01_01|SM_PROP_streetlamp_v01_01|SM_PROP.013
+  - first:
+      74: -3112598633517581438
+    second: SM_PROP_streetlamp|SM_PROP_streetlamp_v01_01|SM_PROP_streetlamp_v01_01|SM_PROP_PLA
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_CLR_yellow
+    second: {fileID: 2100000, guid: 86db9cfabc8136e418d9acfea09919f5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_metal_02
+    second: {fileID: 2100000, guid: f2a56f9b0b3314b478da81f0d235a12b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_stonebrick_02
+    second: {fileID: 2100000, guid: 263d0d95175744e4f87d86fa5b4dda96, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_wood_07
+    second: {fileID: 2100000, guid: 3fd44492ecd00774ca0d37fa557cca06, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: SM_PROP_streetlamp|SM_ENV_PLANT_shroom_v1_01|Take 001|Layer 001
+      takeName: SM_PROP_streetlamp|SM_ENV_PLANT_shroom_v1_01|Take 001|Layer 001
+      internalID: -4935221859454759839
+      firstFrame: 0
+      lastFrame: 120
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: SM_PROP_streetlamp|SM_ENV_PLANT_shroom_v1_02_cut|Take 001|Layer 001
+      takeName: SM_PROP_streetlamp|SM_ENV_PLANT_shroom_v1_02_cut|Take 001|Layer 001
+      internalID: 7369295265168914699
+      firstFrame: 0
+      lastFrame: 120
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: SM_PROP_streetlamp|SM_ENV_PLANT_shroom_v1_02|Take 001|Layer 001
+      takeName: SM_PROP_streetlamp|SM_ENV_PLANT_shroom_v1_02|Take 001|Layer 001
+      internalID: 1603110920577111595
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: SM_PROP_streetlamp|SM_PROP_streetlamp_v01_01|SM_PROP_streetlamp_v01_01|SM_ENV_PLAN
+      takeName: SM_PROP_streetlamp|SM_PROP_streetlamp_v01_01|SM_PROP_streetlamp_v01_01|SM_ENV_PLAN
+      internalID: -8364219934197150438
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: SM_PROP_streetlamp|SM_PROP_streetlamp_v01_01|SM_PROP_streetlamp_v01_01|SM_PROP.000
+      takeName: SM_PROP_streetlamp|SM_PROP_streetlamp_v01_01|SM_PROP_streetlamp_v01_01|SM_PROP.000
+      internalID: 83710074406664941
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: SM_PROP_streetlamp|SM_PROP_streetlamp_v01_01|SM_PROP_streetlamp_v01_01|SM_PROP.001
+      takeName: SM_PROP_streetlamp|SM_PROP_streetlamp_v01_01|SM_PROP_streetlamp_v01_01|SM_PROP.001
+      internalID: -5941174025542759280
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: SM_PROP_streetlamp|SM_PROP_streetlamp_v01_01|SM_PROP_streetlamp_v01_01|SM_PROP.002
+      takeName: SM_PROP_streetlamp|SM_PROP_streetlamp_v01_01|SM_PROP_streetlamp_v01_01|SM_PROP.002
+      internalID: -2237589741562249801
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: SM_PROP_streetlamp|SM_PROP_streetlamp_v01_01|SM_PROP_streetlamp_v01_01|SM_PROP.003
+      takeName: SM_PROP_streetlamp|SM_PROP_streetlamp_v01_01|SM_PROP_streetlamp_v01_01|SM_PROP.003
+      internalID: 2059916038225670997
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: SM_PROP_streetlamp|SM_PROP_streetlamp_v01_01|SM_PROP_streetlamp_v01_01|SM_PROP.004
+      takeName: SM_PROP_streetlamp|SM_PROP_streetlamp_v01_01|SM_PROP_streetlamp_v01_01|SM_PROP.004
+      internalID: -3984194912337245768
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: SM_PROP_streetlamp|SM_PROP_streetlamp_v01_01|SM_PROP_streetlamp_v01_01|SM_PROP.005
+      takeName: SM_PROP_streetlamp|SM_PROP_streetlamp_v01_01|SM_PROP_streetlamp_v01_01|SM_PROP.005
+      internalID: -8882739372110608807
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: SM_PROP_streetlamp|SM_PROP_streetlamp_v01_01|SM_PROP_streetlamp_v01_01|SM_PROP.006
+      takeName: SM_PROP_streetlamp|SM_PROP_streetlamp_v01_01|SM_PROP_streetlamp_v01_01|SM_PROP.006
+      internalID: 8643924037165861274
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: SM_PROP_streetlamp|SM_PROP_streetlamp_v01_01|SM_PROP_streetlamp_v01_01|SM_PROP.007
+      takeName: SM_PROP_streetlamp|SM_PROP_streetlamp_v01_01|SM_PROP_streetlamp_v01_01|SM_PROP.007
+      internalID: -5377946481297151166
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: SM_PROP_streetlamp|SM_PROP_streetlamp_v01_01|SM_PROP_streetlamp_v01_01|SM_PROP.008
+      takeName: SM_PROP_streetlamp|SM_PROP_streetlamp_v01_01|SM_PROP_streetlamp_v01_01|SM_PROP.008
+      internalID: 8747975294155260796
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: SM_PROP_streetlamp|SM_PROP_streetlamp_v01_01|SM_PROP_streetlamp_v01_01|SM_PROP.009
+      takeName: SM_PROP_streetlamp|SM_PROP_streetlamp_v01_01|SM_PROP_streetlamp_v01_01|SM_PROP.009
+      internalID: -1179782830672897696
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: SM_PROP_streetlamp|SM_PROP_streetlamp_v01_01|SM_PROP_streetlamp_v01_01|SM_PROP.010
+      takeName: SM_PROP_streetlamp|SM_PROP_streetlamp_v01_01|SM_PROP_streetlamp_v01_01|SM_PROP.010
+      internalID: 1151164435142574944
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: SM_PROP_streetlamp|SM_PROP_streetlamp_v01_01|SM_PROP_streetlamp_v01_01|SM_PROP.011
+      takeName: SM_PROP_streetlamp|SM_PROP_streetlamp_v01_01|SM_PROP_streetlamp_v01_01|SM_PROP.011
+      internalID: -8660148679759223216
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: SM_PROP_streetlamp|SM_PROP_streetlamp_v01_01|SM_PROP_streetlamp_v01_01|SM_PROP.012
+      takeName: SM_PROP_streetlamp|SM_PROP_streetlamp_v01_01|SM_PROP_streetlamp_v01_01|SM_PROP.012
+      internalID: 7329559819364435097
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: SM_PROP_streetlamp|SM_PROP_streetlamp_v01_01|SM_PROP_streetlamp_v01_01|SM_PROP.013
+      takeName: SM_PROP_streetlamp|SM_PROP_streetlamp_v01_01|SM_PROP_streetlamp_v01_01|SM_PROP.013
+      internalID: -3642640958549054763
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: SM_PROP_streetlamp|SM_PROP_streetlamp_v01_01|SM_PROP_streetlamp_v01_01|SM_PROP_PLA
+      takeName: SM_PROP_streetlamp|SM_PROP_streetlamp_v01_01|SM_PROP_streetlamp_v01_01|SM_PROP_PLA
+      internalID: -3112598633517581438
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
