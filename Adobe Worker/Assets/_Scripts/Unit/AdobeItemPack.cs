@@ -19,7 +19,7 @@ public class AdobeItemPack : MonoBehaviour
 
     [SerializeField] float radius;
     const int PLAYER_INVENTORY_MAX_SIZE = 24;   // 6 * 4 슬롯
-    const int QUICK_SLOT_START_INDEX = 18;      // 마크처럼 맨 아랫줄이 퀵슬롯에 해당하는 슬롯
+    const int QUICK_SLOT_START_INDEX = 0;      // 마크처럼 맨 아랫줄이 퀵슬롯에 해당하는 슬롯
 
     private void Start()
     {
@@ -80,9 +80,10 @@ public class AdobeItemPack : MonoBehaviour
 
     public void SwapItems(int fromIndex, int toIndex)
     {
-        if (fromIndex < 0 || toIndex < 0 || fromIndex >= inventory.Count || toIndex >= inventory.Count)
+        if (inventory == null || fromIndex < 0 || toIndex < 0 || fromIndex >= inventory.Count || toIndex >= inventory.Count)
         {
-            return; // 유효하지 않은 인덱스 방어 코드
+            Debug.LogError("Invalid inventory or indices!");
+            return;
         }
 
         AdobeItemBase temp = inventory[fromIndex];
@@ -92,7 +93,6 @@ public class AdobeItemPack : MonoBehaviour
         ShowInventory();
         ShowQuickSlot();
     }
-
 
     #region 끼약
     public void Use(AdobeItemUseArguments arguments)
