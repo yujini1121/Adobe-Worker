@@ -30,11 +30,11 @@ public class PlayerMovement : MonoBehaviour
     {
         { EActionType.none, 0 },
         { EActionType.fist, 0.125f },
-        { EActionType.sword, 0.5f },
-        { EActionType.spear, 0.5f },
-        { EActionType.bow, 0.8f },
+        { EActionType.sword, 1.15f },
+        { EActionType.spear, 1.15f },
+        { EActionType.bow, 0.75f },
         { EActionType.shuriken, 0.25f },
-        { EActionType.amulet, 0.25f },
+        { EActionType.amulet, 0.75f },
         { EActionType.axe, 0.5f },
         { EActionType.pickaxe, 0.5f },
     };
@@ -56,7 +56,7 @@ public class PlayerMovement : MonoBehaviour
         inventory = GetComponent<AdobeItemPack>();
         // 만약 여기 아래에 에러가 나면, 원래 했던대로 주인공 캐릭터 메쉬 받아서 쓰기
 
-        characterMeshTransform = transform.Find("stand");
+        characterMeshTransform = transform.Find("T_Pose");
 
         if (characterMeshTransform != null)
         {
