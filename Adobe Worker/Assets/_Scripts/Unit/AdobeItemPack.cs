@@ -62,7 +62,7 @@ public class AdobeItemPack : MonoBehaviour
     {
         for (int index = 0; index < inventory.Count; ++index)
         {
-            if (inventory[index].id != id) continue;
+            if (inventory[index].Id != id) continue;
             count -= inventory[index].amount;
             if (count <= 0) return true;
         }
@@ -93,7 +93,7 @@ public class AdobeItemPack : MonoBehaviour
         for (int index = inventory.Count - 1; index >= 0; --index)
         {
             bool hasElementRemoved = false;
-            if (inventory[index].id != id) continue;
+            if (inventory[index].Id != id) continue;
             if (amount >= inventory[index].amount)
             {
                 amount -= inventory[index].amount;
@@ -122,7 +122,7 @@ public class AdobeItemPack : MonoBehaviour
     {
         for (int index = 0; index < inventory.Count; ++index)
         {
-            if (inventory[index].id == target.id)
+            if (inventory[index].Id == target.Id)
             {
                 inventory[index].amount += target.amount;
                 return;

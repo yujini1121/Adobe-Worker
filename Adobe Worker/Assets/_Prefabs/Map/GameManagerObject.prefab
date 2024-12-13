@@ -92,6 +92,10 @@ MonoBehaviour:
     type: 3}
   amuletAttackRange: {fileID: 9048709265329161449, guid: 1d6783df7d20dd842847ec1fa899d221,
     type: 3}
+  axeActionRange: {fileID: 8378799658704188605, guid: dcaf4ed0142dfc8418fab3425b09d594,
+    type: 3}
+  pickaxeActionRange: {fileID: 8378799658704188605, guid: 37e395fe79c4d884fa84a552d72eddcc,
+    type: 3}
   defaultDropItemPrefab: {fileID: 5744674744600871171, guid: 087f263bfa08d524a9772e0fbf6de830,
     type: 3}
 --- !u!114 &872439630073384820
@@ -114,6 +118,9 @@ MonoBehaviour:
     hunger: 0
     sanity: 0
     items: []
+  itemEntry:
+    id: 0
+    amount: 0
 --- !u!114 &6209258736025741721
 MonoBehaviour:
   m_ObjectHideFlags: 0

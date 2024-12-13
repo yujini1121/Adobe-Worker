@@ -31,16 +31,16 @@ public class ItemHealable : AdobeItemBase
             Debug.Log($"<!>ItemHealable.Use(AdobeItemUseArguments arguments) : {gameObject.name}의 플레이어 컨트롤러가 존재하지 않음!");
             return;
         }
-        if (itemPack.IsExist(id) == false)
+        if (itemPack.IsExist(Id) == false)
         {
-            Debug.Log($"<!>ItemHealable.Use(AdobeItemUseArguments arguments) : {gameObject.name}의 itempack은 해당 컴포넌트를 가리키지만, 인벤토리에 유효한 amount({amount})가 아닙니다. id : {id}");
-            itemPack.Remove(id, 0);
+            Debug.Log($"<!>ItemHealable.Use(AdobeItemUseArguments arguments) : {gameObject.name}의 itempack은 해당 컴포넌트를 가리키지만, 인벤토리에 유효한 amount({amount})가 아닙니다. id : {Id}");
+            itemPack.Remove(Id, 0);
             return;
         }
 
-        Healamount healamount = GetHeal(id);
+        Healamount healamount = GetHeal(Id);
 
-        if (id != 502)
+        if (Id != 502)
         {
             playerController.Heal(healamount.addHealth, healamount.addStamina);
         }
@@ -49,6 +49,6 @@ public class ItemHealable : AdobeItemBase
             playerController.HealStamina(healamount.addStamina, healamount.staminaLimit);
         }
 
-        itemPack.Remove(id);
+        itemPack.Remove(Id);
     }
 }

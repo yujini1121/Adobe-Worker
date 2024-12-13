@@ -4,6 +4,11 @@ using UnityEngine;
 
 public class AdobeItemAmulet : AdobeItemBase
 {
+    private void Awake()
+    {
+        m_id = 211;
+    }
+
     public override void Use(AdobeItemUseArguments arguments)
     {
         AdobePlayerController player = arguments.itemUser.GetComponent<AdobePlayerController>();
@@ -21,6 +26,6 @@ public class AdobeItemAmulet : AdobeItemBase
             AdobePrefabManager.amuletRange,
             arguments.itemUser.transform.position + 2.0f * arguments.direction,
             arguments.rotation);
-        instantiated.GetComponent<AdobeAttackRange>().SetDamage(SimpleWeaponSpec.Get(id).damage);
+        instantiated.GetComponent<AdobeAttackRange>().SetDamage(SimpleWeaponSpec.Get(Id).damage);
     }
 }

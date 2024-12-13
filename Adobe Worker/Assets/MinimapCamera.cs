@@ -8,6 +8,15 @@ public class MinimapFollow : MonoBehaviour
     [Tooltip("0~1 사이의 값")]
     [SerializeField] private float smoothSpeed = 0.125f;
 
+    private void Start()
+    {
+        GameObject playerGameObject = AdobePlayerReference.playerInstance;
+        if (player == null && playerGameObject != null)
+        {
+            player = playerGameObject.transform;
+        }
+    }
+
     void Update()
     {
         Vector3 desiredPosition = player.position + cameraOffset;

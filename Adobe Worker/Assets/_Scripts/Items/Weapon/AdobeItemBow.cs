@@ -4,6 +4,11 @@ using UnityEngine;
 
 public class AdobeItemBow : AdobeItemConsumable
 {
+    private void Awake()
+    {
+        m_id = 207;
+    }
+
     public override void Use(AdobeItemUseArguments arguments)
     {
         if (itemPack == null)

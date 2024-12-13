@@ -10,7 +10,7 @@ public class AdobeItemSword : AdobeItemConsumable
             AdobePrefabManager.swordRange,
             arguments.itemUser.transform.position + 2.0f * arguments.direction,
             arguments.rotation);
-        instantiated.GetComponent<AdobeAttackRange>().SetDamage(SimpleWeaponSpec.Get(id).damage);
+        instantiated.GetComponent<AdobeAttackRange>().SetDamage(SimpleWeaponSpec.Get(Id).damage);
 
         Consume(this);
     }
