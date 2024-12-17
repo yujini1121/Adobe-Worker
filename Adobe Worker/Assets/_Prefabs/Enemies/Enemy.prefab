@@ -20,6 +20,7 @@ GameObject:
   - component: {fileID: 2590737085372630525}
   - component: {fileID: 3851833724049796364}
   - component: {fileID: 3855203658020334317}
+  - component: {fileID: 4202276526955247162}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -144,11 +145,13 @@ MonoBehaviour:
   fromAttack: 1
   fromStructure: 0
   fromItem: 0
+  fromEnemyAttack: 0
   player: 0
   enemy: 1
   attack: 0
   structure: 0
   item: 0
+  enemyAttack: 0
   inspectorInputTags: 
   inspectorOutputTags: 
 --- !u!114 &1795116203929268945
@@ -166,6 +169,9 @@ MonoBehaviour:
   health: 30
   speed: 3
   detectRange: 50
+  attackTryRange: 2
+  attacTermTime: 2
+  offsetAttackPosition: 0
 --- !u!54 &5408920002045801190
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -255,3 +261,17 @@ MonoBehaviour:
   memo: 
   amount: 0
   m_id: 0
+--- !u!114 &4202276526955247162
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7833260069890500132}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34f71fbbcbc2b4a4397e9d46579e29de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 0}
+  deadTime: 0

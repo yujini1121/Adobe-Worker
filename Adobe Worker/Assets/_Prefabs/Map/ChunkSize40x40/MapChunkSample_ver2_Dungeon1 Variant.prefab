@@ -772,12 +772,17 @@ PrefabInstance:
     - target: {fileID: 4446405638517318338, guid: 4aeaf6cf1dfa04946b93f6bfaa512f02,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.025
+      value: 0.04
+      objectReference: {fileID: 0}
+    - target: {fileID: 4446405638517318338, guid: 4aeaf6cf1dfa04946b93f6bfaa512f02,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.5999999
       objectReference: {fileID: 0}
     - target: {fileID: 4446405638517318338, guid: 4aeaf6cf1dfa04946b93f6bfaa512f02,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.025
+      value: 0.04
       objectReference: {fileID: 0}
     - target: {fileID: 4446405638517318338, guid: 4aeaf6cf1dfa04946b93f6bfaa512f02,
         type: 3}
@@ -828,6 +833,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4446405638517318338, guid: 4aeaf6cf1dfa04946b93f6bfaa512f02,
+        type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1128,7 +1138,7 @@ PrefabInstance:
     - target: {fileID: 8319565216563176255, guid: 0f9cffdd45e29084ab9d6a7c4b8fcb46,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.25
+      value: 0.101
       objectReference: {fileID: 0}
     - target: {fileID: 8319565216563176255, guid: 0f9cffdd45e29084ab9d6a7c4b8fcb46,
         type: 3}
@@ -1271,7 +1281,7 @@ PrefabInstance:
     - target: {fileID: 570195514331524545, guid: fefa919a600ed68469d217c8950caa4e,
         type: 3}
       propertyPath: m_Name
-      value: MapChunkSample_ver2_Dungeon Variant
+      value: MapChunkSample_ver2_Dungeon1 Variant
       objectReference: {fileID: 0}
     - target: {fileID: 654103081178402215, guid: fefa919a600ed68469d217c8950caa4e,
         type: 3}

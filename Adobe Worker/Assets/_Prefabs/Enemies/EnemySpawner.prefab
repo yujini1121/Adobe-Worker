@@ -119,8 +119,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Enemies:
-  - {fileID: 7833260069890500132, guid: 8626933fef279db46bbfe041e41dabee, type: 3}
   - {fileID: 73487338983733408, guid: a4df0ea48921cca4583195f9e81f5380, type: 3}
+  - {fileID: 8601985397821198941, guid: 6d1bb8cb25bdb5f41814f4a5fb3cd2d7, type: 3}
   spawnPeriod: 20
   spawnPositionRange: 10
   spawnContitionDistnace: 20

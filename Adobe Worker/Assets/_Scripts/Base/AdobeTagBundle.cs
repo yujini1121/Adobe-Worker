@@ -14,6 +14,7 @@ public class AdobeTagBundle : MonoBehaviour
     [SerializeField] bool fromAttack;
     [SerializeField] bool fromStructure;
     [SerializeField] bool fromItem;
+    [SerializeField] bool fromEnemyAttack;
 
     [Header("충돌시 외부에게 보낼 정보 : 자신을 설명하는 태그(외부 호출)")]
     [SerializeField] bool player;
@@ -21,10 +22,11 @@ public class AdobeTagBundle : MonoBehaviour
     [SerializeField] bool attack;
     [SerializeField] bool structure;
     [SerializeField] bool item;
+    [SerializeField] bool enemyAttack;
     [SerializeField] List<bool> inspectorInputTags;
     [SerializeField] List<bool> inspectorOutputTags;
 
-    const int INSPECTOR_TAGS_COUNT = 5;
+    const int INSPECTOR_TAGS_COUNT = 6;
     int inputTagValue; // receive tag from other
     int outputTagValue; // insert tag to other
     System.Action<AdobeTagActionArguments> tagActionReceiving;
@@ -150,12 +152,14 @@ public class AdobeTagBundle : MonoBehaviour
         if (fromAttack == true) AddInputTag(2);
         if (fromStructure == true) AddInputTag(3);
         if (fromItem == true) AddInputTag(4);
+        if (fromEnemyAttack == true) AddInputTag(5);
 
         if (player == true) AddOutputTag(0);
         if (enemy == true) AddOutputTag(1);
         if (attack == true) AddOutputTag(2);
         if (structure == true) AddOutputTag(3);
         if (item == true) AddOutputTag(4);
+        if (enemyAttack == true) AddOutputTag(5);
 
         for (int index = 0; index < 32 - INSPECTOR_TAGS_COUNT && index < inspectorInputTags.Count; ++index)
         {

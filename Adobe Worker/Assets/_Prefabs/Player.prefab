@@ -215,11 +215,13 @@ MonoBehaviour:
   fromAttack: 1
   fromStructure: 1
   fromItem: 1
+  fromEnemyAttack: 1
   player: 1
   enemy: 0
   attack: 0
   structure: 0
   item: 0
+  enemyAttack: 0
   inspectorInputTags: 
   inspectorOutputTags: 
 --- !u!114 &4859353026370584560

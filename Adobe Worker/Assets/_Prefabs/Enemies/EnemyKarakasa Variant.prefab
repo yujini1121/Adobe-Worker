@@ -13,6 +13,56 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1795116203929268945, guid: 8626933fef279db46bbfe041e41dabee,
+        type: 3}
+      propertyPath: attackTryRange
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4202276526955247162, guid: 8626933fef279db46bbfe041e41dabee,
+        type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 5618138125942681522}
+    - target: {fileID: 4202276526955247162, guid: 8626933fef279db46bbfe041e41dabee,
+        type: 3}
+      propertyPath: deadTime
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4202276526955247162, guid: 8626933fef279db46bbfe041e41dabee,
+        type: 3}
+      propertyPath: randomWeights.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4202276526955247162, guid: 8626933fef279db46bbfe041e41dabee,
+        type: 3}
+      propertyPath: randomWeights.Array.data[0].value
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4202276526955247162, guid: 8626933fef279db46bbfe041e41dabee,
+        type: 3}
+      propertyPath: randomWeights.Array.data[1].value
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4202276526955247162, guid: 8626933fef279db46bbfe041e41dabee,
+        type: 3}
+      propertyPath: randomWeights.Array.data[2].value
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4202276526955247162, guid: 8626933fef279db46bbfe041e41dabee,
+        type: 3}
+      propertyPath: randomWeights.Array.data[0].weight
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4202276526955247162, guid: 8626933fef279db46bbfe041e41dabee,
+        type: 3}
+      propertyPath: randomWeights.Array.data[1].weight
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4202276526955247162, guid: 8626933fef279db46bbfe041e41dabee,
+        type: 3}
+      propertyPath: randomWeights.Array.data[2].weight
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 7124041675221622096, guid: 8626933fef279db46bbfe041e41dabee,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -179,6 +229,12 @@ PrefabInstance:
 --- !u!4 &1952185160620946888 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7463940980180917469, guid: 6f7bcac4584649d4b98213d5ec1c3fd8,
+    type: 3}
+  m_PrefabInstance: {fileID: 8971927788880898325}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &5618138125942681522 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 3563774549077509799, guid: 6f7bcac4584649d4b98213d5ec1c3fd8,
     type: 3}
   m_PrefabInstance: {fileID: 8971927788880898325}
   m_PrefabAsset: {fileID: 0}
