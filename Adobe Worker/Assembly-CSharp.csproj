@@ -134,7 +134,6 @@
     <Compile Include="Assets\_Scripts\UserIO\DurabilityBarController.cs" />
     <Compile Include="Assets\_Scripts\Unit\Enemy\AiFunction.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SkewTextExample.cs" />
-    <Compile Include="Assets\_Scripts\Items\AdobeRecipeManager.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\WarpTextExample.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshProFloatingText.cs" />
     <Compile Include="Assets\_Scripts\TempTaeYoon\TempPlayerControllerAlpha.cs" />
