@@ -4,6 +4,18 @@ using UnityEngine;
 using UnityEngine.UI;
 
 [System.Serializable]
+public class ItemRecipes
+{
+    public string[] ingredients;
+    public string result;
+}
+
+[System.Serializable]
+public class ItemRecipeArray
+{
+    public ItemRecipes[] recipes;
+}
+
 public class AdobeItemPack : MonoBehaviour
 {
     [Tooltip("코드로 접근해서 수정할 수 있으나, AdobeItemBase를 상속하는 컴포넌트를 어태치하고, 인스펙터 창에서 드래그 앤 드롭으로 해도 됩니다.")]
@@ -15,6 +27,10 @@ public class AdobeItemPack : MonoBehaviour
     [Space(20f)]
     [Header("Real Inventory")]
     public List<AdobeItemBase> inventory;
+
+    [Space(20f)]
+    [Header("Item Recipes")]
+    public TextAsset recipesJsonFile;
 
     public int InventoryIndex { get => m_inventoryIndex; }
     private int m_inventoryIndex;
@@ -30,6 +46,19 @@ public class AdobeItemPack : MonoBehaviour
             inventory = new List<AdobeItemBase>();
         }
         m_inventoryIndex = 0;
+
+        if (recipesJsonFile != null)
+        {
+            ItemRecipes[] recipes = JsonUtility.FromJson<ItemRecipeArray>(recipesJsonFile.text).recipes;
+            foreach (var recipe in recipes)
+            {
+                Debug.Log($"Recipe: {recipe.result}");
+                foreach (var ingredient in recipe.ingredients)
+                {
+                    Debug.Log($"Ingredient: {ingredient}");
+                }
+            }
+        }
 
         ShowQuickSlot();
         ShowInventory();

@@ -6,6 +6,7 @@ public class AdobeItemSlot : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
 {
     [SerializeField] private int slotIndex;
     [SerializeField] private AdobeItemPack itemPack;
+    [SerializeField] private AdobeCraftManager craftManager;
 
     private Canvas canvas;
     private CanvasGroup canvasGroup;
@@ -16,7 +17,6 @@ public class AdobeItemSlot : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
     private void Awake()
     {
         slotImage = GetComponent<Image>();
-
         canvasGroup = gameObject.AddComponent<CanvasGroup>();
         canvas = GetComponentInParent<Canvas>();
     }
@@ -43,10 +43,9 @@ public class AdobeItemSlot : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
         GameObject dropTarget = eventData.pointerEnter;
         if (dropTarget != null && dropTarget.TryGetComponent(out AdobeItemSlot targetSlot))
         {
-            //Debug.Log("Slot Index: " + slotIndex);
-            //Debug.Log("Target Slot Index: " + targetSlot.slotIndex);
-
             itemPack.SwapItems(slotIndex, targetSlot.slotIndex);
+            // 퀵슬롯 아이템이 제작대 슬롯에 드래그되면 해당 슬롯에 추가
+            //craftManager.AddItemToCraftingSlot(itemPack.inventory[slotIndex], slotIndex);
         }
         else
         {
@@ -61,5 +60,4 @@ public class AdobeItemSlot : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
         itemPack.ShowInventory();
         itemPack.ShowQuickSlot();
     }
-
 }

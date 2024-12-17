@@ -97,6 +97,7 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark03.cs" />
     <Compile Include="Assets\_Scripts\Items\Vanilla\AdobeItemPaper.cs" />
     <Compile Include="Assets\_Scripts\UserIO\HealthBarController.cs" />
+    <Compile Include="Assets\_Scripts\Items\AdobeCraftiManager.cs" />
     <Compile Include="Assets\_Scripts\Maps\AdobeMapChunk.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_ExampleScript_01.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMPro_InstructionOverlay.cs" />

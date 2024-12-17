@@ -55,6 +55,7 @@ public class AdobePlayerController : MonoBehaviour
     [SerializeField] private bool isDebuggingHeal;
 
     // other component
+    [SerializeField] private GameObject inventoryPanel;
     AdobeItemPack inventory;
     PlayerMovement playerMovement;
 
@@ -127,15 +128,16 @@ public class AdobePlayerController : MonoBehaviour
 
 		PlayerDash();
 
+        if (Input.GetKeyDown(KeyCode.F))
+        {
+            inventoryPanel.SetActive(!inventoryPanel.activeSelf);
+        }
+
 	}
 
 	private void LateUpdate()
     {
         PlayerRotation();
-    }
-
-    private void FixedUpdate()
-    {
     }
 
     void MoveOrStop()
