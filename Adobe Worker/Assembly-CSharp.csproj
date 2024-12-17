@@ -96,6 +96,7 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark03.cs" />
     <Compile Include="Assets\_Scripts\Items\Vanilla\AdobeItemPaper.cs" />
     <Compile Include="Assets\_Scripts\UserIO\HealthBarController.cs" />
+    <Compile Include="Assets\_Scripts\Maps\AdobeMapChunk.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_ExampleScript_01.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMPro_InstructionOverlay.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeB.cs" />
@@ -103,6 +104,7 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\DropdownSample.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexColorCycler.cs" />
     <Compile Include="Assets\_Scripts\Base\DataStructure\AdobeItemUseArguments.cs" />
+    <Compile Include="Assets\_Scripts\Maps\AdobeMapGenerator.cs" />
     <Compile Include="Assets\_Scripts\UserIO\AdobeKeyBinding.cs" />
     <Compile Include="Assets\_Scripts\Items\Weapon\AdobeItemAmulet.cs" />
     <Compile Include="Assets\_Scripts\Base\DataStructure\AdobeSquareGraph.cs" />
@@ -121,11 +123,9 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TeleType.cs" />
     <Compile Include="Assets\_Scripts\Unit\AdobeUnitHealth.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventCheck.cs" />
-    <Compile Include="Assets\_Scripts\Items\Maps\AdobeMapChunk.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_UiFrameRateCounter.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexZoom.cs" />
     <Compile Include="Assets\_Scripts\TempTaeYoon\TempEnemyControllerAlpha.cs" />
-    <Compile Include="Assets\_Scripts\Items\Maps\AdobeMapGenerator.cs" />
     <Compile Include="Assets\_Scripts\Items\AdobeDroppedItem.cs" />
     <Compile Include="Assets\_Scripts\Base\AdobeEnemyBase.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_B.cs" />
