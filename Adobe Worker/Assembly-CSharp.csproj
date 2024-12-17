@@ -74,6 +74,7 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SimpleScript.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark04.cs" />
     <Compile Include="Assets\_Scripts\Items\Weapon\AdobeAttackRangeFlying.cs" />
+    <Compile Include="Assets\_Scripts\Base\EnemyMovementBase.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ChatController.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_DigitValidator.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_FrameRateCounter.cs" />
@@ -87,13 +88,14 @@
     <Compile Include="Assets\_Scripts\Base\AdobeTagBundle.cs" />
     <Compile Include="Assets\MinimapCamera.cs" />
     <Compile Include="Assets\_Scripts\Utility\AdobeUtility.cs" />
+    <Compile Include="Assets\_Scripts\UserIO\StaminaBarController.cs" />
     <Compile Include="Assets\_Scripts\Base\AdobeIDamageable.cs" />
     <Compile Include="Assets\_Scripts\Items\Tools\AdobeItemAxe.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\CameraController.cs" />
     <Compile Include="Assets\_Scripts\Unit\Player\AdobePlayerReference.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark03.cs" />
     <Compile Include="Assets\_Scripts\Items\Vanilla\AdobeItemPaper.cs" />
-    <Compile Include="Assets\_Scripts\Maps\AdobeMapChunk.cs" />
+    <Compile Include="Assets\_Scripts\UserIO\HealthBarController.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_ExampleScript_01.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMPro_InstructionOverlay.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeB.cs" />
@@ -101,7 +103,6 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\DropdownSample.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexColorCycler.cs" />
     <Compile Include="Assets\_Scripts\Base\DataStructure\AdobeItemUseArguments.cs" />
-    <Compile Include="Assets\_Scripts\Maps\AdobeMapGenerator.cs" />
     <Compile Include="Assets\_Scripts\UserIO\AdobeKeyBinding.cs" />
     <Compile Include="Assets\_Scripts\Items\Weapon\AdobeItemAmulet.cs" />
     <Compile Include="Assets\_Scripts\Base\DataStructure\AdobeSquareGraph.cs" />
@@ -120,12 +121,15 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TeleType.cs" />
     <Compile Include="Assets\_Scripts\Unit\AdobeUnitHealth.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventCheck.cs" />
+    <Compile Include="Assets\_Scripts\Items\Maps\AdobeMapChunk.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_UiFrameRateCounter.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexZoom.cs" />
     <Compile Include="Assets\_Scripts\TempTaeYoon\TempEnemyControllerAlpha.cs" />
+    <Compile Include="Assets\_Scripts\Items\Maps\AdobeMapGenerator.cs" />
     <Compile Include="Assets\_Scripts\Items\AdobeDroppedItem.cs" />
     <Compile Include="Assets\_Scripts\Base\AdobeEnemyBase.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_B.cs" />
+    <Compile Include="Assets\_Scripts\Unit\Enemy\BossController.cs" />
     <Compile Include="Assets\_Scripts\UserIO\DurabilityBarController.cs" />
     <Compile Include="Assets\_Scripts\Unit\Enemy\AiFunction.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SkewTextExample.cs" />
@@ -138,6 +142,7 @@
     <Compile Include="Assets\_Scripts\Items\Tools\AdobeItemPickaxe.cs" />
     <Compile Include="Assets\_Scripts\Unit\AdobeItemPack.cs" />
     <Compile Include="Assets\_Scripts\Items\Weapon\AdobeItemSpear.cs" />
+    <Compile Include="Assets\_Scripts\UserIO\StartButton.cs" />
     <Compile Include="Assets\_Scripts\Base\AdobeItemConsumable.cs" />
     <Compile Include="Assets\_Scripts\Structure\AdobeStructureColliderChild.cs" />
     <Compile Include="Assets\_Scripts\Unit\Player\PlayerMovement.cs" />

@@ -92,6 +92,8 @@ MonoBehaviour:
     type: 3}
   amuletAttackRange: {fileID: 9048709265329161449, guid: 1d6783df7d20dd842847ec1fa899d221,
     type: 3}
+  enemyAttackRangePrefab: {fileID: 8820156999284436960, guid: 038677dd8806144409838fa7f97e7322,
+    type: 3}
   axeActionRange: {fileID: 8378799658704188605, guid: dcaf4ed0142dfc8418fab3425b09d594,
     type: 3}
   pickaxeActionRange: {fileID: 8378799658704188605, guid: 37e395fe79c4d884fa84a552d72eddcc,

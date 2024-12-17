@@ -281,12 +281,15 @@ public class NpcController : MonoBehaviour
         {
             case 0:
                 Debug.Log("0번 실행");
+                aiFunction.StayIdle();
                 break;
             case 1:
                 Debug.Log("1번 실행");
+                aiFunction.StartTrade();
                 break;
             case 2:
                 Debug.Log("2번 실행");
+                aiFunction.StartFollowPlayer();
                 break;
             case 3:
                 Debug.Log("3번 실행");

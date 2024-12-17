@@ -8,6 +8,11 @@ using UnityEngine;
 
 public class AdobePlayerController : MonoBehaviour
 {
+    public float Health { get => health; }
+    public float MaxHealth { get => maxHealth; }
+    public float Stamina { get => stamina; }
+    public float MaxStamina { get => maxStamina; }
+
     [Header("Cinemachine Camera")]
 	private float keyHorizontalAxisValue;
 	private float keyVerticalAxisValue;

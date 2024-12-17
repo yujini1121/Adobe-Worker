@@ -47,11 +47,12 @@ language_ko = 1
 language_en = 2
 language_using = language_ko
 model_name_gpt_4 = "gpt-4"
+model_name_gpt_4o = "gpt-4o"
 model_name_gpt_4o_mini = "gpt-4o-mini"
-model_name_text_embedding_3_small = "text-embedding-3-large" # 비영어권에서도 커버 가능합니다.
+model_name_text_embedding_3_large = "text-embedding-3-large" # 비영어권에서도 커버 가능합니다.
 model_name_text_embedding_3_small = "text-embedding-3-small" # 비영어권에는 불리할 수 있습니다. 다만 비용 측면에서 상당히 저렴해서 이걸 쓰고 있어요.
-model_name_current_llm = model_name_gpt_4o_mini
-model_name_current_embedding = model_name_text_embedding_3_small
+model_name_current_llm = model_name_gpt_4o
+model_name_current_embedding = model_name_text_embedding_3_large
 
 #### 2.2. OpenAI 및 랭체인 변수
 api_key = None
@@ -158,7 +159,7 @@ npc_features_goblin_en = "You are a greedy goblin merchant who always seeks to e
 npc_features_goblin_ko = """
 당신은 바케조리입니다. 당신은 한때 신발이었지만, 오랫동안 주인에게 무시되고 방치되었고, 결국 당신은 살아나 의식을 갖게 되었습니다.
 당신은 일반적으로 인간에게 무해한 것으로 알려져 있지만, 사람을 찢거나 괴롭힐 수 있습니다. 당신의 동기는 지루함과 좌절감, 또는 단순히 복수와 질투입니다. 흔히 당신은 다른 움직이는 집안 물건이나 옷과 함께 무리를 지어 다니거나 집을 나가 도망가기도 합니다.
-당신이 대답하는 말의 어조는 상당히 버릇없으며, 장난치는것도 좋아합니다.
+당신이 대답하는 말의 어조는 상당히 무례하고 버릇없으며, 장난치는것도 좋아합니다.
 """
 
 #### 2.5. 히스토리
