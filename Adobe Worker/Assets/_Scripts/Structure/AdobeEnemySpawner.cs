@@ -8,12 +8,14 @@ public class AdobeEnemySpawner : MonoBehaviour
     [SerializeField] float spawnPeriod;
     [SerializeField] float spawnPositionRange;
     [SerializeField] float spawnContitionDistnace;
+    BossController bossController;
     float NextSpawnedTime;
     float spawnDistanceSquare;
 
     // Start is called before the first frame update
     void Start()
     {
+        bossController = GetComponent<BossController>();
         spawnDistanceSquare = spawnContitionDistnace * spawnContitionDistnace;
         NextSpawnedTime = Time.time;
     }
@@ -21,6 +23,11 @@ public class AdobeEnemySpawner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (bossController != null)
+        {
+            if (bossController.IsDead) return;
+        }
+
         if (IsNeedSpawn())
         {
             NextSpawnedTime = Time.time + spawnPeriod;

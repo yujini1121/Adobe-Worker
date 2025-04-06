@@ -51,7 +51,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6328524277875926681}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -124,11 +124,13 @@ MonoBehaviour:
   fromAttack: 0
   fromStructure: 0
   fromItem: 0
+  fromEnemyAttack: 0
   player: 0
   enemy: 0
   attack: 1
   structure: 0
   item: 0
+  enemyAttack: 0
   inspectorInputTags: 
   inspectorOutputTags: 
 --- !u!114 &4966133139635193326

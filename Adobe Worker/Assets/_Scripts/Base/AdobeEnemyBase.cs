@@ -14,9 +14,9 @@ public class AdobeEnemyBase : MonoBehaviour, AdobeIDamageable
     private Transform playerTransform;
     private bool isDead = false;
 
-
     Rigidbody myRigidbody;
     EnemyMovementBase myEnemyMovementBase;
+
 
     public virtual void DoWhenDamaged(float damage)
     {
@@ -90,6 +90,7 @@ public class AdobeEnemyBase : MonoBehaviour, AdobeIDamageable
     {
         myRigidbody = GetComponent<Rigidbody>();
         myEnemyMovementBase = GetComponent<EnemyMovementBase>();
+
 
         playerTransform = AdobePlayerReference.playerInstance.transform;
     }

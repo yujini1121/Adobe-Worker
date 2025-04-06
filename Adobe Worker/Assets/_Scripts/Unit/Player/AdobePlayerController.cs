@@ -58,6 +58,9 @@ public class AdobePlayerController : MonoBehaviour
     AdobeItemPack inventory;
     PlayerMovement playerMovement;
 
+    [SerializeField] GameObject swordGo;
+    [SerializeField] GameObject bowGo;
+
     public void GetHurt(float damage)
     {
         health -= damage;
@@ -106,6 +109,9 @@ public class AdobePlayerController : MonoBehaviour
 
     private void Start()
     {
+        Cursor.visible = false;
+
+
         rb = GetComponent<Rigidbody>();
         inventory = GetComponent<AdobeItemPack>();
         playerMovement = GetComponent<PlayerMovement>();
@@ -127,6 +133,14 @@ public class AdobePlayerController : MonoBehaviour
 
 		PlayerDash();
 
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Cursor.visible = true;
+        }
+        if (Input.GetKeyDown(KeyCode.Slash))
+        {
+            Cursor.visible = false;
+        }
 	}
 
 	private void LateUpdate()
@@ -267,6 +281,9 @@ public class AdobePlayerController : MonoBehaviour
             inventory.SwitchItem(1);
             Debug.Log($"아이템을 바꾸었습니다. 순서 : {inventory.InventoryIndex} {inventory.inventory[inventory.InventoryIndex].Id}");
         }
+
+        swordGo.active = inventory.GetID() == 203;
+        bowGo.active = inventory.GetID() == 207;
 
     }
 

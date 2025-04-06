@@ -39,6 +39,12 @@ public class AdobeAttackRange : MonoBehaviour
         {
             harvest.TakeDamage(damage);
         }
+
+        BossController boss = attackTarget.GetComponent<BossController>();
+        if (boss != null)
+        {
+            boss.DoWhenDamaged(damage);
+        }
     }
 
     void Start()

@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Security.Cryptography;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -21,6 +22,15 @@ public class AdobeItemPack : MonoBehaviour
             inventory = new List<AdobeItemBase>();
         }
         m_inventoryIndex = 0;
+    }
+
+    public int GetID()
+    {
+        if (inventory.Count > 0)
+        {
+            return inventory[m_inventoryIndex].Id;
+        }
+        return -1;
     }
 
     public void Use(AdobeItemUseArguments arguments)
